@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    width: 1445px;
+    overflow: scroll;
+    /* position: relative; */
+    /* overflow-y: scroll; */
+    /* overflow: hidden; */
+}
+#upperSection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: white;
+    /* border: 1px solid red; */
+    /* height: 540px; */
+}
+#upperSectionRightPartImage{
+    width: 650px;
+    /* height: 540px; */
+    height: 100%;
+    /* margin: auto; */
+
+}
+#upperSectionRightPart{
+    /* border: 1px solid blue; */
+    text-align: right;
+    height: 540px;
+}
+#upperSectionLeftPartInnerBox{
+    margin: 50px;
+    margin-right: 0;
+    margin-top: 60px;
+    /* border: 1px solid red; */
+    padding-left: 75px;
+}
+#swiggyLogo{
+    width: 190px;
+}
+nav{
+    display: flex;
+}
+#navButtonDiv{
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-right: 0;
+    display: flex;
+    /* width: 200px; */
+}
+.navBtn{
+    width: 100px;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    color: #282c3f;;
+}
+#signupBtn{
+    background-color: #282c3f;
+    color: #FFFFFF;
+}
+.navBtn:hover{
+    cursor: pointer;
+}
+#loginBtn:hover{
+    color: #FC8019;
+}
+#randomTextHeading{
+    font-size: 40px;
+    font-weight: 600;
+    /* padding-top: 100px; */
+    margin-top: 80px;
+    /* border: 1px solid red; */
+    color: #282c3f;
+    margin-bottom: 1%;
+    transform: 1s;
+
+    /* -webkit-font-smoothing : antialiased; */
+}
+#supporterTextHeading{
+    color: #686b78;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0%;
+}
+#searchBox{
+    display: flex;
+    width: 608px;
+    margin-top: 40px;
+    height: 58px;
+    /* border: 1px solid red; */
+}
+#searchBar{
+    font-size: 18px !important;
+    font-weight: 500;
+    width: 468px;
+    border: none;
+    outline: none;
+    border: 1px solid #bebfc5;
+    caret-color: #FC8019;
+    padding-left: 15px;
+    font-family: arial,Helvetica Neue,sans-serif;
+    /* caret-color: #FC8019; */
+}
+#searchBar:focus{
+    border: 1px solid #FC8019;
+
+}
+#searchBtn{
+    width: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #FC8019;
+    color: #fff;
+    border: none;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+#searchBtn:hover{
+    cursor: pointer;
+}
+#popularCitiesHeading{
+    font-size: 15px;
+    color: #A9ABB2;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#popularCitiesList{
+    list-style-type: none;
+    display: block;
+    width: 570px;
+    font-weight: 300;
+    color: #282c3f;
+    font-size: 14px;
+    padding: 0;
+    margin-top: 0%;
+}
+#popularCitiesList>li{
+    float: left;
+}
+#popularCitiesList>li>a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #686b78;
+    text-decoration: none;
+    margin-right: 8px;
+}
+#popularCitiesList>li:nth-child(even)>a{
+    color: #93959F;
+}
+#secondBox{
+    height: 403px;
+    width: 100%;
+    background-color: #2b1e16;
+}
+#secondBoxInnerDiv{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+}
+.secondBoxInnerDivGridBox{
+    width: 260px;
+    height: 323px;
+    /* border: 1px solid white; */
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+#secondBoxImage1{
+    width: 105px;
+    margin-bottom: 42px;
+    height: 200px;
+}
+#secondBoxImage2{
+    margin-bottom: 42px;
+    width: 112px;
+    height: 200px;
+}
+#secondBoxImage3{
+    margin-bottom: 42px;
+    width: 124px;
+    height: 200px;
+}
+.secondBoxHeading{
+    font-size: 20px;
+    font-weight: 600;
+}
+.secondBoxPara{
+    font-size: 15px;
+    margin-top: 10px;
+}
+#thirdBox{
+    height: 570px;
+    border: 1px solid rgba(245, 245, 245, 0);
+    position: relative;
+    /* align-items: center; */
+}
+#thirdBoxInnerDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 155px 125px;
+    /* margin: auto; */
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+    /* justify-content: center; */
+    /* position: relative; */
+}
+#thirdBoxInnerDivHeading{
+    font-size: 40px;
+    font-weight: 600;
+    width: 300px;
+    display: block;
+    color: #282c3f;
+}
+#thirdBoxInnerDivPara{
+    font-size: 20px;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    color: #7e808c;
+    display: block;
+    /* margin: auto; */
+}
+#mobileImage1{
+    top: 0;
+    right: 430px;
+    position: absolute;
+}
+#mobileImage2{
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    /* right: 70px; */
+    /* left: 10px; */
+    /* top: 10; */
+    /* bottom: -315px; */
+}
