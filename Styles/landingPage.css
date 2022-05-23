@@ -39,6 +39,11 @@ body{
 nav{
     display: flex;
 }
+#navButtonUpperDiv{
+    margin: auto;
+    margin-right: 0;
+    display: none;
+}
 #navButtonDiv{
     /* border: 1px solid red; */
     margin: auto;
@@ -50,6 +55,8 @@ nav{
     margin: auto;
     margin-right: 0;
     display: none;
+    position: relative;
+    /* border: 1px solid red; */
 }
 #loggedUser{
     border: .1px solid rgba(128, 128, 128, 0.204);
@@ -63,6 +70,7 @@ nav{
     /* align-items: center; */
     /* display: none; */
 }
+
 #loggedUser>div{
     margin: auto;
     /* border: 1px solid red; */
@@ -80,6 +88,9 @@ nav{
     display: inline;
     text-align: center;
     /* border: 1px solid red; */
+}
+#loggedUser>div>button:hover,#loggedUser>div:hover{
+    cursor: pointer;
 }
 #loggedUser>div>img{
     width: 30px;
@@ -276,4 +287,33 @@ nav{
     /* left: 10px; */
     /* top: 10; */
     /* bottom: -315px; */
+}
+
+#logoutDropDown{
+    text-align: center; 
+    padding: 5px;
+    /* border: 1px solid red; */
+    position: absolute;
+    margin: auto;
+    width: 94%;
+    right: -1px;
+    display: none;
+}
+#logoutDropDown>button:hover{
+    cursor: pointer;
+    border: .1px solid rgba(128, 128, 128, 0.151);
+    border-radius: 50px;
+    /* border: 1px solid red; */
+}
+#logoutDropDown>button{
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border: .1px solid rgba(128, 128, 128, 0.075);
+    border-radius: 50px;
+    /* border: 1px solid red;  */
 }

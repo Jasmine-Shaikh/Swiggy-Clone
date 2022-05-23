@@ -10,6 +10,8 @@
         randomTextHeading.innerText = randomText[index];
         index++;
     },2000);
+    
+    showProfileSection();
 
 import {footerHTML} from '../Components/footer.js'
 document.getElementById('footerPart').innerHTML = footerHTML();
@@ -99,6 +101,16 @@ async function getDataFromDataBase(){
     }
 }
 
+async function getSingleDataFromDataBase(id){
+    try {
+        let result = await fetch(`http://localhost:3000/Users/${id}`);
+        let response = await result.json();
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 userLoginForm.addEventListener('submit', () => {
     event.preventDefault();
     let enteredEmailOrPhoneNumber = document.getElementById('enteredEmailOrPhoneNumber').value;
@@ -108,19 +120,19 @@ userLoginForm.addEventListener('submit', () => {
     getDataFromDataBase().then((result) => {
         // console.log(result);
         let checkUserData = false;
-        let loggedUser;
+        let userID=-1;
         result.forEach(element => {
             if((enteredEmailOrPhoneNumber == element.userEmail || enteredEmailOrPhoneNumber == element.userPhoneNumber) && enteredPassword == element.userPassword){
                 checkUserData =true;
-                loggedUser = element;
+                userID = element.id;
             }
         });
+        let localData = [checkUserData,userID];
         if(checkUserData){
             alert('Login Successful');
             initialPosition();
-            document.querySelector('#navButtonDiv').style.display = 'none';
-            document.querySelector('#loggedUpperDiv').style.display = 'block';
-            document.querySelector('#loggedUser>div>button').innerText = loggedUser.userName;
+            localStorage.setItem('userProfile',JSON.stringify(localData));
+            showProfileSection();
         }
         else{
             alert('Invalid Credentials');
@@ -129,4 +141,36 @@ userLoginForm.addEventListener('submit', () => {
         console.log(error);
     })
     
+});
+
+function showProfileSection(){
+    let loggedUserData = JSON.parse(localStorage.getItem('userProfile'))||[];
+    // console.log(loggedUserData);
+    if(loggedUserData[0]){
+        getSingleDataFromDataBase(loggedUserData[1]).then( (response) => {
+            document.querySelector('#navButtonUpperDiv').style.display = 'none';
+            document.querySelector('#loggedUpperDiv').style.display = 'block';
+            document.querySelector('#loggedUser>div>button').innerText = response.userName;
+
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+    else{
+        document.querySelector('#loggedUpperDiv').style.display = 'none';
+        document.querySelector('#navButtonUpperDiv').style.display = 'block';
+    }
+};
+
+document.querySelector('#loggedUpperDiv').addEventListener('mouseenter', () => {
+    document.getElementById('logoutDropDown').style.display = 'block';
+});
+
+document.querySelector('#loggedUpperDiv').addEventListener('mouseleave', () => {
+    document.getElementById('logoutDropDown').style.display = 'none';
+});
+
+document.querySelector('#logoutBtn').addEventListener('click', () => {
+    localStorage.setItem('userProfile',JSON.stringify([false, -1]));
+    showProfileSection();
 })
