@@ -1,0 +1,20 @@
+{
+  "Users": [
+    {
+      "userName": "Akash Kumawat",
+      "userEmail": "akashkmt963@gmail.com",
+      "userPhoneNumber": "9079938742",
+      "userPassword": "AAaa@123",
+      "userCart": [],
+      "id": 1
+    },
+    {
+      "userName": "Akash",
+      "userEmail": "akashkmt@gmail.com",
+      "userPhoneNumber": "90799",
+      "userPassword": "AAaa@123",
+      "userCart": [],
+      "id": 2
+    }
+  ]
+}

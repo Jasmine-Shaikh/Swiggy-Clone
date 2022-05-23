@@ -10,21 +10,21 @@ function signUpHtml(){
         <div class="signLogPara">or <a href="#">login to your account</a></div>
         <img class="signLogImg" width="100" height="105" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r">
     </div>
-        <form>
+        <form id="userSignupForm">
             <div class="form">
-                <input type="tel" id="userPhoneNumber" class="form__input" autocomplete="off" placeholder=" ">
+                <input type="tel" required id="userPhoneNumber" class="form__input" autocomplete="off" placeholder=" ">
                 <label for="userPhoneNumber" class="form__label">Phone number</label>
               </div>
               <div class="form">
-                <input type="text" id="userName" class="form__input" autocomplete="off" placeholder=" ">
+                <input type="text" required id="userName" class="form__input" autocomplete="off" placeholder=" ">
                 <label for="userName" class="form__label">Name</label>
               </div>
             <div class="form">
-                <input type="email" id="userEmail" class="form__input" autocomplete="off" placeholder=" ">
+                <input type="email" required id="userEmail" class="form__input" autocomplete="off" placeholder=" ">
                 <label for="userEmail" class="form__label">Email</label>
               </div>
               <div class="form">
-                <input type="password" id="userPassword" class="form__input" autocomplete="off" placeholder=" ">
+                <input type="password" required id="userPassword" class="form__input" autocomplete="off" placeholder=" ">
                 <label for="userPassword" class="form__label">Password</label>
             </div>
             <a id="referralLine" href="#">Have a referral code?</a>
@@ -44,13 +44,13 @@ function loginHTML(){
         <div class="signLogPara">or <a href="#">create a new account</a></div>
         <img class="signLogImg" width="100" height="105" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r">
     </div>
-    <form>
+    <form id="userLoginForm">
         <div class="form">
-            <input type="email" id="enteredEmail" class="form__input" autocomplete="off" placeholder=" ">
-            <label for="enteredEmail" class="form__label">Email</label>
+            <input type="text" required id="enteredEmailOrPhoneNumber" class="form__input" autocomplete="off" placeholder=" ">
+            <label for="enteredEmail" class="form__label">Email / Phone number</label>
           </div>
           <div class="form">
-            <input type="password" id="enteredPassword" class="form__input" autocomplete="off" placeholder=" ">
+            <input type="password" required id="enteredPassword" class="form__input" autocomplete="off" placeholder=" ">
             <label for="enteredPassword" class="form__label">Password</label>
         </div>
         <div style="margin-top: 20px;">
@@ -82,6 +82,8 @@ function initialPosition(){
     document.querySelector('#loginDiv').style.display = 'none';
     document.querySelector('#signupDiv').style.display = 'none';
     document.querySelector('body').style.overflow = 'scroll';
+    document.querySelector('#userSignupForm').reset();
+    document.querySelector('#userLoginForm').reset();
 };
 
 

@@ -46,6 +46,47 @@ nav{
     display: flex;
     /* width: 200px; */
 }
+#loggedUpperDiv{
+    margin: auto;
+    margin-right: 0;
+    display: none;
+}
+#loggedUser{
+    border: .1px solid rgba(128, 128, 128, 0.204);
+    border-radius: 100px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    /* height: 45px; */
+    margin: auto;
+    /* margin-right: 0; */
+    /* align-items: center; */
+    /* display: none; */
+}
+#loggedUser>div{
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* text-align: center; */
+    align-items: center;
+}
+#loggedUser>div>button{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    display: inline;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+#loggedUser>div>img{
+    width: 30px;
+    margin-top: 4px;
+    border-radius: 100px;
+    /* border: 1px solid blue; */
+}
 .navBtn{
     width: 100px;
     padding: 10px;
