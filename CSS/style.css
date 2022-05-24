@@ -1,0 +1,150 @@
+* {
+    margin: 0%;
+}
+
+#restaurant-header {
+    display: flex;
+    width: 100%;
+    height: 35vh;
+    background-color: black;
+    margin: auto;
+    gap: 50px;
+    margin-top: 100px;
+    /* justify-content: space-around; */
+}
+
+#Pastas {
+    height: 25vh;
+    margin-left: 100px;
+    margin-top: 30px;
+
+}
+
+#restaurant-header>div>h1{
+    color: white;
+}
+#restaurant-header p{
+    color: white;
+}
+
+-
+#para-container {
+    display: flex;
+    margin-top: 25px;
+    /* text-align: center; */
+}
+
+#para-container>div>p {
+    margin-left:20px;
+
+}
+
+
+.offer{
+    margin-top: 32px;
+   margin-right: 200px;
+   padding-left: 25px;
+   padding-bottom: 25px;
+    border: 2px solid white;
+    /* border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white; */
+    transform: translateZ(0);
+    transition: transform .2s ease-in-out;
+    border: 1px solid #bec0c8;
+    position: relative;
+}
+.offer > div{
+    margin-top: 30px;
+   
+}
+.offer>legend{
+    color: white;
+}
+
+.offer > div > p{
+    padding:0%;
+  
+}
+
+#box1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+    width: 40;
+    /* margin: auto; */
+}
+
+#container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+   
+}
+#leftContainer{
+    direction: rtl;
+    margin-top: 50px;
+    width: 20%;
+    /* border: 2px solid red; */
+}
+#leftContainer>div{
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+#leftContainer>div:hover{
+    color:#fc8019;
+}
+#show{
+    border-left: 1px solid #cecece;
+    width: 60%;
+}
+#rightContainer
+    width: 20%;
+    /* border: 2px solid red; */
+    margin-top: 50px;
+    color:grey;
+   
+}
+#show>div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    /* margin-bottom: 100px; */
+    padding-top: 50px;
+    padding-bottom: 0%;
+    /* margin-bottom: 200px; */
+    /* border: 2px solid red; */
+    border-bottom:2px solid #cecece;
+    justify-content: space-between;
+    /* gap: 30px; */
+}
+/* .imageCant >img{
+    width: 10%;
+} */
+.paraCant > p{
+    width: 100%;
+    padding-top: 15px;
+}
+
+/* #show >div>div{
+    width: 35%;
+    gap: 30%;
+    justify-content: space-between;
+} */
+
+
+#show >div>div>img{
+    /* width: 50%; */
+    height: 90%;
+    /* border: 2px solid red; */
+
+}
+#show >div>div{
+    height: 15vh;
+}
+#rightContainer > img{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
