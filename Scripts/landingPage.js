@@ -13,27 +13,37 @@
     
     showProfileSection();
 
-import {footerHTML} from '../Components/footer.js'
-document.getElementById('footerPart').innerHTML = footerHTML();
+    
+    import {footerHTML} from '../Components/footer.js'
+    document.getElementById('footerPart').innerHTML = footerHTML();
+    
+    import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initialPosition} from '../Components/signupLogin.js'
+    
+    document.getElementById('import1').innerHTML = overlayHTML();
+    document.getElementById('import2').innerHTML = signUpHtml();
+    document.getElementById('import3').innerHTML = loginHTML();
+    
+    document.querySelector('#overlay').addEventListener('click', initialPosition);
+    document.querySelector('#closeBtnForSignup').addEventListener('click', initialPosition);
+    document.querySelector('#closeBtnForLogin').addEventListener('click', initialPosition);
+    document.querySelector('#loginBtn').addEventListener('click', showLoginBox);
+    document.querySelector('#signupBtn').addEventListener('click', showSignupBox);
+    
+    import { popupHTML, showAlertPopupOverlay, showAlertPopupBody, closeAlertPopup1,closeAlertPopup2 } from '../Components/popup.js';
+    document.getElementById('alertBoxUpperDiv1').innerHTML = popupHTML();
+    document.getElementById('alertBoxUpperDiv2').innerHTML = popupHTML();
+    document.querySelector('#alertBoxUpperDiv1>.alertBox>.closePopup').addEventListener('click', closeAlertPopup1);
+    document.querySelector('#alertBoxUpperDiv2>.alertBox>.closePopup').addEventListener('click', closeAlertPopup2);
 
-import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initialPosition} from '../Components/signupLogin.js'
-
-document.getElementById('import1').innerHTML = overlayHTML();
-document.getElementById('import2').innerHTML = signUpHtml();
-document.getElementById('import3').innerHTML = loginHTML();
-
-document.querySelector('#overlay').addEventListener('click', initialPosition);
-document.querySelector('#closeBtnForSignup').addEventListener('click', initialPosition);
-document.querySelector('#closeBtnForLogin').addEventListener('click', initialPosition);
-document.querySelector('#loginBtn').addEventListener('click', showLoginBox);
-document.querySelector('#signupBtn').addEventListener('click', showSignupBox);
-
-
+    console.log("rendered")
+    
 let userSignupForm = document.querySelector('#userSignupForm');
 let userLoginForm = document.querySelector('#userLoginForm');
 
-userSignupForm.addEventListener('submit', () => {
+userSignupForm.addEventListener('submit', (event) => {
+
     event.preventDefault();
+    console.log(event)
     let userPhoneNumber = document.getElementById('userPhoneNumber').value;
     let userName = document.getElementById('userName').value;
     let userEmail = document.getElementById('userEmail').value;
@@ -52,9 +62,10 @@ userSignupForm.addEventListener('submit', () => {
     
 
 });
+var abortController = new AbortController()
 
 function checkUserOnServers(userDetails){
-    getDataFromDataBase().then((result) => {
+    getDataFromDataBase().then(async (result) => {
         // console.log(result);
         let ifUserAlreadyInDB = false;
         result.forEach(element => {
@@ -63,32 +74,46 @@ function checkUserOnServers(userDetails){
             }
         });
         if(!ifUserAlreadyInDB){
-            postUserToDataBase(userDetails).then(()=>{
-                alert('Account created successfully\nPlease Login');
-            }).catch(() => {
-                alert('Error');
-            });
+            try {
+                const res = await postUserToDataBase(userDetails).then(()=>abortController.abort())
+                 initialPosition();
+                    showAlertPopupBody('Account created successfully\nPlease login');
+            } catch(e){
+                console.log(e)
+            }
+            //console.log(await postUserToDataBase(userDetails))//.then(()=>{
+                // alert('Account created successfully\nPlease Login');
+                // setTimeout(() => {
+                  
+                // },1000);
+            // }).catch(() => {
+                // alert('Error');
+            //     showAlertPopupOverlay('Something went wrong !! try again');
+            // });
+            
+                // showAlertPopupBody('Account created successfully\nPlease login');
+            
+
         }
         else{
-            alert('User already exists');
+            // alert('User already exists');
+            showAlertPopupOverlay('User already exists');
         }
     }).catch((error) => {
         console.log(error);
     })
 }
 
-async function postUserToDataBase(userDetails){
-    try {
-        let post = await fetch(`http://localhost:3000/Users`,{
+
+
+function postUserToDataBase(userDetails){
+    return  fetch(`http://localhost:3000/Users`,{
             method : "POST",
             body : JSON.stringify(userDetails),
-            headers : {"Content-Type" : "application/json"}
+            headers : {"Content-Type" : "application/json"},
+            signal: abortController.signal
         });
-        // let response = await post.json();
-        // console.log(response);
-    } catch (error) {
-        console.log(error);
-    }
+     
 }
 
 async function getDataFromDataBase(){
@@ -129,13 +154,16 @@ userLoginForm.addEventListener('submit', () => {
         });
         let localData = [checkUserData,userID];
         if(checkUserData){
-            alert('Login Successful');
-            initialPosition();
+            // alert('Login Successful');
+            showAlertPopupBody('Login successful');
             localStorage.setItem('userProfile',JSON.stringify(localData));
-            showProfileSection();
+            // showProfileSection();
+            setTimeout(showProfileSection,1500)
+            initialPosition();
         }
         else{
-            alert('Invalid Credentials');
+            // alert('Invalid Credentials');
+            showAlertPopupOverlay('Invalid credentials');
         }
     }).catch((error) => {
         console.log(error);

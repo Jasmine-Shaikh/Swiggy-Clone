@@ -1,5 +1,7 @@
 function overlayHTML(){
-    return `<div id="overlay"></div>`
+    return `<div id="overlay">
+        <div id="alertBoxUpperDiv1" class="alertBoxUpperDiv"></div>
+    </div>`
 }
 
 function signUpHtml(){
