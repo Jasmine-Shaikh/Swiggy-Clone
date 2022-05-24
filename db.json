@@ -1,0 +1,47 @@
+
+{
+    "restaurantsAvailable": [
+      {
+        "id": 1,
+       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tk8sfmo0rnpew3wuuabj",
+       "restaurantName": "Domino's Pizza",
+       "cuisine": "Pizzas",
+       "ratings": 4.3,
+       "delivery": 30,
+       "approxPrice": 400,
+       "offer": 50
+      },
+      {
+        "id": 2,
+       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mocil3npmwpcdcfaxql1",
+       "restaurantName": "La Pino'z Pizza",
+       "cuisine": "Pizzas",
+       "ratings": 3.8,
+       "delivery": 44,
+       "approxPrice": 220,
+       "offer": 50
+      },
+      {
+        "id": 3,
+       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/l7zme8yryk6adeakj6jy",
+       "restaurantName": "The Pizza Bakery",
+       "cuisine": "Pizzas",
+       "ratings": 4.3,
+       "delivery": 37,
+       "approxPrice": 700,
+       "offer": 50
+      },
+      {
+        "id": 4,
+       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rtj6tjqn0ql4glxfr4pt",
+       "restaurantName": "Pizza Stop",
+       "cuisine": "Italian, Pizzas",
+       "ratings": 4.1,
+       "delivery": 34,
+       "approxPrice": 400,
+       "offer": 50
+      }
+  ]
+  }
+
+  

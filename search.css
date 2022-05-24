@@ -1,0 +1,99 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+  
+}
+
+/* search part start */
+#searchPageContainer{
+    margin-top: 130px;
+    margin-bottom: 20px;
+}
+
+#searchContainer input{
+    padding: 15px;
+    padding-right: 640px;
+    font-size: 17px;
+    border: 1px solid grey;
+    /* border: none; */
+    float: left;
+    width: 95%;
+    background: white;
+    outline: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+#searchContainer button{
+    float: left;
+    width: 5%;
+    padding: 15px;
+    background: white;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+  
+}
+#searchContainer{
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
+  
+}
+/* search part end */
+
+/* Filter part start */
+#filterRestaurant{
+    display: flex;
+    margin-left: 305px;
+}
+#filterRestaurant> button{
+    /* color: white; */
+    padding: 15px;
+    background-color: white;
+    border-radius: 9999px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    border:1px solid #cecece
+}
+
+/* filter part end */
+
+ /* Restaurant part Start */
+#mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    gap: 40px;
+    margin: auto;
+    margin-bottom: 100vh;
+    margin-top: 3px;
+}
+
+/* #mainContainer>div{
+    border: 2px solid green;
+
+} */
+#mainContainer>div:hover{
+    border: 1px solid #cecece;
+}
+#mainContainer >div>img{
+    width: 100%;
+}
+#mainContainer >div>div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.ratingDeliveryApproxPrice{
+    margin-bottom: 10px;
+}
+.offerContainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* restaurant part end */

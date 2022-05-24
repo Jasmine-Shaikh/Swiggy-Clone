@@ -1,0 +1,139 @@
+#fourthBox{
+    padding: 76px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    background-color: #000000;
+    color: white;
+}
+#fourthBoxInnerBox{
+    /* border: 1px solid white; */
+    display: flex;
+    margin: auto;
+}
+#companyList, #contactList, #legalList{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0%;
+    line-height: 1.2;
+}
+#companyList>li, #contactList>li, #legalList>li{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 300;
+    /* line-height: 30px; */
+    margin-top: 15px;
+}
+#companyList>li:hover, #contactList>li:hover, #legalList>li:hover{
+    /* transform: skew(1); */
+    font-weight: 600;
+}
+#companyList>li>a, #contactList>li>a, #legalList>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+#fourthBoxInnerBox>div{
+    width: 300px;
+    color: #fff;
+    /* border: 1px solid red; */
+    font-weight: 300;
+    padding-left: 20px;
+    font-size: 14px;
+}
+#fourthBoxInnerBox>div>div{
+    color: gray;
+    font-weight: 600;
+    font-size: 15px;
+}
+#deliverLocations{
+    color: gray;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+#fourthBoxInnerBoxImages{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+    /* justify-content: center; */
+    padding-top: 10px;
+    margin-top: 0%;
+    margin-bottom: 0;
+}
+#fourthBoxInnerBoxImages>a>img{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 200px;
+    height: 65px;
+}
+#fourthBoxInnerBoxImages>a{
+    text-align: center;
+}
+#horizontalLine1{
+    border: 0.00001px solid gray;
+    margin-top: -5px;
+    width: 98.5%;
+    margin-right: 0;
+}
+#deliverLocationsDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#deliverLocationsDiv>ul{
+    list-style-type: none;
+    padding: 0;
+    padding-left: 20px;
+}
+#deliverLocationsDiv>ul>li{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 300;
+    /* line-height: 30px; */
+    margin-top: 15px;
+}
+#deliverLocationsDiv>ul>li>a:hover{
+    font-weight: 600;
+}
+#deliverLocationsDiv>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+#horizontalLine2{
+    border: 0.00001px solid gray;
+    margin-top: 20px;
+    width: 98.5%;
+    margin-right: 0;
+}
+#footerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-top: 20px
+    /* border: 1px solid blue; */
+}
+#footerNavLogo{
+    width: 142px;
+}
+#socialHandels{
+    display: flex;
+    gap: 20px;
+    /* text-align: center; */
+}
+#socialHandels>a{
+    /* text-align: center; */
+    margin: auto;
+}
+#socialHandels>a>img{
+    width: 24px;
+    transition: transform .3s;
+}
+#socialHandels>a>img:hover{
+    transform: scale(1.2);
+}

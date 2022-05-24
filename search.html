@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./search.css">
+    <link rel="stylesheet" href="./ComponentsStyles/footer.css">
+    <link rel="stylesheet" href="./componentsStyles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="headerContainer">
+            <div id="headerContentContainer">
+                <a href="./homepage.html" id="logo"><img src="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg" alt="swiggylogo"></a>
+
+                <div id="currentLocation">Bangalore, Karnataka, India</div>
+
+                <ul id="headerContainerRight">
+                    <li id="search">
+                        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/2048px-Search_Icon.svg.png">Search</a>
+                    </li>
+                    <li id="offer">
+                        <a href=""><img src="https://static.thenounproject.com/png/971055-200.png" alt=""> Offers</a>
+                    </li>
+                    <li id="help">
+                        <a href=""><img src="https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536847_960_720.png" alt=""> Help</a>
+                    </li>
+                    <li id="signIn">
+                        <a href=""><img src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png" alt=""> Sign In</a>
+                    </li>
+                    <li id="cart"><a href=""><span id="noOfCartItems"></span> Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="searchPageContainer">
+        <div id="searchContainer">
+            
+            <input type="text" id="searchInput" placeholder="Search For Restaurants"/> 
+            <button><i class="fa fa-search"></i></button>
+        </div>
+        <!-- <div id="RestaurantsContainer">
+            <div id="Restaurants">
+                <button>Restaurants</button>
+                <button>Dishes</button>
+            </div>
+            <div id="filterContainer">
+                <button>Relevance</button>
+                <ul>
+                    <li>Relevence</li>
+                    <li>Delivery</li>
+                    <li>Rating</li>
+                    <li>Cost For Two</li>
+                </ul>
+            </div> -->
+
+        </div>
+    </div>
+    <div id="filterRestaurant">
+        <button id="restaurantButton">Restaurants</button>
+        <button id="dishesButton">Dishes</button>
+    </div>
+    <div id="mainContainer">
+
+    </div>
+   
+    <footer id="footerPart"></footer>
+    
+    <script src="./search.js" type="module"></script>
+</body>
+</html>
