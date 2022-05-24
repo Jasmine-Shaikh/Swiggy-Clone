@@ -64,7 +64,7 @@ function checkUserOnServers(userDetails){
         });
         if(!ifUserAlreadyInDB){
             postUserToDataBase(userDetails).then(()=>{
-                alert('Account created successfully\nPlease Login again');
+                alert('Account created successfully\nPlease Login');
             }).catch(() => {
                 alert('Error');
             });
