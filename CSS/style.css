@@ -1,6 +1,8 @@
-* {
+*{
+    font-family: 'Spartan' , sans-serif;
     margin: 0%;
 }
+
 
 #restaurant-header {
     display: flex;
@@ -27,7 +29,7 @@
     color: white;
 }
 
--
+
 #para-container {
     display: flex;
     margin-top: 25px;
@@ -98,7 +100,7 @@
     border-left: 1px solid #cecece;
     width: 60%;
 }
-#rightContainer
+#rightContainer{
     width: 20%;
     /* border: 2px solid red; */
     margin-top: 50px;

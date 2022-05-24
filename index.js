@@ -59,6 +59,7 @@ let restaurantsAvailable = [{
       let descElement = document.createElement('p');
       descElement.innerText = user.desc;
       
+      
       imageContainer.append(imageElement)
       paraContainer.append(titleElement,priceElement, descElement)
       box.append(paraContainer,imageContainer);
