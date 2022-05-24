@@ -114,6 +114,13 @@ header {
     fill: #FC9036;
 }
 
+sup {
+    color: #FC9036;
+    vertical-align: super;
+    font-size: small;
+    text-align: start;
+}
+
 #logo>img {
     height: 49px;
     width: 34px;
@@ -184,4 +191,54 @@ header {
     transition: transform .5s cubic-bezier(.215, .61, .355, 1);
     backface-visibility: visible;
     transform: translateZ(0);
+}
+
+#headingAndFilters {
+    margin: 30px 60px;
+    padding: 7px 3px;
+    display: flex;
+    border-bottom: 0.5px solid #c7c7ca;
+    align-items: flex-end;
+}
+
+#noOfRestaurants {
+    font-weight: 600;
+    font-size: 28px;
+    flex: 1;
+}
+
+#sortingAndFilters>button {
+    padding-bottom: 0px;
+    background-color: white;
+    border-style: none;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #686b78;
+    margin-left: 23px;
+    cursor: pointer;
+}
+
+#sortingAndFilters>button:hover {
+    color: #3d4152;
+}
+
+#filters {
+    font-weight: bold!important;
+}
+
+#filters:hover {
+    color: #FC9036!important;
+}
+
+#iconFilter {
+    height: 17px;
+    width: 17px;
+    height: 17px;
+    width: 17px;
+    border: 1px solid #EE5932;
+    margin-left: 3px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-bottom: -5px;
 }
