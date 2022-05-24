@@ -34,16 +34,12 @@
     document.getElementById('alertBoxUpperDiv2').innerHTML = popupHTML();
     document.querySelector('#alertBoxUpperDiv1>.alertBox>.closePopup').addEventListener('click', closeAlertPopup1);
     document.querySelector('#alertBoxUpperDiv2>.alertBox>.closePopup').addEventListener('click', closeAlertPopup2);
-
-    console.log("rendered")
     
 let userSignupForm = document.querySelector('#userSignupForm');
 let userLoginForm = document.querySelector('#userLoginForm');
 
 userSignupForm.addEventListener('submit', (event) => {
-
     event.preventDefault();
-    console.log(event)
     let userPhoneNumber = document.getElementById('userPhoneNumber').value;
     let userName = document.getElementById('userName').value;
     let userEmail = document.getElementById('userEmail').value;
@@ -62,10 +58,9 @@ userSignupForm.addEventListener('submit', (event) => {
     
 
 });
-var abortController = new AbortController()
 
 function checkUserOnServers(userDetails){
-    getDataFromDataBase().then(async (result) => {
+    getDataFromDataBase().then((result) => {
         // console.log(result);
         let ifUserAlreadyInDB = false;
         result.forEach(element => {
@@ -74,22 +69,16 @@ function checkUserOnServers(userDetails){
             }
         });
         if(!ifUserAlreadyInDB){
-            try {
-                const res = await postUserToDataBase(userDetails).then(()=>abortController.abort())
-                 initialPosition();
-                    showAlertPopupBody('Account created successfully\nPlease login');
-            } catch(e){
-                console.log(e)
-            }
-            //console.log(await postUserToDataBase(userDetails))//.then(()=>{
+            postUserToDataBase(userDetails).then(()=>{
                 // alert('Account created successfully\nPlease Login');
                 // setTimeout(() => {
-                  
+                    initialPosition();
+                    showAlertPopupBody('Account created successfully\nPlease login');
                 // },1000);
-            // }).catch(() => {
+            }).catch(() => {
                 // alert('Error');
-            //     showAlertPopupOverlay('Something went wrong !! try again');
-            // });
+                showAlertPopupOverlay('Something went wrong !! try again');
+            });
             
                 // showAlertPopupBody('Account created successfully\nPlease login');
             
@@ -104,16 +93,18 @@ function checkUserOnServers(userDetails){
     })
 }
 
-
-
-function postUserToDataBase(userDetails){
-    return  fetch(`http://localhost:3000/Users`,{
+async function postUserToDataBase(userDetails){
+    try {
+        let post = await fetch(`http://localhost:3000/Users`,{
             method : "POST",
             body : JSON.stringify(userDetails),
-            headers : {"Content-Type" : "application/json"},
-            signal: abortController.signal
+            headers : {"Content-Type" : "application/json"}
         });
-     
+        let response = await post.json();
+        // console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function getDataFromDataBase(){

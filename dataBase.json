@@ -9,7 +9,7 @@
       "id": 1
     },
     {
-      "userName": "Akash",
+      "userName": "akash",
       "userEmail": "akashkmt@gmail.com",
       "userPhoneNumber": "90799",
       "userPassword": "aaaa",
@@ -17,60 +17,20 @@
       "id": 2
     },
     {
-      "userName": "afsd",
-      "userEmail": "a@g.com",
-      "userPhoneNumber": "234234",
-      "userPassword": "324",
+      "userName": "akash",
+      "userEmail": "akashkmt93@gmail.com",
+      "userPhoneNumber": "1234567890",
+      "userPassword": "aaaa",
       "userCart": [],
       "id": 3
     },
     {
-      "userName": "agdf",
-      "userEmail": "gs@gm",
-      "userPhoneNumber": "2346",
-      "userPassword": "325",
+      "userName": "asdfgsdg",
+      "userEmail": "asdga@glkds.v",
+      "userPhoneNumber": "1234576679",
+      "userPassword": "aaaa",
       "userCart": [],
       "id": 4
-    },
-    {
-      "userName": "sadgas",
-      "userEmail": "adfa@sd.v",
-      "userPhoneNumber": "41235",
-      "userPassword": "adsga",
-      "userCart": [],
-      "id": 5
-    },
-    {
-      "userName": "a",
-      "userEmail": "a@g.c",
-      "userPhoneNumber": "234",
-      "userPassword": "234",
-      "userCart": [],
-      "id": 6
-    },
-    {
-      "userName": "aasgdg",
-      "userEmail": "basdfs@v.c",
-      "userPhoneNumber": "234234234",
-      "userPassword": "234",
-      "userCart": [],
-      "id": 7
-    },
-    {
-      "userName": "agds",
-      "userEmail": "as@d.csd",
-      "userPhoneNumber": "346",
-      "userPassword": "345",
-      "userCart": [],
-      "id": 8
-    },
-    {
-      "userName": "adf",
-      "userEmail": "as@d.cd",
-      "userPhoneNumber": "2347457",
-      "userPassword": "234",
-      "userCart": [],
-      "id": 9
     }
   ],
   "Restaurants": [
