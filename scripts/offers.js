@@ -1,6 +1,9 @@
 import {footerHTML} from '../componentsJs/footer.js'
 document.getElementById('footerPart').innerHTML = footerHTML();
 
+import { navbarHTML } from '../componentsJs/navbar.js';
+document.getElementById("navbarContainer").innerHTML = navbarHTML();
+
 async function fetchAndDisplayData(){
     let url = "http://localhost:3000/restaurantsAvailable";
     let res = await fetch(url);

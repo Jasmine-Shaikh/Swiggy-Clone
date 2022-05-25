@@ -4,7 +4,7 @@
       {
         "id": 1,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tk8sfmo0rnpew3wuuabj",
-       "restaurantName": "Domino's Pizza",
+       "name": "Domino's Pizza",
        "cuisine": "Pizzas",
        "ratings": 4.3,
        "delivery": 30,
@@ -14,7 +14,7 @@
       {
         "id": 2,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mocil3npmwpcdcfaxql1",
-       "restaurantName": "La Pino'z Pizza",
+       "name": "La Pino'z Pizza",
        "cuisine": "Pizzas",
        "ratings": 3.8,
        "delivery": 44,
@@ -24,7 +24,7 @@
       {
         "id": 3,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/l7zme8yryk6adeakj6jy",
-       "restaurantName": "The Pizza Bakery",
+       "name": "The Pizza Bakery",
        "cuisine": "Pizzas",
        "ratings": 4.3,
        "delivery": 37,
@@ -34,7 +34,7 @@
       {
         "id": 4,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rtj6tjqn0ql4glxfr4pt",
-       "restaurantName": "Pizza Stop",
+       "name": "Pizza Stop",
        "cuisine": "Italian, Pizzas",
        "ratings": 4.1,
        "delivery": 34,
@@ -44,7 +44,7 @@
       {
         "id": 5,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tqt0kko6qnugg7g7dtf5",
-       "restaurantName": "Parijata pure veg",
+       "name": "Parijata pure veg",
        "cuisine": "South Indian",
        "ratings": 4.0,
        "delivery": 28,
@@ -54,7 +54,7 @@
       {
         "id": 6,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tfbnpd65irvhp9iwhbtk",
-       "restaurantName": "Sri Udupi Park",
+       "name": "Sri Udupi Park",
        "cuisine": "North Indian, South Indian",
        "ratings": 4.4,
        "delivery": 29,
@@ -64,7 +64,7 @@
       {
         "id": 7,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/v8jgifosg3vdzrgsv1sw",
-       "restaurantName": "IDC KITCHEN",
+       "name": "IDC KITCHEN",
        "cuisine": "South Indian, North Indian",
        "ratings": 4.5,
        "delivery": 32,
@@ -74,7 +74,7 @@
       {
         "id": 8,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kpu0jglsdlfl3bh5ircu",
-       "restaurantName": "Virinchi Cafe",
+       "name": "Virinchi Cafe",
        "cuisine": "South Indian",
        "ratings": 4.4,
        "delivery": 32,
@@ -84,7 +84,7 @@
       {
         "id": 9,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/my4zyu8ahvh0t1iedftc",
-       "restaurantName": "Sunny's",
+       "name": "Sunny's",
        "cuisine": "European, American",
        "ratings": 4.3,
        "delivery": 32,
@@ -94,7 +94,7 @@
       {
         "id": 10,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mocil3npmwpcdcfaxql1",
-       "restaurantName": "Paakashala",
+       "name": "Paakashala",
        "cuisine": "South Indian, North Indian",
        "ratings": 4.2,
        "delivery": 32,
@@ -104,7 +104,7 @@
       {
         "id": 11,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/t6c6szppjphxel1loidn",
-       "restaurantName": "Samrudh Veg",
+       "name": "Samrudh Veg",
        "cuisine": "South Indian, Chinese",
        "ratings": 4.0,
        "delivery": 33,
@@ -114,7 +114,7 @@
       {
         "id": 12,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/z7q1fmri5lvk29mdzrof",
-       "restaurantName": "Sri Udupi Sagar",
+       "name": "Sri Udupi Sagar",
        "cuisine": "South Indian, North Indian",
        "ratings": 4.3,
        "delivery": 37,
@@ -124,7 +124,7 @@
       {
         "id": 13,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tc3cigltkf42oves0sst",
-       "restaurantName": "Sendhoor coffee",
+       "name": "Sendhoor coffee",
        "cuisine": "Pizzas",
        "ratings": 4.5,
        "delivery": 38,
@@ -134,7 +134,7 @@
       {
         "id": 14,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hbpel7wiienbuq60t3xg",
-       "restaurantName": "Falhari- A fruitful Habit",
+       "name": "Falhari- A fruitful Habit",
        "cuisine": "Salads, Juices",
        "ratings": 4.0,
        "delivery": 37,
@@ -144,7 +144,7 @@
       {
         "id": 15,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddlewhiegjaigcxnp5tr",
-       "restaurantName": "Shanti Sagar",
+       "name": "Shanti Sagar",
        "cuisine": "Chinese",
        "ratings": 4.3,
        "delivery": 38,
@@ -154,7 +154,7 @@
       {
         "id": 16,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jzmvp9i4jp2uk1hvxyhz",
-       "restaurantName": "Meat and Eat",
+       "name": "Meat and Eat",
        "cuisine": "Biryani",
        "ratings": 4.1,
        "delivery": 38,
@@ -164,7 +164,7 @@
       {
         "id": 16,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/deuy7akmjecenisilwrm",
-       "restaurantName": "The Bowl Company",
+       "name": "The Bowl Company",
        "cuisine": "Continental, North Indian",
        "ratings": 4.3,
        "delivery": 38,
@@ -174,7 +174,7 @@
       {
         "id": 16,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/fs9fnrbjr3cgvtmljate",
-       "restaurantName": "Naadoota",
+       "name": "Naadoota",
        "cuisine": "Indian, Biryani",
        "ratings": 4.1,
        "delivery": 36,
@@ -184,7 +184,7 @@
       {
         "id": 16,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tuhvik2llvsfshjlptex",
-       "restaurantName": "Kavali Hotel",
+       "name": "Kavali Hotel",
        "cuisine": "South Indian",
        "ratings": 4.4,
        "delivery": 36,
@@ -194,7 +194,7 @@
       {
         "id": 16,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ap8fnfunttp5a0afyjfl",
-       "restaurantName": "SRI UDUPI VAIBHAV",
+       "name": "SRI UDUPI VAIBHAV",
        "cuisine": "South Indian, North Indian",
        "ratings": 4.3,
        "delivery": 37,
@@ -204,7 +204,7 @@
       {
         "id": 16,
        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hbpel7wiienbuq60t3xg",
-       "restaurantName": "Falhari- A fruitful Habit",
+       "name": "Falhari- A fruitful Habit",
        "cuisine": "Salads, Juices",
        "ratings": 4.0,
        "delivery": 37,
