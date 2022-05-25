@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order food online</title>
+    <link rel="stylesheet" href="./styles/offers.css">
+    <link rel="stylesheet" href="./ComponentsStyles/footer.css">
+    <link rel="stylesheet" href="./componentsStyles/navbar.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerContainer">
+            <div id="headerContentContainer">
+                <a href="./homepage.html" id="logo"><img src="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg"
+                        alt="swiggylogo"></a>
+
+                <div id="currentLocation">Bangalore, Karnataka, India</div>
+
+                <ul id="headerContainerRight">
+                    <li id="search">
+                        <a href="search.html"><img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/2048px-Search_Icon.svg.png">Search</a>
+                    </li>
+                    <li id="offer">
+                        <a href="offers.html"><img src="https://static.thenounproject.com/png/971055-200.png" alt="">
+                            Offers</a>
+                    </li>
+                    <li id="help">
+                        <a href=""><img src="https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536847_960_720.png"
+                                alt=""> Help</a>
+                    </li>
+                    <li id="signIn">
+                        <a href=""><img
+                                src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png"
+                                alt=""> Sign In</a>
+                    </li>
+                    <li id="cart"><a href=""><span id="noOfCartItems"></span> Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="offerbackground">
+        <div>
+            <h1>Offers for you</h1>
+            <p>Explore top deals and offers exclusively for you!</p>
+        </div>
+        <!-- <div>
+            
+        </div> -->
+        <div id="offerimgid">
+              <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/KHu24Gqw_md3ham" alt="">
+        </div>
+    </div>
+    <!-- <img id="offerImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScYCwmQVSk1aRUIfId0OK0RpSUC73JaL4CCw&usqp=CAU" alt=""> -->
+    <div id="filters">
+        <div id="filterRestaurant">
+            <div>
+                <button id="restaurantButton">Restaurant offers</button>
+                <!-- <hr> -->
+            </div>
+            <div>
+                <button id="dishesButton">Payment offers/Coupons</button>
+                <!-- <hr> -->
+            </div>
+        </div>
+    </div>
+    <div id="allOffers">
+        <h1 id="allOffer">All offers (0)</h1>
+        <p>All offers and deals, from restaurants near you
+        </p>
+    </div>
+    <div id="restaurantOffers">
+
+    </div>
+    <!-- <hr> -->
+
+
+    <footer id="footerPart"></footer>
+
+    <script src="./scripts/offers.js" type="module"></script>
+</body>
+
+</html>

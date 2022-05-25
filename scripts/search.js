@@ -1,13 +1,13 @@
 
-import {footerHTML} from './componentsJs/footer.js'
+import {footerHTML} from '../componentsJs/footer.js'
 document.getElementById('footerPart').innerHTML = footerHTML();
 
 async function fetchAndDisplayData(){
     let url = "http://localhost:3000/restaurantsAvailable";
     let res = await fetch(url);
-    console.log(res)
+    // console.log(res)
     let data = await res.json();
-    console.log(data)
+    // console.log(data)
     displayData(data);
    
 }
