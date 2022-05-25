@@ -1,0 +1,414 @@
+body{
+    margin: 0;
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    width: 1445px;
+    overflow: scroll;
+    font-weight: 300;
+    color: #282c3f;
+    font-size: 14px;
+    line-height: 1.2;
+    /* position: relative; */
+    /* overflow-y: scroll; */
+    /* overflow: hidden; */
+}
+#fullContainer{
+    position: relative;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 1240px;
+}
+
+#header{
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #fff;
+    z-index: 1000;
+    will-change: transform;
+    transform: translateZ(0);
+    transition: transform .3s ease;
+    contain: size layout style;
+    padding: 0 20px;
+    display: block;
+}
+#navBar{
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    background: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+
+#slogo{
+    height: 49px;
+    /* border: 1px solid red; */
+    /* width: 34px; */
+}
+#navBar>a{
+    margin-right: 16px;
+}
+
+#secureCheckoutDiv{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 14px;
+    width: 300px;
+    /* height: ; */
+}
+#secureCheckoutDiv > span{
+    font-weight: 700;
+    color: #3d4152;
+    text-transform: uppercase;
+}
+#extraPart{
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 20px;
+    padding: 1px;
+}
+.navBox{
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: row;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    /* padding: 1px; */
+    /* margin: auto; */
+}
+.navBox:hover{
+    cursor: pointer;
+    /* color: #FC8019; */
+}
+.navBoxImg{
+    width: 20px;
+    height: 20px;
+}
+.extraPartInnerDiv{
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+}
+/* #profileBox{ */
+    /* border: 1px solid red; */
+    /* text-align: center;
+    position: relative;
+    border: .1px solid rgba(128, 128, 128, 0.204);
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navBox>img, .navBox>span{
+    margin: auto;
+}
+#logoutDiv{
+    position: absolute; */
+    /* border: 1px solid black; */
+    /* width: 98%;
+    padding: 1px;
+    left: 2px;
+    display: none;
+}
+#logoutBtn{ */
+    /* width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background-color: inherit;
+    text-align: center; */
+    /* font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin-top: 5px;
+    border: .1px solid rgba(128, 128, 128, 0.075);
+    border-radius: 10px; */
+/* }
+#logoutBtn:hover{ */
+    /* cursor: pointer; */
+    /* cursor: pointer;
+    border: .1px solid rgba(128, 128, 128, 0.151);
+    border-radius: 10px;
+    color: #FC8019;
+} */
+#navButtonUpperDiv{
+    margin: auto;
+    margin-right: 0;
+    display: none;
+    /* border: 1px solid red; */
+}
+#navButtonDiv{
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-right: 0;
+    display: flex;
+    /* width: 200px; */
+}
+#loggedUpperDiv{
+    margin: auto;
+    margin-right: 0;
+    display: none;
+    position: relative;
+    /* border: 1px solid red; */
+}
+#loggedUser{
+    border: .1px solid rgba(128, 128, 128, 0.204);
+    border-radius: 10px;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: row;
+    /* height: 45px; */
+    margin: auto;
+    /* margin-right: 0; */
+    /* align-items: center; */
+    /* display: none; */
+}
+
+#loggedUser>div{
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    /* text-align: center; */
+    align-items: center;
+}
+#loggedUser>div>button{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    display: inline;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+#loggedUser>div>button:hover,#loggedUser>div:hover{
+    cursor: pointer;
+    /* color: #FC8019; */
+}
+#loggedUser>div>img{
+    width: 30px;
+    margin-top: 4px;
+    border-radius: 100px;
+    /* border: 1px solid blue; */
+}
+.navBtn{
+    width: 100px;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    color: #282c3f;;
+}
+#signupBtn{
+    background-color: #282c3f;
+    color: #FFFFFF;
+}
+.navBtn:hover{
+    cursor: pointer;
+}
+#loginBtn:hover{
+    color: #FC8019;
+}
+#logoutDropDown{
+    text-align: center; 
+    padding: 5px;
+    /* border: 1px solid red; */
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    width: 94%;
+    right: -1px;
+    /* top: 50px; */
+    border-top: 1.5px solid #FC8019;
+    /* margin-top: 5px; */
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: none;
+}
+#logoutDropDown>button:hover{
+    cursor: pointer;
+    border: .1px solid rgba(128, 128, 128, 0.151);
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
+#logoutDropDown>button{
+    font-size: 15px;
+    /* color: #fff; */
+    font-weight: 600;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border: .1px solid rgba(128, 128, 128, 0.075);
+    border-radius: 10px;
+    /* border: 1px solid red;  */
+}
+    #navButtonUpperDiv, #loggedUpperDiv{
+        margin-left: 0;
+    }
+
+
+/* popup css */
+.alertBox{
+    /* border: 1px solid red; */
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    /* border: .1px solid #fc7f1939; */
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.733);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+  }
+  .alertBox:hover{
+      background-color: rgba(245, 245, 245, 0.773);
+    /* border: .1px solid #fc7f1950; */
+  }
+  .alertMSG{
+      margin: auto;
+      margin-left: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: black;
+  }
+  .alertBoxUpperDiv{
+    /* border: 1px solid blue; */
+    /* padding: 1px; */
+    /* align-items: center; */
+    width: 341px;
+    position: absolute;
+    top: 83px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+  }
+  #alertBoxUpperDiv1{
+      display: none;
+  }
+  #alertBoxUpperDiv2{
+    display: none;
+}
+  
+.closePopup{
+    font-weight: bold;
+    font-size: 20px;
+}
+  .closePopup:hover{
+    cursor: pointer;
+    color: #FC8019;
+  }
+  
+  /* popup */
+
+  #middlePart{
+      /* height: 500px; */
+      background-color: #E9ECEE;
+      height: 100%;
+      border:.1px solid #E9ECEE;
+  }
+
+  #middlePartInnerDiv{
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 31px;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    border: 1px solid red;
+  }
+  #middlePartInnerLeftPart{
+      width: 804px;
+      background-color: #FFFFFF;
+    border: 1px solid black;
+  }
+  #middlePartInnerRightPart{
+    width: 366px;
+    /* max-height: 500px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #E9ECEE;
+    border: 1px solid black;
+}
+#addressBox{
+    margin: 0 0 20px 25px;
+    padding: 35px 40px 39px;
+    border: 1px solid blue;
+}
+#addresses{
+    width: 699px;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#forNewAddress{
+    width: 324px;
+    margin: 0 25px 25px 0;
+    cursor: pointer;
+    border: 1px solid orange ;
+}
+#addNewAddress{
+    height: 218px;
+    padding: 23px 30px 29px 57px;
+    display: flex;
+    flex: 1;
+    border: 1px solid orange ;
+
+}
+
+#paymentUpperBox{
+    border: 1px solid red;
+    /* height: 500px; */
+}
+#paymentBox{
+    margin: 0 0 20px 25px;
+    padding: 35px 40px 39px;
+    border: 1px solid blue;
+}
+#rightSideUpperBoxForCart{
+    border: 1px solid red;
+    background-color: #FFFFFF;
+    height: 400px;
+}
+#saveMoneyBox{
+    background-color: #FFFFFF;
+    border: 1px solid red;
+    height: 50px;
+}
+#cancellitionPolicyBox{
+    background-color: #FFFFFF;
+    border: 1px solid red;
+    height: 250px;
+}

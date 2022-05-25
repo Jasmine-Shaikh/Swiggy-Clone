@@ -9,14 +9,14 @@ function showAlertPopupOverlay(textMSG){
     document.querySelector('#alertBoxUpperDiv1>.alertBox>.alertMSG').innerText = textMSG;
     document.querySelector('#alertBoxUpperDiv1').style.display = 'block';
 
-    setTimeout(closeAlertPopup1,4000);
+    setTimeout(closeAlertPopup1,3000);
 }
 
 function showAlertPopupBody(textMSG){
     document.querySelector('#alertBoxUpperDiv2>.alertBox>.alertMSG').innerText = textMSG;
     document.querySelector('#alertBoxUpperDiv2').style.display = 'block';
 
-    setTimeout(closeAlertPopup2,4000);
+    setTimeout(closeAlertPopup2,3000);
 }
 
 function closeAlertPopup1(){

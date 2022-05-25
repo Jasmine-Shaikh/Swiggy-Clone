@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./Styles/checkout.css">
+    <link rel="stylesheet" href="./ComponentsStyles/sigupLogin.css">
+    <link rel="stylesheet" href="./ComponentsStyles/footer.css">
+    <!-- <link rel="stylesheet" href="./ComponentsStyles/popup.css"> -->
+</head>
+<body>
+    <div id="root" style="height: 100%;">
+        <div id="fullContainer">
+            <header id="header">
+                <div id="global-nav">
+                    <div id="navBar">
+                        <a href="#"><img id="slogo" src="./sLogo.png" alt=""></a>
+                        <div id="secureCheckoutDiv">
+                            <span>SECURE CHECKOUT</span>
+                        </div>
+                        <div id="extraPart">
+                            <div class="extraPartInnerDiv">
+                                <div class="navBox">
+                                    <img id="helpImg" class="navBoxImg" src="./helpIcon.png" alt="">
+                                    <span>Help</span>
+                                </div>
+                            </div>
+                            <!-- <div id="profileBox" class="extraPartInnerDiv">
+                                <div class="navBox">
+                                    <img class="navBoxImg" src="./profile.png" alt="">
+                                    <span id="loggedUserName"></span>
+                                </div>
+                                <div id="logoutDiv">
+                                    <button id="logoutBtn">Logout</button>
+                                </div>
+                            </div> -->
+                            <div id="navButtonUpperDiv">
+                                <div id="navButtonDiv">
+                                    <button id="loginBtn" class="navBtn">Login</button>
+                                    <button id="signupBtn" class="navBtn">Sign up</button>
+                                </div>
+                            </div>
+                            <div id="loggedUpperDiv">
+                                <div id="loggedUser">
+                                    <div><img src="./profile.png" alt=""></div>
+                                    <div><button></button></div>
+                                </div>
+                                <div id="logoutDropDown">
+                                    <button id="logoutBtn">Logout</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="middlePart">
+            <div id="middlePartInnerDiv">
+                <div id="middlePartInnerLeftPart">
+                    <div id="addressBox">
+                        <div id="heading">Choose a delivery address</div>
+                        <div id="addresses">
+                            <div id="forNewAddress">
+                                <div id="addNewAddress">
+                                    <div id="newAddressLogo"></div>
+                                    <div id="headingAndOthers"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="paymentUpperBox">
+                        <div id="paymentBox"></div>
+                    </div>
+                </div>
+                <div id="middlePartInnerRightPart">
+                    <div id="rightSideUpperBoxForCart"></div>
+                    <div id="saveMoneyBox"></div>
+                    <div id="cancellitionPolicyBox"></div>
+                </div>
+            </div>
+        </div>
+        <footer id="footerPart"></footer>
+        <div id="import1"></div>
+        <div id="import2"></div>
+        <div id="import3"></div>
+        <div id="alertBoxUpperDiv2" class="alertBoxUpperDiv"></div>
+    </div>
+</body>
+</html>
+<script src="./Scripts/checkout.js" type="module"></script>

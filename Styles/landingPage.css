@@ -60,7 +60,7 @@ nav{
 }
 #loggedUser{
     border: .1px solid rgba(128, 128, 128, 0.204);
-    border-radius: 100px;
+    border-radius: 10px;
     padding-left: 5px;
     display: flex;
     flex-direction: row;
@@ -298,12 +298,19 @@ nav{
     margin: auto;
     width: 94%;
     right: -1px;
+    border-top: 1.5px solid #FC8019;
+    /* margin-top: 5px; */
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: none;
 }
 #logoutDropDown>button:hover{
     cursor: pointer;
     border: .1px solid rgba(128, 128, 128, 0.151);
-    border-radius: 50px;
+    border-radius: 10px;
     /* border: 1px solid red; */
 }
 #logoutDropDown>button{
@@ -315,6 +322,6 @@ nav{
     outline: none;
     background-color: inherit;
     border: .1px solid rgba(128, 128, 128, 0.075);
-    border-radius: 50px;
+    border-radius: 10px;
     /* border: 1px solid red;  */
 }
