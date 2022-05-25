@@ -17,18 +17,20 @@ async function fetchAndDisplayData(){
 
 let restaurantButton = document.getElementById("restaurantButton");
 restaurantButton.addEventListener("click",function(){
-   dishesButton.style.backgroundColor = "";
-  dishesButton.style.color = "black"
-  restaurantButton.style.backgroundColor="black";
-  restaurantButton.style.color = "white"
+  dishesButton.style.borderBottom = "1px solid white"
+  restaurantButton.style.color = "grey"
+  restaurantButton.style.color = "black"
+  restaurantButton.style = "black"
+  restaurantButton.style.borderBottom = "3px solid #fc8019"
+
 })
 
 let dishesButton = document.getElementById("dishesButton");
 dishesButton.addEventListener("click", function(){
-  dishesButton.style.backgroundColor = "black";
-  dishesButton.style.color = "white"
-  restaurantButton.style.backgroundColor="";
-  restaurantButton.style.color = "black"
+  dishesButton.style.color = "black"
+  dishesButton.style.borderBottom = "3px solid #fc8019"
+  restaurantButton.style.color = "grey"
+  restaurantButton.style.borderBottom = "1px solid white"
 })
 
 

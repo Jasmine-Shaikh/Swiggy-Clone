@@ -38,7 +38,7 @@
 }
 .leftHelp{
     /* border: 2px solid black; */
-    width: 25%;
+    width: 23%;
     height: auto;
     color: black;
     background-color: #edf1f7;
@@ -83,7 +83,7 @@
 
 .rightHelp{
     border-right: 2px solid #cecece;
-    width: 75%;
+    width: 77%;
     height: auto;
 }
 .rightHelp > details{
