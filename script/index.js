@@ -28,11 +28,18 @@ let restaurantsAvailable = [{
     "title": "Elaichi Kesar Kulfi",
     "price": 352,
     "desc": "Rich and creamy kulfi, made with whole milk, healthy khandasari sugar, saffron and cardamom. Allergen information: Dairy."
+   },
+   {
+    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/lw0w9wdv7poaipovtewi",
+    "title": "Creamy Tomato & BBQ Penne Pasta",
+    "price": 352,
+    "desc": "Rich and creamy kulfi, made with whole milk, healthy khandasari sugar, saffron and cardamom. Allergen information: Dairy."
+   }
    
  
 
   
-  }]
+  ]
 
 
   let show = document.getElementById("show");
