@@ -48,13 +48,15 @@
    padding-left: 25px;
    padding-bottom: 25px;
     border: 2px solid white;
+
     /* border-bottom: 2px solid white;
     border-left: 2px solid white;
     border-right: 2px solid white; */
-    transform: translateZ(0);
-    transition: transform .2s ease-in-out;
-    border: 1px solid #bec0c8;
-    position: relative;
+
+    /* transform: translateZ(0); */
+    /* transition: transform .2s ease-in-out; */
+    /* border: 1px solid #bec0c8; */
+    /* position: relative; */
 }
 .offer > div{
     margin-top: 30px;
@@ -87,6 +89,7 @@
     direction: rtl;
     margin-top: 50px;
     width: 20%;
+
     /* border: 2px solid red; */
 }
 #leftContainer>div{
