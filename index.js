@@ -28,11 +28,14 @@ let restaurantsAvailable = [{
     "title": "Elaichi Kesar Kulfi",
     "price": 352,
     "desc": "Rich and creamy kulfi, made with whole milk, healthy khandasari sugar, saffron and cardamom. Allergen information: Dairy."
+   },
+    
+   
    
  
 
   
-  }]
+  ]
 
 
   let show = document.getElementById("show");
