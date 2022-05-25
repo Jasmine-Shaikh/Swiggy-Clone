@@ -242,3 +242,81 @@ sup {
     padding: 3px;
     margin-bottom: -5px;
 }
+
+
+/* -----------------------------Restaurant Tile ----------------------- */
+
+#restaurantListContainer {
+    display: flex;
+}
+
+.restaurantCard {
+    padding: 20px 20px 57px;
+    margin: 10px;
+}
+
+.restaurantCard:hover {
+    border: 1px solid #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.restaurantName {
+    font-size: 17px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.restaurantCard>img {
+    width: 254px;
+    height: 160px;
+}
+
+.cuisine {
+    color: #686b78;
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.ratingDeliveryPriceBox {
+    display: flex;
+    align-items: flex-end;
+    color: #535665;
+    justify-content: space-between;
+    border-bottom: 0.3px solid #686b7885;
+}
+
+.ratingDeliveryPriceBox>p {
+    font-size: 12px;
+    margin-top: 0%;
+}
+
+.ratings {
+    background-color: #48c479;
+    color: white;
+}
+
+.ratings>p {
+    font-size: 12px;
+    margin-top: 0%;
+}
+
+.offerBox {
+    display: flex;
+    align-items: center;
+}
+
+.offerBox>img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+.offerDetails {
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #363636;
+    font-size: 14px;
+}
