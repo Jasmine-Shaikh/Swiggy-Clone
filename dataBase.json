@@ -310,6 +310,281 @@
           ]
         }
       ]
+    },
+    {
+      "id": 2,
+      "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/d2kya4g6zpeminutmlia",
+      "name": "Burger King ",
+      "address": "Opposite To West Side, Shivaji Nagar",
+      "ratings": "4.2",
+      "approxDeliveryTime": "44 MINS",
+      "approxPrice": "350 FOR TWO",
+      "cuisine": [
+        "American",
+        "Fast Food"
+      ],
+      "categories": [
+        {
+          "id" : 1,
+          "categoryName": "Recommended",
+          "categoryItems": [
+            {
+              "name": "Super Over Combo (Chicken)",
+              "price": "624",
+              "details": "2 Crispy Chicken Double Patty + 1King Peri Peri Fries + 1 Chicken Fries + 2 Pepsi (M)"
+            },
+            {
+              "name": "Super Over Combo (Veg)",
+              "price": "506",
+              "details": "2 Crispy Veg Double Patty+ 1 King Peri Peri Fries + 1 Veggie Strips + 2 Pepsi (M)"
+            },
+            {
+              "name": "Mutton Roast",
+              "price": "349",
+              "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+            },
+            {
+              "name": "Chicken French",
+              "price": "279",
+              "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating, tossed in tangy sauces."
+            },
+            {
+              "name": "Chicken Masala",
+              "price": "279",
+              "details": "Chicken cooked with authentic spices from Rayalaseema region"
+            },
+            {
+              "name": "Paneer Butter Masala",
+              "price": "269",
+              "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+            }
+          ]
+        },
+        {
+          "id" : 2,
+          "categoryName": "Andhra Soups",
+          "categoryItems": [
+            {
+              "name": "Chicken Pepper Soup",
+              "price": "109",
+              "details": "Chicken pepper soup is basically chicken broth with herbs and spices like peppercorn, ginger, cayenne pepper, fennel seeds, and cumin. allspice has a woody flavor that resembles a combination of cloves, cinnamon, must try soup"
+            }
+          ]
+        },
+        {
+          "id" : 3,
+          "categoryName": "Super Hit Veg Starters",
+          "categoryItems": [
+            {
+              "name": "Gobi Sholay Kebab",
+              "price": "229",
+              "details": "A signature preparation of the house"
+            },
+            {
+              "name": "Gobi Pudina Dry",
+              "price": "229",
+              "details": "A signature preparation of the house"
+            },
+            {
+              "name": "Baby Corn Pudina Dry",
+              "price": "229",
+              "details": "A signature preparation of the house"
+            },
+            {
+              "name": "Mushroom Pepper Dry",
+              "price": "259",
+              "details": "A signature preparation of the house"
+            }
+          ]
+        },
+        {
+          "id" : 4,
+          "categoryName": "Super Hit Non Veg Starters",
+          "categoryItems": [
+            {
+              "name": "Andhra Chicken Fry",
+              "price": "289",
+              "details": "Chicken chunks cooked in real spices of telangana region"
+            },
+            {
+              "name": "Andhra Chicken Kebab",
+              "price": "289",
+              "details": "Marinated chicken chunks and fried chicken pieces"
+            },
+            {
+              "name": "Mutton Roast",
+              "price": "349",
+              "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+            },
+            {
+              "name": "Fish Chilly",
+              "price": "349",
+              "details": "Stir-fried fish fillets coated in a spicy marinade and topped with a special Andhra chilli masala."
+            }
+          ]
+        },
+        {
+          "id" : 5,
+          "categoryName": "Andhra Style Non Vegetarian",
+          "categoryItems": [
+            {
+              "name": "Chicken French",
+              "price": "279",
+              "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating tossed in tangy sauces."
+            },
+            {
+              "name": "Prawns Pepper Fry",
+              "price": "349",
+              "details": "Fresh prawns shallow fried, and finished with chef's special spices"
+            }
+          ]
+        },
+        {
+          "id" : 6,
+          "categoryName": "North Indian Main Course",
+          "categoryItems": [
+            {
+              "name": "Butter Chicken Boneless",
+              "price": "299",
+              "details": "A decadently creamy dish prepared with boneless chicken chunks dunked in a hearty gravy of tomatoes, onions and mild Indian spices."
+            },
+            {
+              "name": "Kadai Chicken Curry",
+              "price": "299",
+              "details": "Must try dish the bitter taste of fenugreek greens complements the chicken exceptionally well. the addition of cream further mellows down the bitterness thereby adding to the rich quotient of this dish."
+            },
+            {
+              "name": "Paneer Butter Masala",
+              "price": "269",
+              "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+            },
+            {
+              "name": "Dal Fry",
+              "price": "229",
+              "details": "Spicy, yet simple, a comforting yellow lentil preparation spiced with Indian masala."
+            },
+            {
+              "name": "Kadai Paneer",
+              "price": "269",
+              "details": "Cubes of Paneer,Diced Tomato & Capicum Cooked with Aromatic Gravy Kadai Gravy"
+            },
+            {
+              "name": "Mushroom Masala",
+              "price": "259",
+              "details": "Is a Delicious Indian Curry Made with Fresh Button Mushrooms cooked with Onions , Tomato , Spices and Herbs"
+            }
+          ]
+        },
+        {
+          "id" : 7,
+          "categoryName": "Breads",
+          "categoryItems": [
+            {
+              "name": "Butter Naan",
+              "price": "50",
+              "details": "A super-soft bread with a generous serving of butter that tastes brilliant when paired with a gravy."
+            },
+            {
+              "name": "Kulcha",
+              "price": "50",
+              "details": "Clay oven baked Thick flat bread made from refined flour"
+            },
+            {
+              "name": "Butter Paratha",
+              "price": "60",
+              "details": "All Time Favorite Multi Layered Bread Loaded with Butter"
+            },
+            {
+              "name": "Roti",
+              "price": "45",
+              "details": "Leavened, clay oven-baked flat bread"
+            },
+            {
+              "name": "Butter Roti",
+              "price": "50",
+              "details": "Clay oven baked flat bread made from refined flour"
+            },
+            {
+              "name": "Garlic Naan",
+              "price": "60",
+              "details": "Clay oven baked flat bread made from refined flour Sprinkled With Roast Garlic"
+            }
+          ]
+        },
+        {
+          "id" : 8,
+          "categoryName": "Tandoori Delights",
+          "categoryItems": [
+            {
+              "name": "Kalmi Kabab",
+              "price": "289",
+              "details": "Tandoor-cooked succulent chicken drumsticks marinated in a blend of yogurt and roasted Indian spices."
+            },
+            {
+              "name": "Tandoori Chicken",
+              "price": "310",
+              "details": "Evergreen Tender chicken Chicken cooked with yogurt Base masala Finished with Clay"
+            }
+          ]
+        },
+        {
+          "id" : 9,
+          "categoryName": "Chinese Starters",
+          "categoryItems": [
+            {
+              "name": "Mushroom Manchurian",
+              "price": "259",
+              "details": "Deep-fried Battered Button Mushroom that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+            },
+            {
+              "name": "Paneer Manchurian",
+              "price": "269",
+              "details": "Deep-fried paneer cubes that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+            },
+            {
+              "name": "Chilly Chicken Boneless",
+              "price": "279",
+              "details": "Deep-fried, boneless chicken pieces coated in seasoned batter and tossed in a slightly spicy chilli sauce."
+            },
+            {
+              "name": "Chicken Manchurian",
+              "price": "279",
+              "details": "Manchurian is a class of Chinese dish made by roughly chopping and deep-fried Battered Chicken Piece , and sautéeing it in a sauce flavored with soy sauce"
+            }
+          ]
+        },
+        {
+          "id" : 10,
+          "categoryName": "Rice and Noodles",
+          "categoryItems": [
+            {
+              "name": "Veg pulao",
+              "price": "229",
+              "details": "Long Grain Basmati Rice Cooked With Fresh Vegetable & Green Peas"
+            },
+            {
+              "name": "Jeera Rice",
+              "price": "229",
+              "details": "flavored Indian Rice Dish Made By Cooking with Cumin Seeds & other Fragrant Spices"
+            },
+            {
+              "name": "Veg Noodles",
+              "price": "239",
+              "details": "Tender noodles tossed in a ginger-garlic base along with grated vegetable mix."
+            },
+            {
+              "name": "Chicken Fried Rice",
+              "price": "279",
+              "details": "Wholesome stir-fried rice tossed with juicy chicken chunks and grated vegetables."
+            },
+            {
+              "name": "Egg Fried Rice",
+              "price": "249",
+              "details": "Long grain basmati cooked with beaten eggs and flavored full masala finished with spicy schezwan sauce"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

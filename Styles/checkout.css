@@ -93,7 +93,7 @@ body{
 }
 .navBox:hover{
     cursor: pointer;
-    /* color: #FC8019; */
+    color: #FC8019;
 }
 .navBoxImg{
     width: 20px;
@@ -206,9 +206,10 @@ body{
     /* color: #FC8019; */
 }
 #loggedUser>div>img{
-    width: 30px;
+    width: 20px;
+    height: 20px;
     margin-top: 4px;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     /* border: 1px solid blue; */
 }
 .navBtn{
@@ -346,12 +347,19 @@ body{
     margin-top: 31px;
     justify-content: space-between;
     margin-bottom: 150px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
   #middlePartInnerLeftPart{
       width: 804px;
-      background-color: #FFFFFF;
-    border: 1px solid black;
+      /* background-color: #FFFFFF; */
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* row-gap: 20px; */
   }
   #middlePartInnerRightPart{
     width: 366px;
@@ -362,34 +370,31 @@ body{
     background-color: #E9ECEE;
     border: 1px solid black;
 }
+#addressUpperDiv{
+    /* border: 1px solid red; */
+    position: relative;
+    background-color: #FFFFFF;
+}
 #addressBox{
     margin: 0 0 20px 25px;
     padding: 35px 40px 39px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 #addresses{
     width: 699px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
 }
-#forNewAddress{
-    width: 324px;
-    margin: 0 25px 25px 0;
-    cursor: pointer;
-    border: 1px solid orange ;
-}
-#addNewAddress{
-    height: 218px;
-    padding: 23px 30px 29px 57px;
-    display: flex;
-    flex: 1;
-    border: 1px solid orange ;
 
-}
 
 #paymentUpperBox{
     border: 1px solid red;
+    position: relative;
+    background-color: #FFFFFF;
+
     /* height: 500px; */
 }
 #paymentBox{
@@ -405,10 +410,112 @@ body{
 #saveMoneyBox{
     background-color: #FFFFFF;
     border: 1px solid red;
-    height: 50px;
+    height: 40px;
 }
 #cancellitionPolicyBox{
     background-color: #FFFFFF;
     border: 1px solid red;
-    height: 250px;
+    height: 262px;
+}
+#newAddress{
+    width: 324px;
+    height: 218px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    border: 1px solid #e9e9eb;
+    /* border-style: dashed; */
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#locationIcon{
+    width: 30px;
+    margin-top: 11px;
+}
+#headingH2{
+    margin-bottom: 4px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #282c3f;
+    line-height: 1.18;
+    text-transform: capitalize;
+}
+#h2BelowPara{
+    font-size: 13px;
+    color: #93959f;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-weight: 300;
+    line-height: 16px;
+    height: 64px;
+    overflow: hidden;
+}
+#addNewBtn{
+    border: 1px solid #60b246;
+    color: #60b246;
+    background: #fff;
+    margin-top: 30px;
+    text-transform: uppercase;
+    width: 130px;
+    /* height: 34px; */
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .3px;
+    position: relative;
+    padding-bottom: 0px;
+    padding: 9px 0;
+}
+#heading{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #282c3f;
+}
+.paymentIcons{
+    width: 35px;
+    height: 35px;
+    border: 1px solid red;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 0;
+}
+#selectMethod{
+    background-color: #EDF1F7;
+    padding: 20px 0 15px 15px;
+    min-width: 230px;
+    max-width: 245px;
+}
+#paymentHeading{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #282c3f;
+}
+#innerPartPayment{
+    margin-top: 20px;
+}
+.paymentOptionsDivs{
+    display: flex;
+    height: 70px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    padding-right: 15px;
+    border: 1px solid red;
+    /* margin: auto; */
+}
+.paymentOptionsDivs::selection{
+    background-color: #fff;
+    color: #282c3f;
+    font-size: 18px;
+    transition: color .25s ease-in-out;
+}
+.paymentOptionsDivs>span{
+    margin: auto;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 0px;
+    color: #686b78;
 }

@@ -91,11 +91,13 @@ nav{
 }
 #loggedUser>div>button:hover,#loggedUser>div:hover{
     cursor: pointer;
+    /* color: #FC8019; */
 }
 #loggedUser>div>img{
-    width: 30px;
+    width: 20px;
+    height: 20px;
     margin-top: 4px;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     /* border: 1px solid blue; */
 }
 .navBtn{

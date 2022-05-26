@@ -183,10 +183,12 @@ function showProfileSection(){
 
 document.querySelector('#loggedUpperDiv').addEventListener('mouseenter', () => {
     document.getElementById('logoutDropDown').style.display = 'block';
+    document.getElementById('colorChange').style.color = '#FC8019';
 });
 
 document.querySelector('#loggedUpperDiv').addEventListener('mouseleave', () => {
     document.getElementById('logoutDropDown').style.display = 'none';
+    document.getElementById('colorChange').style.color = '#282c3f';
 });
 
 document.querySelector('#logoutBtn').addEventListener('click', () => {

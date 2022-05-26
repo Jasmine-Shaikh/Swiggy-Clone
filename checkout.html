@@ -23,7 +23,7 @@
                         <div id="extraPart">
                             <div class="extraPartInnerDiv">
                                 <div class="navBox">
-                                    <img id="helpImg" class="navBoxImg" src="./helpIcon.png" alt="">
+                                    <img id="helpImg" class="navBoxImg" src="https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536847_960_720.png" alt="">
                                     <span>Help</span>
                                 </div>
                             </div>
@@ -44,8 +44,8 @@
                             </div>
                             <div id="loggedUpperDiv">
                                 <div id="loggedUser">
-                                    <div><img src="./profile.png" alt=""></div>
-                                    <div><button></button></div>
+                                    <div><img id="profileIcon" src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png" alt=""></div>
+                                    <div><button id="colorChange"></button></div>
                                 </div>
                                 <div id="logoutDropDown">
                                     <button id="logoutBtn">Logout</button>
@@ -58,19 +58,48 @@
         <div id="middlePart">
             <div id="middlePartInnerDiv">
                 <div id="middlePartInnerLeftPart">
-                    <div id="addressBox">
-                        <div id="heading">Choose a delivery address</div>
-                        <div id="addresses">
-                            <div id="forNewAddress">
-                                <div id="addNewAddress">
-                                    <div id="newAddressLogo"></div>
-                                    <div id="headingAndOthers"></div>
+                    <div id="addressUpperDiv">
+                        <div id="addressBox">
+                            <div id="heading">Select delivery address</div>
+                            <div id="addresses">
+                                <div id="newAddress">
+                                    <div><img id="locationIcon" src="https://www.freeiconspng.com/thumbs/location-icon-png/location-icon-png-0.png" alt=""></div>
+                                    <div>
+                                        <h2 id="headingH2">Add New Address</h2>
+                                        <p id="h2BelowPara">Bengaluru, Karnataka, India</p>
+                                        <div id="addNewBtn">ADD NEW</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="paymentUpperBox">
-                        <div id="paymentBox"></div>
+                        <div id="paymentBox">
+                            <div id="paymentHeading">Choose payment method</div>
+                            <div id="innerPartPayment">
+                                <div id="selectMethod">
+                                    <div>
+                                        <div class="paymentOptionsDivs">
+                                            <img class="paymentIcons" src="./walletIcon.png" alt="">
+                                            <span>Wallets</span>
+                                        </div>
+                                        <div class="paymentOptionsDivs">
+                                            <img class="paymentIcons" src="./CardIcon.png" alt="">
+                                            <span>Credit & Debit cards</span>
+                                        </div>
+                                        <div class="paymentOptionsDivs">
+                                            <img class="paymentIcons" src="./netBankingIcon.png" alt="">
+                                            <span>NetBanking</span>
+                                        </div>
+                                        <div class="paymentOptionsDivs">
+                                            <img class="paymentIcons" src="./upiIcon.png" alt="">
+                                            <span>UPI</span> <span>NEW</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="paymentOptions"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="middlePartInnerRightPart">
