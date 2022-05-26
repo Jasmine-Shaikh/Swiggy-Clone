@@ -96,6 +96,30 @@ async function displayRestuarantList() {
             quickViewDiv.setAttribute('class', 'quickViewDiv');
 
 
+            let menuBox = document.createElement('div');
+            menuBox.setAttribute('class', 'menuBox');
+
+            let menuTitle = document.createElement('h3');
+            menuTitle.textContent = "MENU";
+
+            let menuAdd = document.createElement('h6');
+            menuAdd.textContent = restaurant.address;
+
+            let menuCategoriesBox = document.createElement('div');
+            menuCategoriesBox.setAttribute('class', 'menuCategoriesBox');
+
+            restaurant.categories.forEach((e) => {
+
+                let categoryName = document.createElement('h6');
+                categoryName.textContent = e.categoryName;
+
+                menuCategoriesBox.append(categoryName);
+            })
+
+            menuBox.append(menuTitle, menuAdd, menuCategoriesBox)
+
+
+
 
             offerBox.append(offerIcon, offerDetails);
 
@@ -105,7 +129,7 @@ async function displayRestuarantList() {
 
             ratingDeliveryPriceBox.append(ratingsBox, approxDeliveryTime, approxPrice);
 
-            restaurantCard.append(restaurantImg, restaurantName, cuisine, ratingDeliveryPriceBox, offerBox, quickViewDiv);
+            restaurantCard.append(restaurantImg, restaurantName, cuisine, ratingDeliveryPriceBox, offerBox, quickViewDiv, menuBox);
 
             document.getElementById('restaurantListContainer').append(restaurantCard);
 
@@ -119,3 +143,55 @@ async function displayRestuarantList() {
 };
 
 displayRestuarantList();
+
+// ---------------------Filter Modal-------------------
+
+var filterModal = document.getElementById("filterModal");
+
+var btn = document.getElementById("filters");
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    filterModal.style.display = "block";
+}
+
+span.onclick = function() {
+    filterModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == filterModal) {
+        filterModal.style.display = "none";
+    }
+}
+
+// ----------------Filter----------------------
+
+// let filterDishes = document.getElementById("filterSubmitBox");
+
+// filterDishes.addEventListener("click", (event) => {
+
+//     let filter = event.target.checked;
+//     if (filter) {
+//         let filterCriteria = event.target.value;
+
+//         let updatedProductList = productList.filter((prod) => {
+//             if (filterCriteria === "Roadster") {
+//                 return prod.brand == "Roadster";
+//             } else if (filterCriteria === "WROGN") {
+//                 return prod.brand == "WROGN";
+//             } else if (filterCriteria === "HRX by Hrithik Roshan") {
+//                 return prod.brand == "HRX by Hrithik Roshan";
+//             } else if (filterCriteria === "Louis Philippe Sport") {
+//                 return prod.brand == "Louis Philippe Sport";
+//             } else if (filterCriteria === "Puma") {
+//                 return prod.brand == "Puma";
+//             } else {
+//                 return true;
+//             }
+//         });
+//         displayProducts(updatedProductList);
+//     }
+// });
