@@ -23,6 +23,8 @@ restaurantButton.addEventListener("click",function(){
   dishesButton.style.borderBottom = "1px solid white"
   dishesButton.style.color = "grey"
   restaurantButton.style.color = "black"
+  couponsContainer.style.display = "none"
+  alltpyesOfRestaurentOffers.style.display = "block";
 })
 
 let dishesButton = document.getElementById("dishesButton");
@@ -31,7 +33,17 @@ dishesButton.addEventListener("click", function(){
   dishesButton.style.borderBottom = "2px solid black"
   dishesButton.style.color = "black"
   restaurantButton.style.color = "grey"
+  alltpyesOfRestaurentOffers.style.display = "none";
+  couponsContainer.style.display = "block"
 })
+
+// let couponCode = document.getElementById("couponCode");
+// let textCopyBotton = document.getElementById("textCopyBotto");
+
+// textCopyBotton.onclick = function(){
+//   couponCode.ariaSelected();
+//   document.execCommand("copy");
+// }
 
 
 let mainContainer = document.getElementById("restaurantOffers");
@@ -78,3 +90,5 @@ function displayData(datas,length){
 
 }
 fetchAndDisplayData();
+
+

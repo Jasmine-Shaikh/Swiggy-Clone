@@ -60,6 +60,7 @@
     padding-top: 0%;
     padding-bottom: 0%;
     margin-top: 0%;
+    
 }
 #crossIcon >span{
     color: grey;
@@ -67,6 +68,7 @@
     font-size: 16px;
     padding-top: 0%;
 }
+
 /* #searchContainer{
     content: "";
     clear: both;
@@ -122,6 +124,12 @@
     border: none;
     font-size: 20px;
 }
+#filterContainer >div{
+    display: flex;
+}
+#filterContainer >div > i{
+    color: #fc8019;
+}
 #filterContainer ul li{
     border: 2px solid green;
     list-style: none;
@@ -163,3 +171,12 @@
     margin-bottom: 10px;
 }
 /* restaurant part end */
+#filtertypes{
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: white;
+    margin-right: 5px;
+    border: none;
+    color: black;
+    font-size: 20px;
+}
