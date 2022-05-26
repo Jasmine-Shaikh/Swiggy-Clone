@@ -1,104 +1,136 @@
 {
-
-
-
-    
-    "restaurantsAvailable": [
+  "id": 1,
+  "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sxcnljy3m3cgpfa5a5vi",
+  "name": "Canteen Central - Pizzas & Pastas",
+  "address": "VASANTHA NAGAR, Central Bangalore",
+  "ratings": "5.0",
+  "approxDeliveryTime": "40 mins",
+  "approxPrice": 350,
+  "cuisine": ["Andhra","Biryani","Chinese","North Indian"],
+  "categories": [
+    {
+      "categoryName": "Recommended",
+      "categoryItems": [
         {
-        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/obppgtgqevlsog4v7asi",
-        "title": "Basil Pesto Paneer Pizza (Thin Crust)",
-        "price": "292",
-        "desc": "Basil Pesto Paneer Pizza (Thin Crust)"
-      }, {
-        "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/euaev67hctjnqi0a5p26" ,
-        "title":"Caramelized Onion & Feta Cheese Pizza (Thin Crust)",
-        "price": "169",
-        "desc":"Caramelized Onion & Feta Cheese Pizza (Thin Crust)"
-      }, {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l0udrkr0xchcdka2eaei",
-        "title": "Match-day Veg Pizza Fest",
-        "price": 327,
-        "desc": "Feast on thin crust Mother earth pizza and premium classic margherita pizza during an eventful match"
-      }, {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/obppgtgqevlsog4v7asi",
-        "title": "Caramelized Onion & Feta Cheese Pizza (Thin Crust)",
-        "price": 215,
-        "desc": " Caramelized Onion & Feta Cheese Pizza (Thin Crust)"
-       }, {
-         "img":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xs2yrrmbov3ix9bmhnnq",
-         "title":"Italian Pink Sauce Penne Pasta with Paprika",
-         "price": 200,
-        "desc":"Pasta tossed in rich & cheesy sauce with Italian herbs & vegetables with a touch of Chef's special condiments"
-       }, {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/lw0w9wdv7poaipovtewi",
-        "title": "Elaichi Kesar Kulfi",
-        "price": 352,
-        "desc": "Rich and creamy kulfi, made with whole milk, healthy khandasari sugar, saffron and cardamom. Allergen information: Dairy."
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/mvyebstvdcbsuzqwh8bp",
-        "title": "Creamy Tomato & BBQ Penne Pasta",
-        "price": 199,
-        "desc": "The tangy tomato, cheesy cream sauce and a hint of sweet BBQ sauce come together to make this heavenly pasta."
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/oymfdcwwuxhka7dvimeu",
-        "title": "Ghar Ki Chicken Curry (with bone) with Paratha",
-        "price": 199,
-        "desc": "The tangy tomato, cheesy cream sauce and a hint of sweet BBQ sauce come together to make this heavenly pasta."
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
-        "title": "Mangalorean Chicken (with bone) with Rice",
-        "price": 188,
-        "desc": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/g44tyqms5ndfsvutlek0",
-        "title": "Mangalorean Chicken (with bone) with Rice",
-        "price": 188,
-        "desc": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vheazgqsiduyrqmair4t",
-        "title": "Baked Non-Veg Samosa Combo",
-        "price": 183,
-        "desc": "Enjoy samosa guilt free! Combo of bhuna chicken and chicken keema samosa anytime, any-day!"
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/bj5nvhabjlbcmw6bq0kp",
-        "title": "Peri Peri Sauce Penne Pasta",
-        "price": 228,
-        "desc": "Peri-peri spice added to classic creamy sauce pasta makes it into an irresistible burst of flavor with every bite."
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l3xrxq8yyzjuiulr4t2h",
-        "title": "Peri Peri Sauce Penne Pasta",
-        "price": 328,
-        "desc": "Classy creamy spaghetti pasta cooked in rich alfredo sauce!"
-       },
-       {
-       "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/my4dsgwxfivgrknf580f",
-       "title": "Peri Peri Sauce Penne Pasta",
-       "price": 279,
-       "desc": "Slurp in the soft spaghetti cooked in spicy tomato basil sauce with perfect blend of flavours!"
+           "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vnpxficx4rteehadpfot",
+           "name":"Zero Sugar Cola Fizz",
+           "price": 50,
+           "desc": "Protein powered delicious chcocolat oatmeal shake on the go!"
+        },
+        {
+          "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uxzv1pu8j1trzhvbrcsl",
+          "name": "Chocolate Shake",
+          "price": 92,
+          "desc": "Protein powered delicious chcocolat oatmeal shake on the go!"
+        }
+       ]
       },
       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uxzv1pu8j1trzhvbrcsl",
-        "title": "Chocolate Shake",
-        "price": 92,
-        "desc": "Protein powered delicious chcocolat oatmeal shake on the go!"
-       },
-       {
-        "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vnpxficx4rteehadpfot",
-        "title": "Zero Sugar Cola Fizz",
-        "price": 50,
-        "desc": "Protein powered delicious chcocolat oatmeal shake on the go!"
-       }
-      ]
-    
-}
-
-
-
-
+  "categoryName": "Brunch Combos",
+      "categoryItems": [
+        {
+           "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/my4dsgwxfivgrknf580f",
+           "name": "Peri Peri Sauce Penne Pasta",
+           "price": 279,
+           "desc": "Slurp in the soft spaghetti cooked in spicy tomato basil sauce with perfect blend of flavours!"
+        },
+        {  "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l3xrxq8yyzjuiulr4t2h",
+           "name": "Peri Peri Sauce Penne Pasta",
+           "price": 328,
+           "desc": "Classy creamy spaghetti pasta cooked in rich alfredo sauce!"
+        }
+       ]
+      },
+    {
+"categoryName": "Pasta La Vista",
+      "categoryItems": [
+        { "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/bj5nvhabjlbcmw6bq0kp",
+          "name": "Peri Peri Sauce Penne Pasta",
+          "price": 228,
+          "desc": "Peri-peri spice added to classic creamy sauce pasta makes it into an irresistible burst of flavor with every bite."
+        },
+        { "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vheazgqsiduyrqmair4t",
+          "name": "Baked Non-Veg Samosa Combo",
+          "price": 183,
+          "desc": "Enjoy samosa guilt free! Combo of bhuna chicken and chicken keema samosa anytime, any-day!"
+        }
+       ]
+      },
+      {
+"categoryName" : "Snacks & Quick Bites",
+      "categoryItems": [
+        { "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/g44tyqms5ndfsvutlek0",
+          "name": "Mangalorean Chicken (with bone) with Rice",
+          "price": 188,
+          "desc": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+        },
+        { "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
+          "name": "Mangalorean Chicken (with bone) with Rice",
+          "price": 188,
+          "desc": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+        }
+       ]
+      },
+      {
+"categoryName": "Indian Meals & Rice Bowls",
+      "categoryItems": [
+        { "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/oymfdcwwuxhka7dvimeu",
+          "name": "Ghar Ki Chicken Curry (with bone) with Paratha",
+          "price": 199,
+          "desc": "The tangy tomato, cheesy cream sauce and a hint of sweet BBQ sauce come together to make this heavenly pasta."
+        },
+        {  "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
+           "name": "Mangalorean Chicken (with bone) with Rice",
+           "price": 188,
+           "desc": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+        }
+       ]
+      },
+      {
+"categoryName": "Beverages",
+      "categoryItems": [
+        {  "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uxzv1pu8j1trzhvbrcsl",
+           "name": "Chocolate Shake",
+           "price": 92,
+           "desc": "Protein powered delicious chcocolat oatmeal shake on the go!"
+        },
+        {  "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
+           "name": "Mangalorean Chicken (with bone) with Rice",
+           "price": 188,
+          "desc": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+        }
+       ]
+      },
+      {
+"categoryName": "The 997 AD pizzas",
+      "categoryItems": [
+        {  "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l0udrkr0xchcdka2eaei",
+    "name": "Match-day Veg Pizza Fest",
+    "price": 327,
+    "desc": "Feast on thin crust Mother earth pizza and premium classic margherita pizza during an eventful match"
+        },
+        {    "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/obppgtgqevlsog4v7asi",
+    "name": "Caramelized Onion & Feta Cheese Pizza (Thin Crust)",
+    "price": 215,
+    "desc": " Caramelized Onion & Feta Cheese Pizza (Thin Crust)"
+        }
+       ]
+      },
+      {
+"categoryName": "Desserts",
+      "categoryItems": [
+       { "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l0udrkr0xchcdka2eaei",
+        "name": "Match-day Veg Pizza Fest",
+        "price": 327,
+        "desc": "Feast on thin crust Mother earth pizza and premium classic margherita pizza during an eventful match"
+        },
+        { "img": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/obppgtgqevlsog4v7asi",
+          "name": "Caramelized Onion & Feta Cheese Pizza (Thin Crust)",
+          "price": 215,
+          "desc": " Caramelized Onion & Feta Cheese Pizza (Thin Crust)"
+        }
+       ]
+      }
+    ]
+  }
+   

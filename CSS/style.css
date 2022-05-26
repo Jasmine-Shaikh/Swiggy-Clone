@@ -7,7 +7,7 @@
 #restaurant-header {
     display: flex;
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     background-color: black;
     margin: auto;
     gap: 50px;
@@ -40,27 +40,43 @@
     margin-left:20px;
 
 }
-
+#ratingLogoContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+    margin: auto;
+}
+#ratingLogoContainer>img{
+ width: 14px;
+ height: 14px;
+ /* background-color: black; */
+ /* filter: invert(100%); */
+}
+#offertext{
+    padding-bottom: 20px;
+    margin-right: 10px;
+    
+}
 
 .offer{
-    margin-top: 32px;
+    margin-top: 22px;
    margin-right: 200px;
    padding-left: 25px;
-   padding-bottom: 25px;
+   padding-bottom: 0px;
     border: 2px solid white;
+    margin-bottom: 100px;
 
     /* border-bottom: 2px solid white;
     border-left: 2px solid white;
     border-right: 2px solid white; */
 
-    /* transform: translateZ(0); */
-    /* transition: transform .2s ease-in-out; */
-    /* border: 1px solid #bec0c8; */
-    /* position: relative; */
+    transform: translateZ(0);
+    transition: transform .2s ease-in-out; 
+    /* border: 1px solid #bec0c8;    */
 }
-.offer > div{
-    margin-top: 30px;
-   
+form{
+    /* border: 2px solid red; */
+    margin-bottom: 50px;
 }
 .offer>legend{
     color: white;
@@ -83,65 +99,59 @@
     display: flex;
     width: 80%;
     margin: auto;
-   
+    /* border: 2px solid red;   */
 }
 #leftContainer{
     direction: rtl;
     margin-top: 50px;
-    width: 20%;
-
+    width: 95%;
+    list-style: none;
     /* border: 2px solid red; */
 }
-#leftContainer>div{
+#leftContainer>li{
     margin-bottom: 10px;
     margin-right: 25px;
+    /* border: 2px solid red; */
+    width: 100%;
 }
-#leftContainer>div:hover{
+#leftContainer>li:hover{
     color:#fc8019;
 }
 #show{
     border-left: 1px solid #cecece;
     width: 60%;
+
 }
 #rightContainer{
     width: 20%;
-    /* border: 2px solid red; */
+
     margin-top: 50px;
     color:grey;
+  
    
 }
 #show>div{
     display: flex;
     width: 90%;
+    height: 150px;
     margin: auto;
-    /* margin-bottom: 100px; */
     padding-top: 50px;
     padding-bottom: 0%;
-    /* margin-bottom: 200px; */
-    /* border: 2px solid red; */
     border-bottom:2px solid #cecece;
     justify-content: space-between;
-    /* gap: 30px; */
+
 }
-/* .imageCant >img{
-    width: 10%;
-} */
+
 .paraCant > p{
     width: 100%;
     padding-top: 15px;
 }
 
-/* #show >div>div{
-    width: 35%;
-    gap: 30%;
-    justify-content: space-between;
-} */
-
 
 #show >div>div>img{
-    /* width: 50%; */
+
     height: 90%;
-    /* border: 2px solid red; */
+    
 
 }
 #show >div>div{

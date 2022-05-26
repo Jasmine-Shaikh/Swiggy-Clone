@@ -1,0 +1,473 @@
+{
+    "Users": [
+      {
+        "userName": "Akash Kumawat",
+        "userEmail": "akashkmt963@gmail.com",
+        "userPhoneNumber": "9079938742",
+        "userPassword": "AAaa@123",
+        "userCart": [],
+        "id": 1
+      },
+      {
+        "userName": "akash",
+        "userEmail": "akashkmt@gmail.com",
+        "userPhoneNumber": "90799",
+        "userPassword": "aaaa",
+        "userCart": [],
+        "id": 2
+      },
+      {
+        "userName": "akash",
+        "userEmail": "akashkmt93@gmail.com",
+        "userPhoneNumber": "1234567890",
+        "userPassword": "aaaa",
+        "userCart": [],
+        "id": 3
+      },
+      {
+        "userName": "asdfgsdg",
+        "userEmail": "asdga@glkds.v",
+        "userPhoneNumber": "1234576679",
+        "userPassword": "aaaa",
+        "userCart": [],
+        "id": 4
+      }
+    ],
+    "Restaurants": [
+      {
+        "id": 1,
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/amwnaysbgyubk9rpzzuf",
+        "name": "Nandhini Deluxe",
+        "address": "St. Marks Road, Ashok Nagar",
+        "ratings": "4.2",
+        "approxDeliveryTime": "31 MINS",
+        "approxPrice": 500,
+        "cuisine": [
+          "Andhra",
+          "Biryani",
+          "Chinese",
+          "North Indian"
+        ],
+        "categories": [
+          {
+            "id" : 1,
+            "categoryName": "Recommended",
+            "categoryItems": [
+              {
+                "name": "Baby Corn Pepper Dry",
+                "price": "239",
+                "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala."
+              },
+              {
+                "name": "Chicken Sholay kebab",
+                "price": "289",
+                "details": "Battered Fried Tender Chicken Sauteed with Fresh Curd with special Spices"
+              },
+              {
+                "name": "Mutton Roast",
+                "price": "349",
+                "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+              },
+              {
+                "name": "Chicken French",
+                "price": "279",
+                "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating, tossed in tangy sauces."
+              },
+              {
+                "name": "Chicken Masala",
+                "price": "279",
+                "details": "Chicken cooked with authentic spices from Rayalaseema region"
+              },
+              {
+                "name": "Paneer Butter Masala",
+                "price": "269",
+                "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+              }
+            ]
+          },
+          {
+            "id" : 2,
+            "categoryName": "Andhra Soups",
+            "categoryItems": [
+              {
+                "name": "Chicken Pepper Soup",
+                "price": "109",
+                "details": "Chicken pepper soup is basically chicken broth with herbs and spices like peppercorn, ginger, cayenne pepper, fennel seeds, and cumin. allspice has a woody flavor that resembles a combination of cloves, cinnamon, must try soup"
+              }
+            ]
+          },
+          {
+            "id" : 3,
+            "categoryName": "Super Hit Veg Starters",
+            "categoryItems": [
+              {
+                "name": "Gobi Sholay Kebab",
+                "price": "229",
+                "details": "A signature preparation of the house"
+              },
+              {
+                "name": "Gobi Pudina Dry",
+                "price": "229",
+                "details": "A signature preparation of the house"
+              },
+              {
+                "name": "Baby Corn Pudina Dry",
+                "price": "229",
+                "details": "A signature preparation of the house"
+              },
+              {
+                "name": "Mushroom Pepper Dry",
+                "price": "259",
+                "details": "A signature preparation of the house"
+              }
+            ]
+          },
+          {
+            "id" : 4,
+            "categoryName": "Super Hit Non Veg Starters",
+            "categoryItems": [
+              {
+                "name": "Andhra Chicken Fry",
+                "price": "289",
+                "details": "Chicken chunks cooked in real spices of telangana region"
+              },
+              {
+                "name": "Andhra Chicken Kebab",
+                "price": "289",
+                "details": "Marinated chicken chunks and fried chicken pieces"
+              },
+              {
+                "name": "Mutton Roast",
+                "price": "349",
+                "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+              },
+              {
+                "name": "Fish Chilly",
+                "price": "349",
+                "details": "Stir-fried fish fillets coated in a spicy marinade and topped with a special Andhra chilli masala."
+              }
+            ]
+          },
+          {
+            "id" : 5,
+            "categoryName": "Andhra Style Non Vegetarian",
+            "categoryItems": [
+              {
+                "name": "Chicken French",
+                "price": "279",
+                "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating tossed in tangy sauces."
+              },
+              {
+                "name": "Prawns Pepper Fry",
+                "price": "349",
+                "details": "Fresh prawns shallow fried, and finished with chef's special spices"
+              }
+            ]
+          },
+          {
+            "id" : 6,
+            "categoryName": "North Indian Main Course",
+            "categoryItems": [
+              {
+                "name": "Butter Chicken Boneless",
+                "price": "299",
+                "details": "A decadently creamy dish prepared with boneless chicken chunks dunked in a hearty gravy of tomatoes, onions and mild Indian spices."
+              },
+              {
+                "name": "Kadai Chicken Curry",
+                "price": "299",
+                "details": "Must try dish the bitter taste of fenugreek greens complements the chicken exceptionally well. the addition of cream further mellows down the bitterness thereby adding to the rich quotient of this dish."
+              },
+              {
+                "name": "Paneer Butter Masala",
+                "price": "269",
+                "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+              },
+              {
+                "name": "Dal Fry",
+                "price": "229",
+                "details": "Spicy, yet simple, a comforting yellow lentil preparation spiced with Indian masala."
+              },
+              {
+                "name": "Kadai Paneer",
+                "price": "269",
+                "details": "Cubes of Paneer,Diced Tomato & Capicum Cooked with Aromatic Gravy Kadai Gravy"
+              },
+              {
+                "name": "Mushroom Masala",
+                "price": "259",
+                "details": "Is a Delicious Indian Curry Made with Fresh Button Mushrooms cooked with Onions , Tomato , Spices and Herbs"
+              }
+            ]
+          },
+          {
+            "id" : 7,
+            "categoryName": "Breads",
+            "categoryItems": [
+              {
+                "name": "Butter Naan",
+                "price": "50",
+                "details": "A super-soft bread with a generous serving of butter that tastes brilliant when paired with a gravy."
+              },
+              {
+                "name": "Kulcha",
+                "price": "50",
+                "details": "Clay oven baked Thick flat bread made from refined flour"
+              },
+              {
+                "name": "Butter Paratha",
+                "price": "60",
+                "details": "All Time Favorite Multi Layered Bread Loaded with Butter"
+              },
+              {
+                "name": "Roti",
+                "price": "45",
+                "details": "Leavened, clay oven-baked flat bread"
+              },
+              {
+                "name": "Butter Roti",
+                "price": "50",
+                "details": "Clay oven baked flat bread made from refined flour"
+              },
+              {
+                "name": "Garlic Naan",
+                "price": "60",
+                "details": "Clay oven baked flat bread made from refined flour Sprinkled With Roast Garlic"
+              }
+            ]
+          },
+          {
+            "id" : 8,
+            "categoryName": "Tandoori Delights",
+            "categoryItems": [
+              {
+                "name": "Kalmi Kabab",
+                "price": "289",
+                "details": "Tandoor-cooked succulent chicken drumsticks marinated in a blend of yogurt and roasted Indian spices."
+              },
+              {
+                "name": "Tandoori Chicken",
+                "price": "310",
+                "details": "Evergreen Tender chicken Chicken cooked with yogurt Base masala Finished with Clay"
+              }
+            ]
+          },
+          {
+            "id" : 9,
+            "categoryName": "Chinese Starters",
+            "categoryItems": [
+              {
+                "name": "Mushroom Manchurian",
+                "price": "259",
+                "details": "Deep-fried Battered Button Mushroom that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+              },
+              {
+                "name": "Paneer Manchurian",
+                "price": "269",
+                "details": "Deep-fried paneer cubes that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+              },
+              {
+                "name": "Chilly Chicken Boneless",
+                "price": "279",
+                "details": "Deep-fried, boneless chicken pieces coated in seasoned batter and tossed in a slightly spicy chilli sauce."
+              },
+              {
+                "name": "Chicken Manchurian",
+                "price": "279",
+                "details": "Manchurian is a class of Chinese dish made by roughly chopping and deep-fried Battered Chicken Piece , and sautéeing it in a sauce flavored with soy sauce"
+              }
+            ]
+          },
+          {
+            "id" : 10,
+            "categoryName": "Rice and Noodles",
+            "categoryItems": [
+              {
+                "name": "Veg pulao",
+                "price": "229",
+                "details": "Long Grain Basmati Rice Cooked With Fresh Vegetable & Green Peas"
+              },
+              {
+                "name": "Jeera Rice",
+                "price": "229",
+                "details": "flavored Indian Rice Dish Made By Cooking with Cumin Seeds & other Fragrant Spices"
+              },
+              {
+                "name": "Veg Noodles",
+                "price": "239",
+                "details": "Tender noodles tossed in a ginger-garlic base along with grated vegetable mix."
+              },
+              {
+                "name": "Chicken Fried Rice",
+                "price": "279",
+                "details": "Wholesome stir-fried rice tossed with juicy chicken chunks and grated vegetables."
+              },
+              {
+                "name": "Egg Fried Rice",
+                "price": "249",
+                "details": "Long grain basmati cooked with beaten eggs and flavored full masala finished with spicy schezwan sauce"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/sxcnljy3m3cgpfa5a5vi",
+        "name": "Canteen Central - Pizzas & Pastas",
+        "address": "VASANTHA NAGAR, Central Bangalore",
+        "ratings": "5.0",
+        "approxDeliveryTime": "40 mins",
+        "approxPrice": 350,
+        "cuisine": ["Pasta","Pizza"],
+        "categories": [
+          {
+            "categoryName": "Recommended",
+            "categoryItems": [
+              {
+                 "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vnpxficx4rteehadpfot",
+                 "name":"Zero Sugar Cola Fizz",
+                 "price": 50,
+                 "details": "Protein powered delicious chcocolat oatmeal shake on the go!"
+              },
+              {
+                "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uxzv1pu8j1trzhvbrcsl",
+                "name": "Chocolate Shake",
+                "price": 92,
+                "details": "Protein powered delicious chcocolat oatmeal shake on the go!"
+              },
+              {
+                "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
+                "name": "Chocolate Shake",
+                "price": 188,
+                "details": "Mangalorean Chicken (with bone) with Rice"
+              },
+              {
+                "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/krqs4reruklznbom23jn",
+                "name": "Desserts",
+                "price": 79,
+                "details": "Creamy Indian rice pudding, set in an earthy clay bowl and enhanced with your favourite Mango is a must try."
+              }
+              
+             ]
+            },
+            {
+        "categoryName": "Brunch Combos",
+            "categoryItems": [
+              {
+                 "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/my4dsgwxfivgrknf580f",
+                 "name": "Peri Peri Sauce Penne Pasta",
+                 "price": 279,
+                 "details": "Slurp in the soft spaghetti cooked in spicy tomato basil sauce with perfect blend of flavours!"
+              },
+              {  "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l3xrxq8yyzjuiulr4t2h",
+                 "name": "Peri Peri Sauce Penne Pasta",
+                 "price": 328,
+                 "details": "Classy creamy spaghetti pasta cooked in rich alfredo sauce!"
+              },
+              {  "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/okykcevv6dacewlfvcbm",
+                "name": "Aam Ras",
+                "price": 128,
+                "details": "Dive into every sip of this authentic aam ka ras flavoured with cardamom. Allergen information : Nut"
+             }
+             ]
+            },
+          {
+      "categoryName": "Pasta La Vista",
+            "categoryItems": [
+              { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/bj5nvhabjlbcmw6bq0kp",
+                "name": "Peri Peri Sauce Penne Pasta",
+                "price": 228,
+                "details": "Peri-peri spice added to classic creamy sauce pasta makes it into an irresistible burst of flavor with every bite."
+              },
+              { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vheazgqsiduyrqmair4t",
+                "name": "Baked Non-Veg Samosa Combo",
+                "price": 183,
+                "details": "Enjoy samosa guilt free! Combo of bhuna chicken and chicken keema samosa anytime, any-day!"
+              },
+              { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/g44tyqms5ndfsvutlek0",
+                "name": "BCreamy Mushroom Sauce Penne Pasta",
+                "price": 237,
+                "details": "An irresistible combination of sauteed mushrooms cooked in a creamy sauce to uplift your everyday pasta to a whole new level."
+              }
+             ]
+            },
+            {
+      "categoryName" : "Snacks & Quick Bites",
+            "categoryItems": [
+              { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/g44tyqms5ndfsvutlek0",
+                "name": "Mangalorean Chicken (with bone) with Rice",
+                "price": 188,
+                "details": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+              },
+              { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
+                "name": "Mangalorean Chicken (with bone) with Rice",
+                "price": 188,
+                "details": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+              }
+             ]
+            },
+            {
+      "categoryName": "Indian Meals & Rice Bowls",
+            "categoryItems": [
+              { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/oymfdcwwuxhka7dvimeu",
+                "name": "Ghar Ki Chicken Curry (with bone) with Paratha",
+                "price": 199,
+                "details": "The tangy tomato, cheesy cream sauce and a hint of sweet BBQ sauce come together to make this heavenly pasta."
+              },
+              {  "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
+                 "name": "Mangalorean Chicken (with bone) with Rice",
+                 "price": 188,
+                 "details": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+              }
+             ]
+            },
+            {
+      "categoryName": "Beverages",
+            "categoryItems": [
+              {  "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uxzv1pu8j1trzhvbrcsl",
+                 "name": "Chocolate Shake",
+                 "price": 92,
+                 "details": "Protein powered delicious chcocolat oatmeal shake on the go!"
+              },
+              {  "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/d0nexdbrzukff4gwym2p",
+                 "name": "Mangalorean Chicken (with bone) with Rice",
+                 "price": 188,
+                "details": "Our take on the mangalorean ghassi, chicken simmered in a fresh coconut and bedgi chili gravy, finished with garam masala. Served with rice. A hearty meal for 1."
+              }
+             ]
+            },
+            {
+      "categoryName": "The 997 AD pizzas",
+            "categoryItems": [
+              {  "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l0udrkr0xchcdka2eaei",
+          "name": "Match-day Veg Pizza Fest",
+          "price": 327,
+          "details": "Feast on thin crust Mother earth pizza and premium classic margherita pizza during an eventful match"
+              },
+              {    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/obppgtgqevlsog4v7asi",
+          "name": "Caramelized Onion & Feta Cheese Pizza (Thin Crust)",
+          "price": 215,
+          "details": " Caramelized Onion & Feta Cheese Pizza (Thin Crust)"
+              }
+             ]
+            },
+            {
+      "categoryName": "Desserts",
+            "categoryItems": [
+             { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/l0udrkr0xchcdka2eaei",
+              "name": "Match-day Veg Pizza Fest",
+              "price": 327,
+              "details": "Feast on thin crust Mother earth pizza and premium classic margherita pizza during an eventful match"
+              },
+              { "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/obppgtgqevlsog4v7asi",
+                "name": "Caramelized Onion & Feta Cheese Pizza (Thin Crust)",
+                "price": 215,
+                "details": " Caramelized Onion & Feta Cheese Pizza (Thin Crust)"
+              }
+             ]
+            }
+          ]
+        }
+    ]
+  }
