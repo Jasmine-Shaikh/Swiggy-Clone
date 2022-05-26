@@ -165,10 +165,9 @@
     text-align: center;
     justify-content: center;
     /* border-left: 1px solid #daceb7; */
-    border-top-left-radius: 50%;
-    
-    
+    border-top-left-radius: 50%;    
 }
+
 #paymentOffers > div > div > img{
     /* border: 2px solid green; */
     padding-right: 25px;
@@ -181,4 +180,8 @@
 }
 #couponsContainer{
     display: none;
+}
+#paytmCouponCode{
+    width: 50%;
+    padding-right: 20px;
 }

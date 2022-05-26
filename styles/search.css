@@ -11,7 +11,7 @@
 }
 #searchContainer{
     /* border: 2px solid red; */
-    margin-left: 300px;
+    margin-left: 320px;
     display: flex;
     flex-direction: row;
 }
@@ -43,24 +43,19 @@
   
 }
 #crossIcon{
-    float: right;
-    width: 5%;
-    padding: 15px;
-    padding: 22px 0px;
-    background: white;
-    color: black;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-right: none; 
-    cursor: pointer;
+    margin-left: 40px;
+    background-color: white;
     border: none;
 }
-#crossIcon > i{
-    font-size: 30px;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    margin-top: 0%;
-    
+#crossIcon > img{
+
+    display: block;
+    /* filter: invert(10%); */
+    font-size: 50px;
+    color: black;
+    width: 80%;
+    height: 45px;
+    margin: auto;
 }
 #crossIcon >span{
     color: grey;
@@ -68,43 +63,27 @@
     font-size: 16px;
     padding-top: 0%;
 }
-
-/* #searchContainer{
-    content: "";
-    clear: both;
-    display: table;
-    margin: auto;
-  
-} */
 /* search part end */
+
+
 #RestaurantsContainer{
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    /* margin: auto; */
+    width: 58%;
     margin: 50px;
-    margin-left: 304px;
+    margin-left: 320px;
     border-bottom: 1px solid #cecece;
 }
 #filterRestaurant{
     display: flex;
-    /* margin-left: 305px; */
-    /* border: 2px solid red; */
+    justify-content: space-between;
+    width: 23%;
 }
-/* #filterRestaurant > button{
-    padding: 0px 40px;
-    background-color: white;
-    
-    margin-right: 5px;
-    border: none;
-    outline: none;
-    border-bottom: 3px solid #fc8019;
-   
-} */
+
 #restaurantButton{
     /* padding: 15px 25px; */
     padding-bottom: 10px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     background-color: white;
     /* border-radius: 9999px; */
     margin-right: 5px;
@@ -124,15 +103,52 @@
     border: none;
     font-size: 20px;
 }
+#filtertypeselector{
+    display: flex;
+    justify-content: space-between;
+}
 #filterContainer >div{
     display: flex;
 }
+#filterContainer >div > button{
+    padding-right: 0%;
+}
 #filterContainer >div > i{
     color: #fc8019;
+    padding-left: 0%;
 }
-#filterContainer ul li{
-    border: 2px solid green;
+#filterlist{
+    width: 15%;
+    margin-left: 1015px;
+    display: none;
+}
+#filterlist ul li{
     list-style: none;
+    padding: 10px;
+}
+.ulList{
+    /* position: absolute; */
+    position: relative;
+    top: -10px;
+    right: 0;
+    padding: 9px 10px 10px 15px;
+    background: #fff;
+    box-shadow: 0 2px 20px 0 rgb(40 44 63 / 50%);
+    min-width: 170px;
+    /* display: none; */
+    z-index: 1;
+    margin: 0;
+    margin-right: 35px;
+    /* padding: 0; */
+    list-style-type: none;
+}
+
+.ullist>li{
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
 }
 
 
@@ -141,22 +157,25 @@
 #mainContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 60%;
+    width: 58%;
     gap: 40px;
     margin: auto;
     margin-bottom: 100vh;
     margin-top: 3px;
 }
 
-/* #mainContainer>div{
-    border: 2px solid green;
-
-} */
 #mainContainer>div:hover{
     border: 1px solid #cecece;
 }
 #mainContainer >div>img{
     width: 100%;
+    padding-bottom: 15px;
+}
+#mainContainer >div>h4{
+    padding-bottom: 15px;
+}
+#mainContainer >div>p{
+    padding-bottom: 20px;
 }
 #mainContainer >div>div{
     display: flex;

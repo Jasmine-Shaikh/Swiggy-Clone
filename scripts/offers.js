@@ -5,7 +5,7 @@ import { navbarHTML } from '../componentsJs/navbar.js';
 document.getElementById("navbarContainer").innerHTML = navbarHTML();
 
 async function fetchAndDisplayData(){
-    let url = "http://localhost:3000/restaurantsAvailable";
+    let url = "http://localhost:3000/Restaurents";
     let res = await fetch(url);
     // console.log(res)
     let data = await res.json();
@@ -58,7 +58,7 @@ function displayData(datas,length){
       imageElement.src = data.image;
 
       let restaurantNameElement = document.createElement("h4");
-      restaurantNameElement.textContent = data.restaurantName;
+      restaurantNameElement.textContent = data.name;
       
       let cuisineElement = document.createElement("p");
       cuisineElement.textContent = data.cuisine;
@@ -69,20 +69,20 @@ function displayData(datas,length){
       ratingsElement.textContent = data.ratings;
 
       let deliveryElement = document.createElement("p");
-      deliveryElement.textContent = `${data.delivery} MINS`;
+      deliveryElement.textContent = `${data.approxDeliveryTime}`;
 
       let approxPriceElement = document.createElement("p");
-      approxPriceElement.textContent = `₹${data.approxPrice} FOR TWO`;
+      approxPriceElement.textContent = `₹${data.approxPrice}`;
       
       let hrElement = document.createElement("hr");
 
 
-      let offerElement = document.createElement("p");
-      offerElement.setAttribute("class","offerContainer")
-      offerElement.textContent = `${data.offer}% off | Use WELCOME50 `;
-      offerElement.style.color = "#8A584B"
+      // let offerElement = document.createElement("p");
+      // offerElement.setAttribute("class","offerContainer")
+      // offerElement.textContent = `${data.offer}% off | Use WELCOME50 `;
+      // offerElement.style.color = "#8A584B"
       ratingDeliveryApproxPrice.append(ratingsElement, deliveryElement, approxPriceElement,)
-      card.append(imageElement, restaurantNameElement, cuisineElement,ratingDeliveryApproxPrice,hrElement, offerElement);
+      card.append(imageElement, restaurantNameElement, cuisineElement,ratingDeliveryApproxPrice,hrElement);
       mainContainer.append(card);
 
   });
