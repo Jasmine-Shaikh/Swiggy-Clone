@@ -248,26 +248,36 @@ sup {
 
 #restaurantListContainer {
     display: flex;
+    justify-content: center;
 }
 
 .restaurantCard {
-    padding: 20px 20px 57px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
     margin: 10px;
+    border: 1px solid white;
+    width: 254px;
 }
 
 .restaurantCard:hover {
-    border: 1px solid #fff;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+
+.restaurantCard:hover .quickViewDiv {
+    visibility: visible;
 }
 
 .restaurantName {
     font-size: 17px;
     font-weight: bold;
     word-break: break-word;
+    margin-bottom: 5px;
 }
 
 .restaurantCard>img {
-    width: 254px;
+    width: 100%;
     height: 160px;
 }
 
@@ -276,6 +286,8 @@ sup {
     font-size: 13px;
     margin-top: 4px;
     margin-bottom: 0px;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 .ratingDeliveryPriceBox {
@@ -283,7 +295,6 @@ sup {
     align-items: flex-end;
     color: #535665;
     justify-content: space-between;
-    border-bottom: 0.3px solid #686b7885;
 }
 
 .ratingDeliveryPriceBox>p {
@@ -304,6 +315,7 @@ sup {
 .offerBox {
     display: flex;
     align-items: center;
+    border-top: 0.3px solid #686b7885;
 }
 
 .offerBox>img {
@@ -319,4 +331,24 @@ sup {
     white-space: nowrap;
     color: #363636;
     font-size: 14px;
+}
+
+.quickViewDiv {
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    border-top: 0.3px solid #686b7885;
+    visibility: hidden;
+}
+
+.quickViewDiv>button {
+    border-style: none;
+    color: #5d8ed5;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+    padding-top: 15px;
 }
