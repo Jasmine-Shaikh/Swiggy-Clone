@@ -341,7 +341,8 @@
       {
     "id": 11,
     "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddodxcajls66p0f7kypg",
-    "address": "Cake Town",
+    "name": "Cake Town",
+    "address":"BTM, BTM",
     "ratings": "4.8",
     "approxDeliveryTime": "62 MINS",
     "approxPrice": "250 FOR TWO",
@@ -507,14 +508,15 @@
 },
       {
     "id": 16,
-    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddlewhiegjaigcxnp5tr",
-    "name": "Shanti Sagar",
-    "address": "Ulsoor, Frazer Town",
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mksb1fkm6edljogjd8n6",
+    "name": "The Himalayan Momo Company",
+    "address": "Indiranagar, Domlur",
     "ratings": "4.3",
-    "approxDeliveryTime": "37 MINS",
-    "approxPrice": "600 FOR TWO",
+    "approxDeliveryTime": "51 MINS",
+    "approxPrice": "200 FOR TWO",
     "cuisine": [
-      "Chinese" 
+      "Snacks",
+      " Beverages" 
       
       
     ],
@@ -523,21 +525,364 @@
         "categoryName": "Recommended",
         "categoryItems": [
           {
-              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ougimdtukafslyszovou",
-            "name": "Single Idli Vada (1 Pc Each)",
-            "price": "50",
-            "details": "Spicy and Testy."
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sgkiw0bj22fhhspzochp",
+            "name": "Himalyan Kurkure Veg Momos",
+            "price": "159",
+            "details": "Seasoned and crumb-fried (in cold pressed groundnut oil) vegetable (cabbage, onion, carrots, herbs) dumplings served with spicy chilli garlic 'chutney'. Our momos are hand made everyday by expert chefs."
           },
           {
-              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hwqefvgot83pt25mqzpj",
-            "name": "Rava Masala Dosa",
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rn1nnobhuslfvhuezyzr",
+            "price": "190",
+            "details": "Grilled cottage cheese and garden vegetables with tandoori spices; served with crisps."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 17,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lpikismf7ulkpknsbw2h",
+    "name": "Bhartiya Jalpan",
+    "address": "Commercial Street, Shivaji Nagar | Change Outlet ",
+    "ratings": "4.2",
+    "approxDeliveryTime": "40 MINS",
+    "approxPrice": "270 FOR TWO",
+    "cuisine": [
+      "North Indian",
+      "Sweets" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/u0himdvdy2kkq99wtlez",
+            "name": "Aloo Sandwich",
+            "price": "120",
+            "details": "Our spicy chatpata aloo masala sandwich make with pure butter intawa."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pvqdlcbktjqrgtnjctyv",
+            "name": "Chole Bhature",
+            "price": "189",
+            "details": "Spicy chole gravy cooked in a delectable veriety of masalas, served with a fluffy fried leavened bread."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 18,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/me4mzdjxosmk0lg4ndog",
+    "name": "Anand Sweets and Savouries",
+    "address": "Commercial Street, Shivaji Nagar | Change Outlet ",
+    "ratings": "4.6",
+    "approxDeliveryTime": "33 MINS",
+    "approxPrice": "200 FOR TWO",
+    "cuisine": [
+      "Sweets",
+       "Chaat" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ow9mvmxclhv8tju2miva",
+            "name": "Kaju Katli",
+            "price": "247.62",
+            "details": "The cashew fudge adds all the dhamaka to every occassin. This lip-smacking sweet is ripe with the goodness of premium cashews in plenty, a decadent ode to everyone's favourite made with plenty in our kitchens."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/o5p0ccqyp8yuajqwcxub",
+            "name": "Soan Halwa",
+            "price": "200",
+            "details": "A caramelized delicacy that plays milk, sugar, cornflour and ghee in rich harmony to reveal the forgotten childhood favorites of the streets of Multan."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 19,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tu6nushcuxar8c03ezaa",
+    "name": "Say Cheese Cake",
+    "address": "Koramangala, Koramangala",
+    "ratings": "4.3",
+    "approxDeliveryTime": "53 MINS",
+    "approxPrice": "175 FOR TWO",
+    "cuisine": [
+      "Desserts",
+      " Beverages" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/qruw4tjrswottvxxiyzc",
+            "name": "Blueberry Cheesecake - Slice",
+            "price": "139",
+            "details": "Dish originally from greece, this cheesecake has a perfect buttery graham cracker crust. Swirled with a sweet blueberry sauce. The velvety richness for a simply sophisticated experience."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nzr2siox3naabnkpffiv",
+            "name": "White Truffle Cake",
+            "price": "479",
+            "details": "Layers of moist white chocolate sponge indulging with milk chocolate ganache, every bite that will melt in your mouth. (Serves 1)."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 20,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dxnxm50rkswvsiwtqero",
+    "name": "Joys Kuttanadu Restaurant",
+    "address": "Mathikere,Yeshwanthpur, Yeswanthpur",
+    "ratings": "4.0",
+    "approxDeliveryTime": "50 MINS",
+    "approxPrice": "300 FOR TWO",
+    "cuisine": [
+      "Kerala", 
+      "South Indian" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/r3uihuizxmyzcdnegj1n",
+            "name": "Chicken Biryani",
+            "price": "175",
+            "details": "Richly flavored aromatic rice layered with marinated chicken pieces in a delicate blend of whole spices."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dyzqlyijv1ppvlenwmah",
+            "name": "Chicken Curry",
+            "price": "155",
+            "details": " Tender chicken cooked in a masala gravy with onions, tomatoes and special spices."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 21,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/qoxluuv2ocvc3ffgdzug",
+    "name": "Green Pepper",
+    "address": "Hal 3Rd Stage, New Tippasandra",
+    "ratings": "4.2",
+    "approxDeliveryTime": "43 MINS",
+    "approxPrice": "200 FOR TWO",
+    "cuisine": [
+      "Kerala", 
+      "Seafood" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/k60n1tsykjclhlenobxy",
+            "name": "Chicken 65",
+            "price": "189",
+            "details": "Chicken 65 is spicy coated with spices which is deep fried in oil and garnished with onion and lemon."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ornc9q1i0msyx3e5hggg",
+            "name": "Pepper Chicken ( Dry )",
+            "price": "189",
+            "details": "| Serves 1,4-5pcs , 500grms |Chicken is cooked untill tender and shallow fried with pepper,onions,curry leaves which gives intensifying spicy flavour.| Bone |."
+          }
+         ]
+       }
+     ]
+},
+     
+      {
+    "id": 22,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/zowvf44mmrwshigprrvn",
+    "name": "Thalassery Restaurant",
+    "address": "Nehru Road, Near Syndicate Bank, Kacharakanahalli",
+    "ratings": "4.2",
+    "approxDeliveryTime": "46 MINS",
+    "approxPrice": "300 FOR TWO",
+    "cuisine": [
+      "South Indian", 
+      "Arabian" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ojbgvuufcipxlwni2acx",
+            "name": "Chilli Paneer",
+            "price": "130",
+            "details": "Cubes of moist paneer tossed in a melange of onion, bell peppers, soy sauce and chilli sauce."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/mipsm2vf83ilvrgt0pl5",
+            "name": "Chicken Curry(kerala Style)",
+            "price": "170",
+            "details": "A spicy flavourful blend of toasted ground spices and grated coconut in a thick gravy with soft and tender chicken pieces (serves 1)."
+          }
+         ]
+       }
+     ]
+},
+     
+      {
+    "id": 23,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vofvjtbfnonk6xespq03",
+    "name": "Bangarpet chats",
+    "address": "Central Bangalore, Central Bangalore | Change Outlet",
+    "ratings": "4.1",
+    "approxDeliveryTime": "35 MINS",
+    "approxPrice": "110 FOR TWO",
+    "cuisine": [
+      "Chaat" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ebbcxtpmccnttdbwrebj",
+            "name": "Sev Puri",
+            "price": "55",
+            "details": "Bangarpet special sev puri."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xsuowbjzdsxuqkjjnxjd",
+            "name": "Masala Puri",
             "price": "75",
+            "details": "Contains 7 puri, delicious taste with extra special white pani."
+          }
+         ]
+       }
+     ]
+},
+     
+      {
+    "id": 24,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jxp8y1chnqljwqylpkov",
+    "name": "Sri Udupi Park (100ft Road)",
+    "address": "100 Feet Road, Indiranagar",
+    "ratings": "4.3",
+    "approxDeliveryTime": "46 MINS",
+    "approxPrice": "100 FOR TWO",
+    "cuisine": [
+      "South Indian",
+       "North Indian" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/lleihif6wfk5rjmbt9pq",
+            "name": "Vada",
+            "price": "35",
+            "details": "This classic Vada is a perfect choice when you don't want to go wrong. Served with sambhar and chutney."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sjg84ifbojyb9glrtc2l",
+            "name": "Masala Dosa",
+            "price": "65",
+            "details": "Filled with nutrients and taste, this Masala Dosa will make your mornings better. Served with sambhar and chutney."
+          }
+         ]
+       }
+     ]
+},
+     
+      {
+    "id": 25,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/n15vckntsiboiod3gpco",
+    "name": "Asha tiffins",
+    "address": "HSR, Hsr Layout",
+    "ratings": "4.4",
+    "approxDeliveryTime": "50 MINS",
+    "approxPrice": "200 FOR TWO",
+    "cuisine": [
+      "Indian", 
+      "South Indian" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/cepid7iiux5mmvqa5lgm",
+            "name": "Gobi Manchurian (dry)",
+            "price": "79",
+            "details": "Served with tomato sauce(no artificial colours/ajinomoto/msg and its chemical free)."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dfzkaxlydbd2zx3zwxa5",
+            "name": "Mushroom Manchurian (dry)",
+            "price": "99",
             "details": "Spicy and Testy."
           }
          ]
        }
      ]
+},
+     
+      {
+    "id": 26,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tn7yk3nwzsa5qkdj7yv4",
+    "name": "Aubree",
+    "address": "Central Bangalore - Bangalore, Shivaji Nagar | Change Outlet ",
+    "ratings": "4.6",
+    "approxDeliveryTime": "35 MINS",
+    "approxPrice": "700 FOR TWO",
+    "cuisine": [
+      "Desserts", 
+      "Bakery" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/w59yb8myjxcg29ajz06v",
+            "name": "Kit Kat Cupcake",
+            "price": "161.90",
+            "details": "The Crunchy Kitkat Cupcake with Delicious chocolate Butter Cream Frosting."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dkq7exmt8lng8vyfxboz",
+            "name": "Black Forest Cake",
+            "price": "566.67",
+            "details": "Chocolate sponge base filled with American sour cherries and topped with white chocolate shavings and edible chocolate mushrooms."
+          }
+         ]
+       }
+     ]
 }
-  
+     
   ]
 }
