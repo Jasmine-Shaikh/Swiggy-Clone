@@ -1,217 +1,543 @@
-
 {
-    "restaurantsAvailable": [
+  "Restaurents":[
       {
-        "id": 1,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tk8sfmo0rnpew3wuuabj",
-       "name": "Domino's Pizza",
-       "cuisine": "Pizzas",
-       "ratings": 4.3,
-       "delivery": 30,
-       "approxPrice": 400,
-       "offer": 50
-      },
+    "id": 1,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/amwnaysbgyubk9rpzzuf",
+    "name": "Nandhini Deluxe",
+    "address": "St. Marks Road, Ashok Nagar",
+    "ratings": "4.2",
+    "approxDeliveryTime": "31 MINS",
+    "approxPrice": "500 FOR TWO",
+    "cuisine": [
+      "Andhra",
+      "Biryani",
+      "Chinese",
+      "North Indian"
+    ],
+    "categories": [
       {
-        "id": 2,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mocil3npmwpcdcfaxql1",
-       "name": "La Pino'z Pizza",
-       "cuisine": "Pizzas",
-       "ratings": 3.8,
-       "delivery": 44,
-       "approxPrice": 220,
-       "offer": 50
-      },
+         
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/oum8oq0luqtycu1bcnuf",
+            "name": "Baby Corn Pepper Dry",
+            "price": "239",
+            "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/zlywpkbcagvmphwb84do",
+            "name": "Chicken Sholay kebab",
+            "price": "289",
+            "details": "Battered Fried Tender Chicken Sauteed with Fresh Curd with special Spices"
+          }
+         ]
+       }
+     ]
+},
       {
-        "id": 3,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/l7zme8yryk6adeakj6jy",
-       "name": "The Pizza Bakery",
-       "cuisine": "Pizzas",
-       "ratings": 4.3,
-       "delivery": 37,
-       "approxPrice": 700,
-       "offer": 50
-      },
+    "id": 2,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lpikismf7ulkpknsbw2h",
+    "name": "Bhartiya Jalpan",
+    "address": "Commercial Street, Shivaji Nagar | Change Outlet ",
+    "ratings": "4.2",
+    "approxDeliveryTime": "41 MINS",
+    "approxPrice": "270 FOR TWO",
+    "cuisine": [
+      "North Indian",
+      "Sweets"
+    ],
+    "categories": [
       {
-        "id": 4,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rtj6tjqn0ql4glxfr4pt",
-       "name": "Pizza Stop",
-       "cuisine": "Italian, Pizzas",
-       "ratings": 4.1,
-       "delivery": 34,
-       "approxPrice": 400,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pvqdlcbktjqrgtnjctyv",
+            "name": "Chole Bhature",
+            "price": "189",
+            "details": "Spicy chole gravy cooked in a delectable veriety of masalas, served with a fluffy fried leavened bread."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/awvdowes1yqakeceeoj2",
+            "name": "Poori Bhaji",
+            "price": "179",
+            "details": "Classic combo of spicy potato preparation, served with fried and puffy pooris (3pcs)."
+          }
+         ]
+       }
+     ]
+},
+     
       {
-        "id": 5,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tqt0kko6qnugg7g7dtf5",
-       "name": "Parijata pure veg",
-       "cuisine": "South Indian",
-       "ratings": 4.0,
-       "delivery": 28,
-       "approxPrice": 200,
-       "offer": 50
-      },
+    "id": 3,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vqntkxnetpgfivsyrpij",
+    "name": "A2B Veg",
+    "address": "BTM, Koramangala | Change Outlet ",
+    "ratings": "4.1",
+    "approxDeliveryTime": "41 MINS",
+    "approxPrice": "300 FOR TWO",
+    "cuisine": [
+      "South Indian", 
+      "North Indian"
+      
+    ],
+    "categories": [
       {
-        "id": 6,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tfbnpd65irvhp9iwhbtk",
-       "name": "Sri Udupi Park",
-       "cuisine": "North Indian, South Indian",
-       "ratings": 4.4,
-       "delivery": 29,
-       "approxPrice": 200,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xpnz5axwk0gxdkzbjqkb",
+            "name": "Mini Tiffin",
+            "price": "145",
+            "details": "A delicious traditional platter of fluffy idlis, Medhu Vada, Pongal, Rava Khichdi, and a Mini Dosa served with a spicy sambar and chutneys."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pw1jp4r7rpubtfwzwlnf",
+            "name": "Poori [2 Nos]",
+            "price": "75",
+            "details": "A delicious Indian breakfast dish comprising of 2 big circular fluffy deep fried wheat flour Pooris served with a mildly spiced vegetable korma and coconut chutney."
+          }
+         ]
+       }
+     ]
+},
+     
       {
-        "id": 7,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/v8jgifosg3vdzrgsv1sw",
-       "name": "IDC KITCHEN",
-       "cuisine": "South Indian, North Indian",
-       "ratings": 4.5,
-       "delivery": 32,
-       "approxPrice": 150,
-       "offer": 50
-      },
+    "id": 4,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/fjqcvqfgqlw6h0atques",
+    "name": "Domino's Pizza",
+    "address": "Rex Theater, Central Bangalore ",
+    "ratings": "4.3",
+    "approxDeliveryTime": "30 MINS",
+    "approxPrice": "400 FOR TWO",
+    "cuisine": [
+      "Pizzas"
+      
+    ],
+    "categories": [
       {
-        "id": 8,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kpu0jglsdlfl3bh5ircu",
-       "name": "Virinchi Cafe",
-       "cuisine": "South Indian",
-       "ratings": 4.4,
-       "delivery": 32,
-       "approxPrice": 250,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/o2m391wspq82kjcluexm",
+            "name": "Cheese n Tomato",
+            "price": "439",
+            "details": "A delectable combination of cheese and juicy tomato."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/n3zrgzgqc6uvltz08qqu",
+            "name": "Pasta Pizza Specials (Veg)",
+            "price": "323",
+            "details": "Reg Moroccan Pasta Pizza + Garlic Bread + Pepsi."
+          }
+         ]
+       }
+     ]
+},
       {
-        "id": 9,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/my4zyu8ahvh0t1iedftc",
-       "name": "Sunny's",
-       "cuisine": "European, American",
-       "ratings": 4.3,
-       "delivery": 32,
-       "approxPrice": 2000,
-       "offer": 50
-      },
+    "id": 5,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/w1rrow27w3vb3ur5xbi9",
+    "name": "McDonald's",
+    "address": "Kasturba Road, Ashok Nagar | Change Outlet ",
+    "ratings": "4.3",
+    "approxDeliveryTime": "34 MINS",
+    "approxPrice": "400 FOR TWO",
+    "cuisine": [
+      "Burgers", 
+      "Beverages"
+      
+    ],
+    "categories": [
       {
-        "id": 10,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mocil3npmwpcdcfaxql1",
-       "name": "Paakashala",
-       "cuisine": "South Indian, North Indian",
-       "ratings": 4.2,
-       "delivery": 32,
-       "approxPrice": 500,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gscpaluydqlvrgxxmjef",
+            "name": "McAloo Tikki + Veg Pizza McPuff + Coke",
+            "price": "139",
+            "details": "Enjoy a combo of McAloo Tikki Burger, Veg Pizza McPuff and Coke, now in a delivery friendly reusable bottle."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uckbx3rr87jhakb81mbs",
+            "name": "McAloo Tikki Burger",
+            "price": "55",
+            "details": "The World's favourite Indian burger! Crunchy potato and peas patty with delicious Tom Mayo & crunchy onions; now with Whole Wheat Bun."
+          }
+         ]
+       }
+     ]
+},
+     
       {
-        "id": 11,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/t6c6szppjphxel1loidn",
-       "name": "Samrudh Veg",
-       "cuisine": "South Indian, Chinese",
-       "ratings": 4.0,
-       "delivery": 33,
-       "approxPrice": 150,
-       "offer": 50
-      },
+    "id": 6,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ukkzkm7sh8ii9zilqpkr",
+    "name": "Samosa Party",
+    "address": "Central Bangalore, Ashok Nagar ",
+    "ratings": "4.4",
+    "approxDeliveryTime": "40 MINS",
+    "approxPrice": "150 FOR TWO",
+    "cuisine": [
+      "Chaat",
+      "North Indian"
+      
+    ],
+    "categories": [
       {
-        "id": 12,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/z7q1fmri5lvk29mdzrof",
-       "name": "Sri Udupi Sagar",
-       "cuisine": "South Indian, North Indian",
-       "ratings": 4.3,
-       "delivery": 37,
-       "approxPrice": 150,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/k7p5l3hkverro19upeng",
+            "name": "Veg Samosa Platter",
+            "price": "179",
+            "details": "Punjabi Aloo, Pickley Paneer, Noodle, Corn and Cheese."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rpvmuk6spo39et2qfi7g",
+            "name": "Samosa and Chole Meal",
+            "price": "139",
+            "details": "Mumbaiya breakfast of Chole and 2 pcs of Punjabi Aloo Samosa served with mint chutney and onion salad."
+          }
+         ]
+       }
+     ]
+},
+     
       {
-        "id": 13,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tc3cigltkf42oves0sst",
-       "name": "Sendhoor coffee",
-       "cuisine": "Pizzas",
-       "ratings": 4.5,
-       "delivery": 38,
-       "approxPrice": 200,
-       "offer": 50
-      },
+    "id": 7,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/myqjdznwukizjyij8yyi",
+    "name": "Biryani Blues",
+    "address": "Central Bangalore, Church Street ",
+    "ratings": "4.3",
+    "approxDeliveryTime": "35 MINS",
+    "approxPrice": "400 FOR TWO",
+    "cuisine": [
+      "Biryani",
+      " Kebabs",
+      "Gulab Jamun"
+      
+    ],
+    "categories": [
       {
-        "id": 14,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hbpel7wiienbuq60t3xg",
-       "name": "Falhari- A fruitful Habit",
-       "cuisine": "Salads, Juices",
-       "ratings": 4.0,
-       "delivery": 37,
-       "approxPrice": 300,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ffvhmvzqjnplvlvmtggo",
+            "name": "Paneer 65 Biryani",
+            "price": "309",
+            "details": "Spicy Paneer 65 pieces layered with Biryani Rice and served with Raita."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dbxnoju4lqiz3cxlqla1",
+            "name": "Gulab Jamun",
+            "price": "49",
+            "details": "Soft, melt in your mouth, fried dumplings, traditionally made of thickened milk and soaked in rose-flavored sugar syrup."
+          }
+         ]
+       }
+     ]
+},
+     
       {
-        "id": 15,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddlewhiegjaigcxnp5tr",
-       "name": "Shanti Sagar",
-       "cuisine": "Chinese",
-       "ratings": 4.3,
-       "delivery": 38,
-       "approxPrice": 600,
-       "offer": 50
-      },
+    "id": 8,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ap8fnfunttp5a0afyjfl",
+    "name": "SRI UDUPI VAIBHAV",
+    "address": "Indiranagar, Indiranagar",
+    "ratings": "4.3",
+    "approxDeliveryTime": "40 MINS",
+    "approxPrice": "199 FOR TWO",
+    "cuisine": [
+      "South Indian", 
+      "North Indian"
+      
+    ],
+    "categories": [
       {
-        "id": 16,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jzmvp9i4jp2uk1hvxyhz",
-       "name": "Meat and Eat",
-       "cuisine": "Biryani",
-       "ratings": 4.1,
-       "delivery": 38,
-       "approxPrice": 300,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rp7lbmw3kmn0u4ixuggi",
+            "name": "Idli (2)",
+            "price": "43.81",
+            "details": "Spicy and Testy."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/wzmmlzejtfjvqhbx9u2n",
+            "name": "Plain Dosa",
+            "price": "66.67",
+            "details": "Spicy and Testy."
+          }
+         ]
+       }
+     ]
+},
+     
       {
-        "id": 16,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/deuy7akmjecenisilwrm",
-       "name": "The Bowl Company",
-       "cuisine": "Continental, North Indian",
-       "ratings": 4.3,
-       "delivery": 38,
-       "approxPrice": 300,
-       "offer": 50
-      },
+    "id": 9,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bavd0e8lwhnzn02gvfsc",
+    "name": "Noto Healthy Ice Cream",
+    "address": "Indiranagar, Indiranagar | Change Outlet ",
+    "ratings": "4.5",
+    "approxDeliveryTime": "45 MINS",
+    "approxPrice": "250 FOR TWO",
+    "cuisine": [
+      "Desserts",
+       "Ice Cream"
+      
+    ],
+    "categories": [
       {
-        "id": 16,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/fs9fnrbjr3cgvtmljate",
-       "name": "Naadoota",
-       "cuisine": "Indian, Biryani",
-       "ratings": 4.1,
-       "delivery": 36,
-       "approxPrice": 350,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jxopfnjzihmimm6mfppr",
+            "name": "Chocolate Peanut Butter 125 ml",
+            "price": "80.51",
+            "details": "Our take on the classic combination of dark chocolate and peanut butter, this one is spoon-lickingly good. We're obsessed and we promise so will you. No Artificial sweeteners or preservatives,100% Vegetarian. (Per serving: 95 Cal, 2.1gms sugar, 5.6gms protein compared to traditional ice creams.)."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/r1hkrmzopddjjamiywwf",
+            "name": "Mangoes and Cream Ice Cream (125ml)",
+            "price": "80.50",
+            "details": "Move over the king is here! Made using 25% real Alphonso pulp you can enjoy this flavour all year round. No Artificial sweeteners or preservatives. 100% Vegetarian (Per serving: 75 cal, 3gms sugar, 5gms protein compared to traditional ice cream)."
+          }
+         ]
+       }
+     ]
+},
+     
       {
-        "id": 16,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tuhvik2llvsfshjlptex",
-       "name": "Kavali Hotel",
-       "cuisine": "South Indian",
-       "ratings": 4.4,
-       "delivery": 36,
-       "approxPrice": 250,
-       "offer": 50
-      },
+    "id": 10,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddlewhiegjaigcxnp5tr",
+    "name": "Shanti Sagar",
+    "address": "Ulsoor, Frazer Town",
+    "ratings": "4.3",
+    "approxDeliveryTime": "37 MINS",
+    "approxPrice": "600 FOR TWO",
+    "cuisine": [
+      "Chinese" 
+      
+      
+    ],
+    "categories": [
       {
-        "id": 16,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ap8fnfunttp5a0afyjfl",
-       "name": "SRI UDUPI VAIBHAV",
-       "cuisine": "South Indian, North Indian",
-       "ratings": 4.3,
-       "delivery": 37,
-       "approxPrice": 199,
-       "offer": 50
-      },
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ougimdtukafslyszovou",
+            "name": "Single Idli Vada (1 Pc Each)",
+            "price": "50",
+            "details": "Spicy and Testy."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hwqefvgot83pt25mqzpj",
+            "name": "Rava Masala Dosa",
+            "price": "75",
+            "details": "Spicy and Testy."
+          }
+         ]
+       }
+     ]
+},
       {
-        "id": 16,
-       "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hbpel7wiienbuq60t3xg",
-       "name": "Falhari- A fruitful Habit",
-       "cuisine": "Salads, Juices",
-       "ratings": 4.0,
-       "delivery": 37,
-       "approxPrice": 300,
-       "offer": 50
-      }
-  ]
-  }
-
+    "id": 11,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddodxcajls66p0f7kypg",
+    "address": "Cake Town",
+    "ratings": "4.8",
+    "approxDeliveryTime": "62 MINS",
+    "approxPrice": "250 FOR TWO",
+    "cuisine": [
+      "Desserts" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sohpazwzra8njkslhqq6",
+            "name": "Ferrero Rocher Cake 1kg",
+            "price": "749",
+            "details": "Soft and Testy."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/yxr6extf5r7varygtdtb",
+            "name": "Mix Fruit Cake 1kg",
+            "price": "749",
+            "details": "Soft and Testy."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 12,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bti5cqzjlftzrw0uml1k",
+    "name": "Sangam Sweets",
+    "address": "Central Bangalore, Gandhi Nagar | Change Outlet ",
+    "ratings": "4.5",
+    "approxDeliveryTime": "48 MINS",
+    "approxPrice": "100 FOR TWO",
+    "cuisine": [
+      "North Indian",
+       "Desserts" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/caoragyuxyneszngkwa2",
+            "name": "MALAI SANDWICH",
+            "price": "175",
+            "details": "Soft and Testy."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/g9dl0en0ncq2yq2qnfoj",
+            "name": "BADAM KATHLI",
+            "price": "392.86",
+            "details": "Soft and Testy."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 13,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/is2nsfowmvlbl4atsrrn",
+    "name": "No Sugar Please, Sweets & Juices",
+    "address": "Koramangala, S.G. Palya",
+    "ratings": "4.3",
+    "approxDeliveryTime": "50 MINS",
+    "approxPrice": "200 FOR TWO",
+    "cuisine": [
+      "Beverages", 
+      "Keto" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ahtefo4u8xfp0qh6hooo",
+            "name": "Tropical Hydrating Fruit Bowl",
+            "price": "129",
+            "details": "Washed in warm ro water. Cucumber & watermelon.[kcal 63gm | carbs 16gm | fats 0.4gm | protein 1.8gm]."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f5fr2wvtwgpimf6uvzjt",
+            "name": "Doctor Immunity Hydrator Bowl",
+            "price": "189",
+            "details": "[washed in warm ro water]orange+apple+watermelon[kcal 121gm | carbs 31gm | fats 0.4gm | protein 1.1gm]."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 14,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rebvqejt2trciuqucqum",
+    "name": "Hatti Kaapi - Coffee and more",
+    "address": "Central Bangalore, Sivanchetti Gardens | Change Outlet ",
+    "ratings": "4.2",
+    "approxDeliveryTime": "38 MINS",
+    "approxPrice": "120 FOR TWO",
+    "cuisine": [
+      "Beverages", 
+      "South Indian" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nzhxamcgbpinoz6ewhz8",
+            "name": "Black Currant Milkshake",
+            "price": "120",
+            "details": "Testy."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ed3yjaqi05uu2yvybhhk",
+            "name": "Upma N Coffee Serves 2",
+            "price": "170",
+            "details": "Testy."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 15,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vojof3tfxr0i3kwpsp3e",
+    "name": "Karnataka Bhel House",
+    "address": "Chamrajpet, Chamrajpet",
+    "ratings": "4.4",
+    "approxDeliveryTime": "30 MINS",
+    "approxPrice": "100 FOR TWO",
+    "cuisine": [
+      "Chaat" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nyxgxr8miybp6lxd4fyv",
+            "name": "Pani Puri",
+            "price": "45",
+            "details": "A byte sized chaat consisting of a hollow crispy fried puffed-ball filled with green peas and onions and flavoured water . (Serves 1)."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/slkyuj1zal9gupncbymt",
+            "name": "Aloo Dahi Puri",
+            "price": "68",
+            "details": "Hollow fried puffed ball filled with mashed potatoes served with a mixture of sweet chutney and curd on top, topped with rice flakes and sev.(Serves 1)."
+          }
+         ]
+       }
+     ]
+},
+      {
+    "id": 16,
+    "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddlewhiegjaigcxnp5tr",
+    "name": "Shanti Sagar",
+    "address": "Ulsoor, Frazer Town",
+    "ratings": "4.3",
+    "approxDeliveryTime": "37 MINS",
+    "approxPrice": "600 FOR TWO",
+    "cuisine": [
+      "Chinese" 
+      
+      
+    ],
+    "categories": [
+      {
+        "categoryName": "Recommended",
+        "categoryItems": [
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ougimdtukafslyszovou",
+            "name": "Single Idli Vada (1 Pc Each)",
+            "price": "50",
+            "details": "Spicy and Testy."
+          },
+          {
+              "subimage":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hwqefvgot83pt25mqzpj",
+            "name": "Rava Masala Dosa",
+            "price": "75",
+            "details": "Spicy and Testy."
+          }
+         ]
+       }
+     ]
+}
   
+  ]
+}
