@@ -5,7 +5,18 @@
       "userEmail": "akashkmt963@gmail.com",
       "userPhoneNumber": "9079938742",
       "userPassword": "AAaa@123",
-      "userCart": [],
+      "userCart": [{
+        "name": "Baby Corn Pepper Dry",
+        "price": "239",
+        "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala.",
+        "count" : 4
+      },
+      {
+        "name": "Mutton Roast",
+        "price": "349",
+        "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala.",
+        "count" : 5
+      }],
       "userAddresses": [
         {
           "flatNumber": "38",
@@ -45,7 +56,12 @@
       "userEmail": "akashkmt@gmail.com",
       "userPhoneNumber": "90799",
       "userPassword": "aaaa",
-      "userCart": [],
+      "userCart": [{
+        "name": "Baby Corn Pepper Dry",
+        "price": "239",
+        "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala.",
+        "count" : 4
+      }],
       "userAddresses": [],
       "id": 2
     },
