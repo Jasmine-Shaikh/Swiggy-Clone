@@ -40,7 +40,6 @@ header {
     display: flex;
     padding: 0px 20px;
     max-width: 1200px;
-    min-width: 1200px;
     position: relative;
     margin: 0 auto;
     height: 80px;
@@ -50,7 +49,7 @@ header {
 
 #headerContentContainer>a {
     display: block;
-    height: 49px px;
+    height: 49px;
     transition: transform .3s cubic-bezier(.215, .61, .355, 1);
     margin-right: 16px;
 }
@@ -59,7 +58,7 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 25px;
     max-width: 300px;
     height: 30px;
     cursor: pointer;
@@ -94,7 +93,7 @@ header {
 }
 
 #headerContainerRight>li {
-    margin-right: 60px;
+    margin-right: 5%;
     color: #3d4152;
     font-size: 16px;
     font-weight: 500;
@@ -249,7 +248,7 @@ sup {
 #restaurantListContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
+    justify-items: center;
 }
 
 .restaurantCard {
@@ -311,7 +310,7 @@ sup {
     background-color: #48c479;
     font-size: 12px;
     margin-top: 0%;
-    padding: 0px 3px;
+    padding: 0px 5px;
 }
 
 .offerBox {
@@ -359,8 +358,8 @@ sup {
     color: gray;
 }
 
-.menuBox {
-    visibility: hidden;
+#menuBox {
+    display: none;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -376,11 +375,14 @@ sup {
     cursor: pointer;
     align-items: center;
     position: absolute;
-    width: 350px;
+    width: 170px;
+    height: 310px;
 }
 
-.quickViewDiv:hover .menuBox {
-    visibility: visible!important;
+.menuBoxContainer {
+    position: relative;
+    left: 100%;
+    bottom: 20px;
 }
 
 .menuBox>h6 {
@@ -422,7 +424,7 @@ sup {
     justify-items: baseline;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid #888;
+    border-bottom: 1px solid #88888870;
 }
 
 #filterModalHead>h2 {
@@ -440,11 +442,6 @@ sup {
     flex-direction: column;
 }
 
-
-/* #filterModal::-webkit-scrollbar {
-    display: none;
-} */
-
 #filterOption {
     margin-top: 70px;
     margin-bottom: 60px;
@@ -452,14 +449,21 @@ sup {
 
 #filterOption>input {
     margin: 10px 5px 8px 25px;
-    ;
+}
+
+#filterOption>input[type="checkbox"]:active {
+    background-color: #fc8019;
+}
+
+#filterOption>label:hover {
+    font-weight: bold;
 }
 
 .close {
     color: rgb(0, 0, 0);
     float: left;
     font-size: 35px;
-    font-weight: 400;
+    margin-left: 10px;
 }
 
 .close:hover,
@@ -477,7 +481,7 @@ sup {
     width: 30%;
     bottom: 0px;
     background-color: white;
-    border-top: 1px solid #888;
+    border-bottom: 1px solid #888888f8;
 }
 
 #filterSubmit {
@@ -490,4 +494,43 @@ sup {
     width: 100%;
     height: 50px;
     margin: 13px;
+}
+
+
+/* ---------------------Responsiveness----------------------- */
+
+@media only screen and (max-width: 1276px) {
+    #restaurantListContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 952px) {
+    #restaurantListContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    #search {
+        display: none;
+    }
+    #offer {
+        display: none;
+    }
+    #help {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #restaurantListContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    #signIn {
+        display: none;
+    }
 }

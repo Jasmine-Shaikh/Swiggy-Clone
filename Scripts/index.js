@@ -95,32 +95,48 @@ async function displayRestuarantList() {
             quickViewBtn.innerHTML = "QUICK VIEW";
             quickViewDiv.setAttribute('class', 'quickViewDiv');
 
+            let menuBoxContainer = document.createElement('div');
+            menuBoxContainer.setAttribute('class', 'menuBoxContainer');
 
-            let menuBox = document.createElement('div');
-            menuBox.setAttribute('class', 'menuBox');
+            let clickCount = 0;
 
-            let menuTitle = document.createElement('h3');
-            menuTitle.textContent = "MENU";
+            quickViewBtn.addEventListener('click', function() {
 
-            let menuAdd = document.createElement('h6');
-            menuAdd.textContent = restaurant.address;
+                if (clickCount % 2 === 0) {
 
-            let menuCategoriesBox = document.createElement('div');
-            menuCategoriesBox.setAttribute('class', 'menuCategoriesBox');
+                    let menuBox = document.createElement('div');
+                    menuBox.setAttribute('id', 'menuBox');
 
-            restaurant.categories.forEach((e) => {
+                    let menuTitle = document.createElement('h3');
+                    menuTitle.textContent = "MENU";
 
-                let categoryName = document.createElement('h6');
-                categoryName.textContent = e.categoryName;
+                    let menuAdd = document.createElement('h6');
+                    menuAdd.textContent = restaurant.address;
 
-                menuCategoriesBox.append(categoryName);
+                    let menuCategoriesBox = document.createElement('div');
+                    menuCategoriesBox.setAttribute('class', 'menuCategoriesBox');
+
+                    restaurant.categories.forEach((e) => {
+
+                        let categoryName = document.createElement('h6');
+                        categoryName.textContent = e.categoryName;
+
+                        menuCategoriesBox.append(categoryName);
+                    })
+
+                    menuBox.append(menuTitle, menuAdd, menuCategoriesBox)
+                    menuBoxContainer.append(menuBox)
+
+                } else {
+                    document.getElementById('menuBox').remove();
+                }
+
+                clickCount++;
+                console.log(clickCount)
             })
 
-            menuBox.append(menuTitle, menuAdd, menuCategoriesBox)
 
-
-
-
+            restaurantCard.append(menuBoxContainer)
             offerBox.append(offerIcon, offerDetails);
 
             quickViewDiv.append(quickViewBtn);
@@ -129,7 +145,7 @@ async function displayRestuarantList() {
 
             ratingDeliveryPriceBox.append(ratingsBox, approxDeliveryTime, approxPrice);
 
-            restaurantCard.append(restaurantImg, restaurantName, cuisine, ratingDeliveryPriceBox, offerBox, quickViewDiv, menuBox);
+            restaurantCard.append(restaurantImg, restaurantName, cuisine, ratingDeliveryPriceBox, offerBox, quickViewDiv);
 
             document.getElementById('restaurantListContainer').append(restaurantCard);
 
