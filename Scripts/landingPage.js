@@ -197,3 +197,17 @@ document.querySelector('#logoutBtn').addEventListener('click', () => {
     localStorage.setItem('userProfile',JSON.stringify([false, -1]));
     showProfileSection();
 })
+
+
+
+//////////////////////////////////
+
+document.getElementById('goToLoginBox').addEventListener('click', () => {
+    // initialPosition();
+    showLoginBox();
+})
+// document.getElementById('goToSignupBox').addEventListener('click', () => {
+//     // initialPosition();
+//     console.log('hii');
+//     showSignupBox();
+// })

@@ -436,12 +436,27 @@ cardForm.addEventListener('submit',() => {
         },2000);
         setTimeout(()=>{
             document.getElementById('thanksPopup').style.display = 'none';
+            doEmptyCart((JSON.parse(localStorage.getItem('userProfile')))[1]);
             document.getElementById('cardDetailsForm').reset();
 
         },4000)
 
     }
 })
+
+async function doEmptyCart(id){
+    try {
+        let result = await fetch(`http://localhost:3000/Users/${id}`,{
+            method : 'PATCH',
+            body : JSON.stringify({
+                userCart : []
+            }),
+            headers : {"Content-Type" : "application/json"}
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 document.getElementById('newAddress').addEventListener('click',()=>{
     // console.log('hello');
@@ -694,3 +709,7 @@ document.getElementById('applyPromoCode').addEventListener('click',()=>{
     }
 })
 
+document.getElementById('goToLoginBox').addEventListener('click', () => {
+    // initialPosition();
+    showLoginBox();
+})

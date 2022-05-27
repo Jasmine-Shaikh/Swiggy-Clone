@@ -5,26 +5,7 @@
       "userEmail": "akashkmt963@gmail.com",
       "userPhoneNumber": "9079938742",
       "userPassword": "AAaa@123",
-      "userCart": [
-        {
-          "name": "Baby Corn Pepper Dry",
-          "price": "239",
-          "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala.",
-          "count": 1
-        },
-        {
-          "name": "Chicken Sholay kebab",
-          "price": "289",
-          "details": "Battered Fried Tender Chicken Sauteed with Fresh Curd with special Spices",
-          "count": 3
-        },
-        {
-          "name": "Mutton Roast",
-          "price": "349",
-          "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala.",
-          "count": 2
-        }
-      ],
+      "userCart": [],
       "userAddresses": [
         {
           "flatNumber": "38",

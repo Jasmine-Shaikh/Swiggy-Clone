@@ -186,3 +186,6 @@ cursor: pointer;
   /* margin-left: -55px; */
   margin-right: 40px;
 }
+#goToLoginBox, #goToSignupBox{
+  cursor: pointer;
+}

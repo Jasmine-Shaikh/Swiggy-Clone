@@ -9,7 +9,7 @@ function signUpHtml(){
     <div>
         <span id="closeBtnForSignup">X</span>
         <div class="signLogHead">Sign up</div>
-        <div class="signLogPara">or <a href="#">login to your account</a></div>
+        <div class="signLogPara">or <a id="goToLoginBox">login to your account</a></div>
         <img class="signLogImg" width="100" height="105" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r">
     </div>
         <form id="userSignupForm">
@@ -43,7 +43,7 @@ function loginHTML(){
     <div>
         <span id="closeBtnForLogin">X</span>
         <div class="signLogHead">Login</div>
-        <div class="signLogPara">or <a href="#">create a new account</a></div>
+        <div class="signLogPara">or <a id="goToSignupBox">create a new account</a></div>
         <img class="signLogImg" width="100" height="105" alt="" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r">
     </div>
     <form id="userLoginForm">
