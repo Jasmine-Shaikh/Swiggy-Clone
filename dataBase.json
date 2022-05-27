@@ -6,6 +6,7 @@
       "userPhoneNumber": "9079938742",
       "userPassword": "AAaa@123",
       "userCart": [],
+      "userAddresses" : [],
       "id": 1
     },
     {
@@ -14,6 +15,7 @@
       "userPhoneNumber": "90799",
       "userPassword": "aaaa",
       "userCart": [],
+      "userAddresses" : [],
       "id": 2
     },
     {
@@ -21,6 +23,7 @@
       "userEmail": "akashkmt93@gmail.com",
       "userPhoneNumber": "1234567890",
       "userPassword": "aaaa",
+      "userAddresses" : [],
       "userCart": [],
       "id": 3
     },
@@ -29,6 +32,7 @@
       "userEmail": "asdga@glkds.v",
       "userPhoneNumber": "1234576679",
       "userPassword": "aaaa",
+      "userAddresses" : [],
       "userCart": [],
       "id": 4
     }
@@ -41,7 +45,7 @@
       "address": "St. Marks Road, Ashok Nagar",
       "ratings": "4.2",
       "approxDeliveryTime": "31 MINS",
-      "approxPrice": "500 FOR TWO",
+      "approxPrice": 500,
       "cuisine": [
         "Andhra",
         "Biryani",
@@ -318,7 +322,7 @@
       "address": "Opposite To West Side, Shivaji Nagar",
       "ratings": "4.2",
       "approxDeliveryTime": "44 MINS",
-      "approxPrice": "350 FOR TWO",
+      "approxPrice": 350,
       "cuisine": [
         "American",
         "Fast Food"

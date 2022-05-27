@@ -45,13 +45,15 @@ userSignupForm.addEventListener('submit', (event) => {
     let userEmail = document.getElementById('userEmail').value;
     let userPassword = document.getElementById('userPassword').value;
     let userCart = [];
+    let userAddresses = [];
 
     let userDetails = {
         userName,
         userEmail,
         userPhoneNumber,
         userPassword,
-        userCart
+        userCart,
+        userAddresses
     }
     // console.log(userDetails);
     checkUserOnServers(userDetails);

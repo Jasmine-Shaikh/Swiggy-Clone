@@ -83,9 +83,11 @@ function initialPosition(){
     document.querySelector('#overlay').style.display = 'none';
     document.querySelector('#loginDiv').style.display = 'none';
     document.querySelector('#signupDiv').style.display = 'none';
+    document.querySelector('#addressDiv').style.display = 'none';
     document.querySelector('body').style.overflow = 'scroll';
     document.querySelector('#userSignupForm').reset();
     document.querySelector('#userLoginForm').reset();
+    document.querySelector('#userAddressForm').reset();
 };
 
 

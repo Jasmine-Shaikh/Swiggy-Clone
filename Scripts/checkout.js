@@ -28,7 +28,8 @@ document.querySelector('#loggedUpperDiv').addEventListener('mouseleave', () => {
 
 document.querySelector('#logoutBtn').addEventListener('click', () => {
     localStorage.setItem('userProfile',JSON.stringify([false, -1]));
-    showProfileSection();
+    // showProfileSection();
+    window.location.reload();
 })
 
 function showProfileSection(){
@@ -62,6 +63,7 @@ import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initial
     document.querySelector('#overlay').addEventListener('click', initialPosition);
     document.querySelector('#closeBtnForSignup').addEventListener('click', initialPosition);
     document.querySelector('#closeBtnForLogin').addEventListener('click', initialPosition);
+    document.querySelector('#closeBtnForAddressDiv').addEventListener('click', initialPosition);
     document.querySelector('#loginBtn').addEventListener('click', showLoginBox);
     document.querySelector('#signupBtn').addEventListener('click', showSignupBox);
     
@@ -81,13 +83,15 @@ import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initial
         let userEmail = document.getElementById('userEmail').value;
         let userPassword = document.getElementById('userPassword').value;
         let userCart = [];
+        let userAddresses = [];
     
         let userDetails = {
             userName,
             userEmail,
             userPhoneNumber,
             userPassword,
-            userCart
+            userCart,
+            userAddresses
         }
         // console.log(userDetails);
         checkUserOnServers(userDetails);
@@ -197,3 +201,235 @@ import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initial
         })
         
     });    
+
+
+document.getElementById('wallet').addEventListener('click',() => {
+var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
+       if(!checkUserDataInLocalStorage[0]){
+           showAlertPopupBody('Please Login')
+       }
+       else{
+        let element = document.getElementById('wallet');
+        element.style.backgroundColor = '#FFFFFF';
+        document.querySelector('#wallet>span').style.fontSize = '17px';
+        document.querySelector('#wallet>span').style.color = '#282c3f';
+        document.getElementById('walletIcon').setAttribute('src','./walletIcon1.png')
+        document.getElementById('walletItemBox').style.display = 'block';
+        document.getElementById('paymentgateway').style.display = 'none';
+ 
+        document.getElementById('card').style.backgroundColor = '#EDF1F7';
+        document.getElementById('banking').style.backgroundColor = '#EDF1F7';
+        document.getElementById('upi').style.backgroundColor = '#EDF1F7';
+ 
+     document.querySelector('#card>span').style.fontSize = '16px';
+     document.querySelector('#banking>span').style.fontSize = '16px';
+     document.querySelector('#upi>span').style.fontSize = '16px';
+ 
+     document.querySelector('#card>span').style.color = '#686b78';
+     document.querySelector('#banking>span').style.color = '#686b78';
+     document.querySelector('#upi>span').style.color = '#686b78';
+     
+     document.getElementById('cardIcon').src = './CardIcon.png';
+     document.getElementById('bankingIcon').src = './netBankingIcon.png';
+     document.getElementById('upiIcon').src = './upiIcon.png';
+ 
+     document.getElementById('bankingItemBox').style.display = 'none';
+     document.getElementById('cardItemBox').style.display = 'none';
+     document.getElementById('upiItemBox').style.display = 'none';
+ 
+     document.getElementById('changingPart').innerText = 'Other banks';
+       }
+    // console.log('hii');
+})
+
+document.getElementById('card').addEventListener('click',() => {
+var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
+    if(!checkUserDataInLocalStorage[0]){
+        showAlertPopupBody('Please Login')
+    }
+    else{
+        let element = document.getElementById('card');
+    document.getElementById('cardDetailsForm').reset();
+    element.style.backgroundColor = '#FFFFFF';
+    document.querySelector('#card>span').style.fontSize = '17px';
+    document.querySelector('#card>span').style.color = '#282c3f';
+    document.getElementById('cardIcon').setAttribute('src','./CardIcon1.png')
+    document.getElementById('cardItemBox').style.display = 'block';
+    document.getElementById('paymentgateway').style.display = 'none';
+
+    document.getElementById('wallet').style.backgroundColor = '#EDF1F7';
+    document.getElementById('banking').style.backgroundColor = '#EDF1F7';
+    document.getElementById('upi').style.backgroundColor = '#EDF1F7';
+
+    document.querySelector('#wallet>span').style.fontSize = '16px';
+    document.querySelector('#banking>span').style.fontSize = '16px';
+    document.querySelector('#upi>span').style.fontSize = '16px';
+
+    document.querySelector('#wallet>span').style.color = '#686b78';
+    document.querySelector('#banking>span').style.color = '#686b78';
+    document.querySelector('#upi>span').style.color = '#686b78';
+
+    document.getElementById('walletIcon').src = './walletIcon.png';
+    document.getElementById('bankingIcon').src = './netBankingIcon.png';
+    document.getElementById('upiIcon').src = './upiIcon.png';
+
+    document.getElementById('walletItemBox').style.display = 'none';
+    document.getElementById('bankingItemBox').style.display = 'none';
+    document.getElementById('upiItemBox').style.display = 'none';
+    document.getElementById('changingPart').innerText = 'Other banks';
+    }
+
+ // console.log('hii');
+})
+
+document.getElementById('banking').addEventListener('click',() => {
+var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
+    if(!checkUserDataInLocalStorage[0]){
+        showAlertPopupBody('Please Login')
+    }
+    else{
+        let element = document.getElementById('banking');
+    element.style.backgroundColor = '#FFFFFF';
+    document.querySelector('#banking>span').style.fontSize = '17px';
+    document.querySelector('#banking>span').style.color = '#282c3f';
+    document.getElementById('bankingIcon').setAttribute('src','./netBankingIcon1.png')
+    document.getElementById('bankingItemBox').style.display = 'block';
+    document.getElementById('paymentgateway').style.display = 'none';
+
+    document.getElementById('wallet').style.backgroundColor = '#EDF1F7';
+    document.getElementById('card').style.backgroundColor = '#EDF1F7';
+    document.getElementById('upi').style.backgroundColor = '#EDF1F7';
+
+    document.querySelector('#wallet>span').style.fontSize = '16px';
+    document.querySelector('#card>span').style.fontSize = '16px';
+    document.querySelector('#upi>span').style.fontSize = '16px';
+
+    document.querySelector('#wallet>span').style.color = '#686b78';
+    document.querySelector('#card>span').style.color = '#686b78';
+    document.querySelector('#upi>span').style.color = '#686b78';
+
+    document.getElementById('cardIcon').src = './CardIcon.png';
+    document.getElementById('upiIcon').src = './upiIcon.png';
+    document.getElementById('walletIcon').src = './walletIcon.png';
+
+    document.getElementById('walletItemBox').style.display = 'none';
+    document.getElementById('cardItemBox').style.display = 'none';
+    document.getElementById('upiItemBox').style.display = 'none';
+    document.getElementById('changingPart').innerText = 'Other banks';
+    }
+
+ // console.log('hii');
+})
+
+document.getElementById('upi').addEventListener('click',() => {
+var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
+    if(!checkUserDataInLocalStorage[0]){
+        showAlertPopupBody('Please Login')
+    }
+    else{
+        let element = document.getElementById('upi');
+    element.style.backgroundColor = '#FFFFFF';
+    document.getElementById('upiDetailsForm').reset();
+    document.querySelector('#upi>span').style.fontSize = '17px';
+    document.querySelector('#upi>span').style.color = '#282c3f';
+    document.getElementById('upiIcon').setAttribute('src','./upiIcon1.png')
+    document.getElementById('upiItemBox').style.display = 'block';
+    document.getElementById('paymentgateway').style.display = 'none';
+
+    document.getElementById('wallet').style.backgroundColor = '#EDF1F7';
+    document.getElementById('card').style.backgroundColor = '#EDF1F7';
+    document.getElementById('banking').style.backgroundColor = '#EDF1F7';
+
+    document.querySelector('#wallet>span').style.fontSize = '16px';
+    document.querySelector('#card>span').style.fontSize = '16px';
+    document.querySelector('#banking>span').style.fontSize = '16px';
+
+    document.querySelector('#wallet>span').style.color = '#686b78';
+    document.querySelector('#card>span').style.color = '#686b78';
+    document.querySelector('#banking>span').style.color = '#686b78';
+
+    document.getElementById('cardIcon').src = './CardIcon.png';
+    document.getElementById('bankingIcon').src = './netBankingIcon.png';
+    document.getElementById('walletIcon').src = './walletIcon.png';
+
+    document.getElementById('walletItemBox').style.display = 'none';
+    document.getElementById('cardItemBox').style.display = 'none';
+    document.getElementById('bankingItemBox').style.display = 'none';
+    document.getElementById('changingPart').innerText = 'Other banks';
+    }
+
+
+ // console.log('hii');
+});
+
+document.querySelector('#bankSelectBar').addEventListener('mouseenter',() => {
+    document.getElementById('downArrowSign').style.color = '#fc8019'
+    document.querySelector('.dropDownBanks').style.display = 'block'
+})
+document.querySelector('.dropDownBanks').addEventListener('mouseleave',() => {
+    document.getElementById('downArrowSign').style.color = ''
+    document.querySelector('.dropDownBanks').style.display = 'none'
+})
+
+let boxes = document.querySelectorAll(".droppDownDivBoxes");
+// console.log(boxes);
+
+boxes.forEach(element => {
+    element.addEventListener('click',(event) => {
+        // console.log(event.target.innerText);
+        document.getElementById('changingPart').innerText = event.target.innerText;
+    document.querySelector('.dropDownBanks').style.display = 'none'
+
+    })
+})
+
+let bankBoxes = document.querySelectorAll('.upperBankInnerBox');
+
+bankBoxes.forEach(element => {
+    // console.log(element)
+    element.addEventListener('click',() => {
+        document.getElementById('hdfc').style.border = '1px solid #e9e9eb';
+        document.getElementById('icici').style.border = '1px solid #e9e9eb';
+        document.getElementById('sbi').style.border = '1px solid #e9e9eb';
+        document.getElementById('axis').style.border = '1px solid #e9e9eb';
+        document.getElementById('kotak').style.border = '1px solid #e9e9eb';
+    element.style.border = '1px solid #60b246'
+
+    })
+})
+
+let cardForm = document.getElementById('cardDetailsForm');
+// console.log(cardForm);
+cardForm.addEventListener('submit',() => {
+    event.preventDefault();
+    let cardNumberSize = document.getElementById('cardNumber').value;
+    let validthrough = document.getElementById('cardValidity').value;
+    let cardcvv = document.getElementById('cardCVV').value;
+
+    // console.log(cardNumberSize.length, validthrough.length, cardcvv.length)
+    
+    if(cardNumberSize.length != 16 || validthrough.length != 4 ||cardcvv.length != 3){
+        // console.log('invalid')
+        showAlertPopupBody('Invalid credentials');
+    }
+    else{
+        showAlertPopupBody('Please Wait...');
+        setTimeout(()=>{
+            document.getElementById('thanksPopup').style.display = 'block';
+        },2000);
+        setTimeout(()=>{
+            document.getElementById('thanksPopup').style.display = 'none';
+            document.getElementById('cardDetailsForm').reset();
+
+        },4000)
+
+    }
+})
+
+document.getElementById('newAddress').addEventListener('click',()=>{
+    // console.log('hello');
+    let overlay = document.querySelector('#overlay');
+    overlay.style.display = 'block';
+    document.getElementById('addressDiv').style.display = 'block';
+    document.querySelector('body').style.overflow = 'hidden';
+})

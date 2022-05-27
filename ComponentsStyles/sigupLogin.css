@@ -80,7 +80,7 @@
     /* form */
     
 
- form {
+    #userSignupForm, #userLoginForm {
    display: flex;
    flex-direction: column;
    gap: 21px;
@@ -171,4 +171,18 @@ cursor: pointer;
     margin-top: 6px;
     color: #686b78;
     /* margin-left: 3px; */
+}
+#make2InputInSingleRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#validCard{
+  width: 170px;
+  /* margin-left: -80px; */
+}
+#cvvCard{
+  width: 105px;
+  /* margin-left: -55px; */
+  margin-right: 40px;
 }
