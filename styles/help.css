@@ -75,22 +75,25 @@
     background-color: white;
     padding: 30px 0px;
     padding-left: 50px;
+    /* border: 2px solid red; */
 }
 #legalHelp{
     padding: 30px 0px;
     padding-left: 50px;
     padding-bottom: 25px;
+    /* border: 2px solid red; */
 }
 #faqshelp{
     padding: 30px 0px;
     padding-left: 50px;
     padding-bottom: 25px;
+    /* border: 2px solid red; */
 }
 
 #rightHelp{
     /* border-right: 2px solid #cecece; */
     width: 77%;
-    height: auto;
+    /* min-height: 100vh; */
 }
 #rightHelp > details{
     padding-top: 35px;
@@ -118,8 +121,8 @@
 }
 #faqsHelpPage{
     /* border-right: 2px solid #cecece; */
-    width: 77%;
-    height: auto;
+    width: 75%;
+    /* min-height: 100vh; */
     display: none;
 }
 #faqsHelpPage > details{
