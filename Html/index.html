@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order online from India's best delivery service</title>
+    <link rel="stylesheet" href="/Styles/index.css">
+</head>
+
+<body>
+    <div id="entirePage">
+        <header>
+            <div id="headerContainer">
+                <div id="headerContentContainer">
+                    <a href="./homepage.html" id="logo"><img src="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg" alt="swiggylogo"></a>
+
+                    <div id="currentLocation">Bangalore, Karnataka, India</div>
+
+                    <ul id="headerContainerRight">
+                        <li id="search">
+                            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/2048px-Search_Icon.svg.png">Search</a>
+                        </li>
+                        <li id="offer">
+                            <a href=""><img src="https://static.thenounproject.com/png/971055-200.png" alt=""> Offers<pre><sup>New</sup></pre></a>
+                        </li>
+                        <li id="help">
+                            <a href=""><img src="https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536847_960_720.png" alt=""> Help</a>
+                        </li>
+                        <li id="signIn">
+                            <a href=""><img src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png" alt=""> Sign In</a>
+                        </li>
+                        <li id="cart"><a href=""><span id="noOfCartItems"></span> Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="mainBody">
+            <div id="mainContent">
+                <div id="recommendationPosters">
+                    <div class="slider">
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ygzzqf9ehrgilzdrlvva" alt=""></div>
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t" alt=""></div>
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lzkjv3sxwwjkzg0vxpvt" alt=""></div>
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/lanisbkyuyltvwegnrgd" alt=""></div>
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/nhubtkw7dukg3ukcmpam" alt=""></div>
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v" alt=""></div>
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/omhjfsrgi5fjkg81ivhj" alt=""></div>
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/ifi2lbzxeu1hvsqrsip3" alt=""></div>
+                    </div>
+                </div>
+                <div id="availableRestaurantInfo">
+                    <div id="availableRestaurantInfoContainer">
+                        <div id="headingAndFilters">
+                            <div id="noOfRestaurants"></div>
+                            <div id="sortingAndFilters">
+                                <button id="relevance">Relevance</button>
+                                <button id="deliveryTimeSort">Delivery Time</button>
+                                <button id="ratingsSort">Ratings</button>
+                                <button id="lowToHigh">Cost:Low To High</button>
+                                <button id="highToLow">Cost: High To Low</button>
+                                <button id="filters">Filters <img id="iconFilter" src="https://cdn.shopify.com/s/files/1/0478/1608/1558/t/23/assets/filter-icon.svg?v=3292009518265845193" alt=""></button>
+                            </div>
+                        </div>
+                        <div id="restaurantList">
+                            <div id="restaurantListContainer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="filterModal">
+            <form id="filterModalContent">
+                <div id="filterModalHead"><span class="close">&times;</span>
+                    <h2>Filters</h2>
+                </div>
+                <div id="filterOption">
+                    <input type="checkbox" id="Chinese" name="Chinese" value="Chinese" class="filterDish">
+                    <label for="Chinese">Chinese</label><br>
+                    <input type="checkbox" id="Andhra" name="Andhra" value="Andhra" class="filterDish">
+                    <label for="Andhra">Andhra</label><br>
+                    <input type="checkbox" id="Fast food" name="Fast food" value="Fast food" class="filterDish">
+                    <label for="Fast food">Fast food</label><br>
+                    <input type="checkbox" id="Salad" name="Salad" value="Salad" class="filterDish">
+                    <label for="Salad">Salad</label><br>
+                    <input type="checkbox" id="Snacks" name="Snacks" value="Snacks" class="filterDish">
+                    <label for="Snacks">Snacks</label><br>
+                    <input type="checkbox" id="Beverages" name="Beverages" value="Beverages" class="filterDish">
+                    <label for="Beverages">Beverages</label><br>
+                    <input type="checkbox" id="Desserts" name="Desserts" value="Desserts" class="filterDish">
+                    <label for="Desserts">Desserts</label><br>
+                    <input type="checkbox" id="Sweets" name="Sweets" value="Sweets" class="filterDish">
+                    <label for="Sweets">Sweets</label><br>
+                    <input type="checkbox" id="South Indian" name="South Indian" value="South Indian" class="filterDish">
+                    <label for="South Indian">South Indian</label><br>
+                    <input type="checkbox" id="Chaat" name="Chaat" value="Chaat" class="filterDish">
+                    <label for="Chaat">Chaat</label><br>
+                    <!-- <input type="checkbox" id="Fast food" name="Fast food" value="Fast food">
+                    <label for="Fast food">Fast food</label><br>
+                    <input type="checkbox" id="Salad" name="Salad" value="Salad">
+                    <label for="Salad">Salad</label><br> <input type="checkbox" id="Chinese" name="Chinese" value="Chinese">
+                    <label for="Chinese">Chinese</label><br> -->
+                    <div id="filterSubmitBox"><button id="filterSubmit" type="submit">Show Results</button></div>
+
+                </div>
+            </form>
+
+        </div>
+        <footer id="footerPart"></footer>
+    </div>
+
+</body>
+
+</html>
+
+
+
+<script src="./Scripts/landingPage.js" type="module"></script>
+
+<script src="/Scripts/index.js"></script>
