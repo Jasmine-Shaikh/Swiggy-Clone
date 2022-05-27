@@ -8,6 +8,7 @@
 #searchPageContainer{
     margin-top: 130px;
     margin-bottom: 20px;
+    /* border: 2px solid red; */
 }
 #searchContainer{
     /* border: 2px solid red; */
@@ -67,11 +68,13 @@
 
 
 #RestaurantsContainer{
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
-    width: 58%;
+    width: 57%;
     margin: 50px;
     margin-left: 320px;
+    /* border: 2px solid red; */
     border-bottom: 1px solid #cecece;
 }
 #filterRestaurant{
@@ -91,7 +94,7 @@
     border: none;
     /* outline: none; */
     color: black;
-    border-bottom: 3px solid #fc8019;
+    /* border-bottom: 3px solid #fc8019; */
     font-size: 20px;
     
 }
@@ -106,6 +109,16 @@
 #filtertypeselector{
     display: flex;
     justify-content: space-between;
+    /* position: fixed; */
+    margin-right: 500px;
+    /* border: 2px solid red; */
+}
+/* #filterContainer{
+    display: flex;
+    flex-direction: column;
+} */
+#filterContainer{
+    width: 14%;
 }
 #filterContainer >div{
     display: flex;
@@ -119,9 +132,15 @@
 }
 #filterlist{
     width: 15%;
-    margin-left: 1015px;
-    display: none;
+    
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
 }
+
+
 #filterlist ul li{
     list-style: none;
     padding: 10px;
@@ -135,7 +154,7 @@
     background: #fff;
     box-shadow: 0 2px 20px 0 rgb(40 44 63 / 50%);
     min-width: 170px;
-    /* display: none; */
+    display: none;
     z-index: 1;
     margin: 0;
     margin-right: 35px;
@@ -198,4 +217,42 @@
     border: none;
     color: black;
     font-size: 20px;
+}
+
+/* deshes css part */
+
+#dishesMainContainer{
+    display: none;
+    
+    width: 58%;
+    gap: 40px;
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 3px;
+    border: 1px solid #cecece;
+}
+#cardcontainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* border: 2px solid red; */
+    width: 92%;
+    margin: auto;
+    border-bottom: 1px solid #cecece;
+}
+#imgBoxContainer > img{
+    display: block;
+    width: 120px;
+    /* margin: auto; */
+    padding: 20px 0px;
+    height: 120px;
+}
+#paraBoxContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* width: 80%; */
+}
+.lastPara{
+    color: gray;
 }

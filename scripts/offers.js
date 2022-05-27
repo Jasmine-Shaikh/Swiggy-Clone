@@ -36,14 +36,29 @@ dishesButton.addEventListener("click", function(){
   alltpyesOfRestaurentOffers.style.display = "none";
   couponsContainer.style.display = "block"
 })
+console.log(alltpyesOfRestaurentOffers);
+console.log(couponsContainer)
 
-// let couponCode = document.getElementById("couponCode");
-// let textCopyBotton = document.getElementById("textCopyBotto");
+// let couponCode = document.getElementById("couponCode").innerText;
+// console.log(couponCode);
+
+
+// couponCode.addEventListener
+// document.getElementById("textCopyBotton").addEventListener("click",function(){
+//    couponCode.ariaSelected();
+//    document.execCommand("copy");
+// })
 
 // textCopyBotton.onclick = function(){
 //   couponCode.ariaSelected();
 //   document.execCommand("copy");
-// }
+// } 
+
+// couponCode.addEventListener("click", ()=>{
+//   textCopyBotton.classList.add("avtive");
+//   copyToClipboard();
+// })
+
 
 
 let mainContainer = document.getElementById("restaurantOffers");

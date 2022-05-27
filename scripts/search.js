@@ -14,6 +14,99 @@ document.getElementById("navbarContainer").innerHTML = navbarHTML();
 //     displayData(data);
    
 // }
+async function dishesList() {
+  try {
+    let result = await fetch(`http://localhost:3000/Restaurents`);
+    console.log(result);
+    let data = await result.json();
+    console.log(data);
+    // console.log(data.categories);
+    data.forEach(element => {
+      console.log(element)
+      func(element , data);
+    });
+    // displayDishesData(data.categories)
+  } catch (error) {
+    console.log(error);
+  }
+}
+function func(data , rdata){
+  console.log(data.ratings)
+  data.categories.forEach(element => {
+    console.log(element)
+    displayDishesData(element, rdata)
+
+  });
+}
+let retaurentDishesContainer = document.getElementById("retaurentDishesContainer");
+function displayDishesData(data, rdata){
+//  let cards = document.createElement("div");
+
+//  let rnameElement = document.createElement("h3");
+//   rnameElement.textContent = rdata.name;
+
+//   let cuisinesElement = document.createElement("p");
+//   cuisinesElement.textContent = rdata.cuisine;
+
+//   let paraContainer = document.createElement("div");
+//   paraContainer.setAttribute("id", "parasCont");
+
+//   let ratingsElement =document.createElement("p");
+//   ratingsElement.textContent = rdata.ratings;
+
+//   let timeElement = document.createElement("p");
+//   timeElement.textContent= rdata.approxDeliveryTime;
+
+//   let priceElement = document.createElement("p");
+//   priceElement.textContent = rdata.approxPrice;
+
+  //  paraContainer.append(ratingsElement, timeElement, priceElement);
+  //  cards.append(rnameElement, cuisinesElement, paraContainer);
+  //  retaurentDishesContainer.append(cards);
+
+  data.categoryItems.forEach(data => {
+     let card = document.createElement("div");
+     card.setAttribute("id","cardcontainer")
+     let paraBox = document.createElement("div");
+     paraBox.setAttribute("id", "paraBoxContainer");
+     let imgBox = document.createElement("div");
+     imgBox.setAttribute("id", "imgBoxContainer")
+
+     let imageElement = document.createElement("img");
+     imageElement.src = data.subimage;
+    //  console.log(imageElement);
+
+     let nameElenemt = document.createElement("h3");
+     nameElenemt.textContent = data.name;
+    //  console.log(name)
+
+     let priceElement = document.createElement("p");
+     priceElement.textContent = data.price;
+
+     let detaileElement = document.createElement("p");
+     detaileElement.textContent = data.details;
+     detaileElement.setAttribute("class", "lastPara")
+
+     imgBox.append(imageElement);
+     paraBox.append(nameElenemt, priceElement, detaileElement);
+
+     card.append(paraBox, imgBox);
+     dishesMainContainer.append(card)
+  });
+
+}
+
+
+
+
+let mainContainer = document.getElementById("mainContainer");
+let dishesMainContainer = document.getElementById("dishesMainContainer");
+
+
+let crossButtonInSearchPage = document.getElementById("crossButtonInSearchPage");
+crossButtonInSearchPage.addEventListener("click", function(){
+  window.location.href = "./help.html";
+})
 
 let restaurantButton = document.getElementById("restaurantButton");
 restaurantButton.addEventListener("click",function(){
@@ -23,6 +116,9 @@ restaurantButton.addEventListener("click",function(){
   restaurantButton.style = "black"
   restaurantButton.style.borderBottom = "3px solid #fc8019"
 
+  dishesMainContainer.style.display = "none";
+  mainContainer.style.display = "block";
+
 })
 
 let dishesButton = document.getElementById("dishesButton");
@@ -31,6 +127,9 @@ dishesButton.addEventListener("click", function(){
   dishesButton.style.borderBottom = "3px solid #fc8019"
   restaurantButton.style.color = "grey"
   restaurantButton.style.borderBottom = "1px solid white"
+
+  mainContainer.style.display = "none";
+  dishesMainContainer.style.display = "block";
 })
 
 
@@ -68,23 +167,10 @@ document.getElementById("searchInput").addEventListener("input", () => {
   }
 
 
-  // async function dishesList() {
-  //   try {
-  //     let result = await fetch(`http://localhost:3000/Restaurents`);
-  //     console.log("res" + result);
-  //     let data = await result.json();
-  //     console.log("data" + data);
-  //     console.log("category" + data.categories);
-  //     displayDishesData(data.categories)
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
 
 
-
-let mainContainer = document.getElementById("mainContainer");
 function displayData(datas){
+
   datas.forEach(data => {
       let card = document.createElement("div");
 
@@ -128,32 +214,12 @@ function displayData(datas){
 // displayData(restaurantsAvailable);
 
 // let dishesMainContainer = document.getElementById("dishesMainContainer");
-// function displayDishesData(data){
-//    data.forEach(data => {
-//       let card = document.createElement("div");
-//       let paraBox = document.createElement("div");
-//       let imgBox = document.createElement("div");
 
-//       let imageElement = document.createElement("img");
-//       imageElement.src = data.subimage;
-//       console.log(imageElement);
 
-//       let nameElenemt = document.createElement("h3");
-//       nameElenemt.textContent = data.categoryItems.name;
-//       console.log(name)
 
-//       let priceElement = document.createElement("p");
-//       priceElement.textContent = data.categoryItems.price;
+dishesList();
 
-//       let detaileElement = document.createElement("p");
-//       detaileElement.textContent = data.categoryItems.details;
 
-//       imgBox.append(imageElement);
-//       paraBox.append(nameElenemt, priceElement, detaileElement);
 
-//       card.append(paraBox, imgBox);
-//       dishesMainContainer(card)
-//    });
 
-// }
-// dishesList();
+

@@ -38,7 +38,7 @@
 }
 .leftHelp{
     /* border: 2px solid black; */
-    width: 23%;
+    width: 22%;
     height: auto;
     color: black;
     background-color: #edf1f7;
@@ -52,7 +52,13 @@
     justify-content: end;
     width: 20%;
 }
-.rightHelp > details > summary:hover{
+#rightHelp > details > summary:hover{
+    color: #fc8019;
+}
+#legalHelppage > details > summary:hover{
+    color: #fc8019;
+}
+#faqsHelpPage> details > summary:hover{
     color: #fc8019;
 }
 .leftHelp > div>div{
@@ -81,18 +87,48 @@
     padding-bottom: 25px;
 }
 
-.rightHelp{
-    border-right: 2px solid #cecece;
+#rightHelp{
+    /* border-right: 2px solid #cecece; */
     width: 77%;
     height: auto;
 }
-.rightHelp > details{
+#rightHelp > details{
     padding-top: 35px;
     font-size: 13px;
 }
-.rightHelp > details > summary{
+#rightHelp > details > summary{
     padding-bottom: 35px;
-    border-bottom: 2px solid #cecece;
+    /* border-bottom: 2px solid #cecece; */
+    font-size: 17px;
+}
+#legalHelppage{
+    /* border-right: 2px solid #cecece; */
+    width: 77%;
+    height: auto;
+    display: none;
+}
+#legalHelppage > details{
+    padding-top: 35px;
+    font-size: 13px;
+}
+#legalHelppage > details > summary{
+    padding-bottom: 35px;
+    /* border-bottom: 2px solid #cecece; */
+    font-size: 17px;
+}
+#faqsHelpPage{
+    /* border-right: 2px solid #cecece; */
+    width: 77%;
+    height: auto;
+    display: none;
+}
+#faqsHelpPage > details{
+    padding-top: 35px;
+    font-size: 13px;
+}
+#faqsHelpPage > details > summary{
+    padding-bottom: 35px;
+    /* border-bottom: 2px solid #cecece; */
     font-size: 17px;
 }
 /* details > summary {
