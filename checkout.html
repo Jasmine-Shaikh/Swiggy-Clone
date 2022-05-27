@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./Styles/checkout.css">
+    <link rel="stylesheet" href="./ComponentsStyles/sigupLogin.css">
+    <link rel="stylesheet" href="./ComponentsStyles/footer.css">
+    <!-- <link rel="stylesheet" href="./ComponentsStyles/popup.css"> -->
+</head>
+<body>
+    <div id="root" style="height: 100%;">
+        <div id="fullContainer">
+            <header id="header">
+                <div id="global-nav">
+                    <div id="navBar">
+                        <a href="#"><img id="slogo" src="./sLogo.png" alt=""></a>
+                        <div id="secureCheckoutDiv">
+                            <span>SECURE CHECKOUT</span>
+                        </div>
+                        <div id="extraPart">
+                            <div class="extraPartInnerDiv">
+                                <div class="navBox">
+                                    <img id="helpImg" class="navBoxImg" src="https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536847_960_720.png" alt="">
+                                    <span>Help</span>
+                                </div>
+                            </div>
+                            <!-- <div id="profileBox" class="extraPartInnerDiv">
+                                <div class="navBox">
+                                    <img class="navBoxImg" src="./profile.png" alt="">
+                                    <span id="loggedUserName"></span>
+                                </div>
+                                <div id="logoutDiv">
+                                    <button id="logoutBtn">Logout</button>
+                                </div>
+                            </div> -->
+                            <div id="navButtonUpperDiv">
+                                <div id="navButtonDiv">
+                                    <button id="loginBtn" class="navBtn">Login</button>
+                                    <button id="signupBtn" class="navBtn">Sign up</button>
+                                </div>
+                            </div>
+                            <div id="loggedUpperDiv">
+                                <div id="loggedUser">
+                                    <div><img id="profileIcon" src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png" alt=""></div>
+                                    <div><button id="colorChange"></button></div>
+                                </div>
+                                <div id="logoutDropDown">
+                                    <button id="logoutBtn">Logout</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+    
+    <div id="alertBoxUpperDiv2" class="alertBoxUpperDiv"></div>
+    <div id="thanksPopup">
+        <img src="./orderDoneImg.jpg" alt="">
+        <h3>THANK YOU</h3>
+        <p>Your order placed successfully</p>
+        <p>Enjoy your meal and have fun</p>
+    </div>
+            </header>
+        </div>
+        <div id="middlePart">
+            <div id="middlePartInnerDiv">
+                <div id="middlePartInnerLeftPart">
+                    <div id="addressUpperDiv">
+                        <div id="addressBox">
+                            <div id="heading">Select delivery address</div>
+                            <div id="addresses">
+                                <div id="newAddress">
+                                    <div><img id="locationIcon" src="https://www.freeiconspng.com/thumbs/location-icon-png/location-icon-png-0.png" alt=""></div>
+                                    <div>
+                                        <h2 id="headingH2">Add New Address</h2>
+                                        <p id="h2BelowPara">Bengaluru, Karnataka, India</p>
+                                        <div id="addNewBtn">ADD NEW</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="paymentUpperBox">
+                        <div id="paymentBox">
+                            <div id="paymentHeading">Choose payment method</div>
+                            <div id="innerPartPayment">
+                                <div id="selectMethod">
+                                    <div>
+                                        <div id="wallet" class="paymentOptionsDivs">
+                                            <img class="paymentIcons" id="walletIcon" src="./walletIcon.png" alt="">
+                                            <span>Wallets</span>
+                                        </div>
+                                        <div id="card" class="paymentOptionsDivs">
+                                            <img class="paymentIcons" id="cardIcon" src="./CardIcon.png" alt="">
+                                            <span>Credit & Debit cards</span>
+                                        </div>
+                                        <div id="banking" class="paymentOptionsDivs">
+                                            <img class="paymentIcons" id="bankingIcon" src="./netBankingIcon.png" alt="">
+                                            <span>Net Banking</span>
+                                        </div>
+                                        <div id="upi" class="paymentOptionsDivs">
+                                            <img class="paymentIcons" id="upiIcon" src="./upiIcon.png" alt="">
+                                            <span>UPI</span> <!--<span>NEW</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="paymentOptions">
+                                    <div id="paymentgateway">
+                                        <img src="./payment-gateway.png" alt="">
+                                    </div>
+                                    <div id="walletItemBox">
+                                        <div class="itemBoxInnerDivs">
+                                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/Amazon_Pay_Logos/Pay/logo_pay-primary-fullcolor-positive" alt="">
+                                            <h3>Amazon Pay</h3>
+                                            <h3>LINK ACCOUNT</h3>
+                                        </div>
+                                        <div class="itemBoxInnerDivs">
+                                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/paytm_wcxbwf" alt="">
+                                            <h3>Paytm (Wallet + Postpaid)</h3>
+                                            <h3>LINK ACCOUNT</h3>
+                                        </div>
+                                        <div class="itemBoxInnerDivs">
+                                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/phonepe_icon_aca9jf" alt="">
+                                            <h3>Phone Pe (Wallet/UPI/Cards)</h3>
+                                            <h3>LINK ACCOUNT</h3>
+                                        </div>
+                                        <div class="itemBoxInnerDivs">
+                                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/v1612413183/PaymentLogos/Mobikwik" alt="">
+                                            <h3>MobiKwik</h3>
+                                            <h3>LINK ACCOUNT</h3>
+                                        </div>
+                                        <div class="itemBoxInnerDivs">
+                                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/freecharge_ya2xfq" alt="">
+                                            <h3>Freecharge</h3>
+                                            <h3>LINK ACCOUNT</h3>
+                                        </div>
+                                    </div>
+                                    <div id="cardItemBox">
+                                        <!-- <h2>Add new card</h2> -->
+                                        <div id="upperImagesLine">
+                                            <div>WE ACCEPT</div>
+                                            <div>
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Visa_lztyeu" alt="">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Mastercard_wqoea2" alt="">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Amex_ozga1w" alt="">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/Zeta_zybqrc" alt="">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,e_trim/RuPayColoured_oyd73s_soebkd" alt="">
+                                            </div>
+                                        </div>
+                                        <form id="cardDetailsForm">
+                                            <div class="cardform">
+                                                <input type="tel" required id="cardNumber" class="cardform__input" autocomplete="off" placeholder=" ">
+                                                <label for="cardNumber" class="cardform__label">Card number</label>
+                                              </div>
+                                              <div id="make2InputInSingleRow">
+                                                <div id="validCard" class="cardform">
+                                                    <input type="tel" required id="cardValidity" class="cardform__input" autocomplete="off" placeholder=" ">
+                                                    <label for="cardValidity" class="cardform__label">Valid through(MM/YY)</label>
+                                                  </div>
+                                                  <div id="cvvCard" class="cardform">
+                                                    <input type="password" type="number" required id="cardCVV" class="cardform__input" autocomplete="off" placeholder=" ">
+                                                    <label for="cardCVV" class="cardform__label">CVV</label>
+                                                  </div>
+                                              </div>
+                                            <div class="cardform">
+                                                <input type="text" required id="cardnameOnCard" class="cardform__input" autocomplete="off" placeholder=" ">
+                                                <label for="nameOnCard" class="cardform__label">Name on card</label>
+                                              </div>
+                                            <div>
+                                                <input class="paymentBtn" type="submit" value="PAY">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="bankingItemBox">
+                                        <div id="upperBanks">
+                                            <div id="hdfc" class="upperBankInnerBox">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/PaymentLogos/paymentIcons/netbanking/hdfc" alt="">
+                                                <h3>HDFC</h3>
+                                            </div>
+                                            <div id="icici" class="upperBankInnerBox">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/PaymentLogos/paymentIcons/netbanking/icici" alt="">
+                                                <h3>ICICI</h3>
+                                            </div>
+                                            <div id="sbi" class="upperBankInnerBox">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/PaymentLogos/paymentIcons/netbanking/sbi" alt="">
+                                                <h3>SBI</h3>
+                                            </div>
+                                            <div id="axis" class="upperBankInnerBox">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/PaymentLogos/paymentIcons/netbanking/axis" alt="">
+                                                <h3>AXIS</h3>
+                                            </div>
+                                            <div id="kotak" class="upperBankInnerBox">
+                                                <img id="kotakimg" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_80/kotak_gjlw24" alt="">
+                                                <h3>KOTAK</h3>
+                                            </div>
+                                        </div>
+                                        <hr style="border: .1px solid #686b78; background-color: #686b78;">
+                                        <div id="mainBoxOfBanks">
+                                            <div id="bankSelectBar">
+                                                <div id="changingPart">Other banks</div>
+                                                <div id="downArrowSign" style="font-weight: 600;">˅</div>
+                                            </div>
+                                            <div class="dropDownBanks">
+                                                <div class="droppDownDivBoxes" >Bank of India</div>
+                                                <div class="droppDownDivBoxes" >Bank of Maharashtra</div>
+                                                <div class="droppDownDivBoxes" >Canara Bank</div>
+                                                <div class="droppDownDivBoxes" >Central Bank Of India</div>
+                                                <div class="droppDownDivBoxes" >City Union Bank</div>
+                                                <div class="droppDownDivBoxes" >Corporation Bank</div>
+                                                <div class="droppDownDivBoxes">Development Credit Bank</div>
+                                                <div class="droppDownDivBoxes">Deutsche Bank</div>
+                                                <div class="droppDownDivBoxes">Dhanalaxmi Bank</div>
+                                                <div class="droppDownDivBoxes">Federal Bank</div>
+                                                <div class="droppDownDivBoxes">Industrial Development Bank of India</div>
+                                                <div class="droppDownDivBoxes">Indian Bank</div>
+                                                <div class="droppDownDivBoxes">IndusInd Bank</div>
+                                                <div class="droppDownDivBoxes">Indian Overseas Bank</div>
+                                                <div class="droppDownDivBoxes">ING Vysya Bank</div>
+                                                <div class="droppDownDivBoxes">Jammu and Kashmir Bank</div>
+                                                <div class="droppDownDivBoxes">Karnataka Bank</div>
+                                                <div class="droppDownDivBoxes">Karur Vysya Bank</div>
+                                                <div class="droppDownDivBoxes">State Bank of Bikaner and Jaipur</div>
+                                                <div class="droppDownDivBoxes">State Bank of Hyderabad</div>
+                                                <div class="droppDownDivBoxes">State Bank of Mysore</div>
+                                                <div class="droppDownDivBoxes">State Bank of Patiala</div>
+                                                <div class="droppDownDivBoxes">State Bank of Travancore</div>
+                                                <div class="droppDownDivBoxes">South Indian Bank</div>
+                                                <div class="droppDownDivBoxes">Union Bank of India</div>
+                                                <div class="droppDownDivBoxes">United Bank Of India</div>
+                                                <div class="droppDownDivBoxes">Vijaya Bank</div>
+                                                <div class="droppDownDivBoxes">Yes Bank</div></div>
+                                        </div>
+                                        <div>
+                                            <!-- <input class="paymentBtn" type="submit" value="PAY"> -->
+                                            <button id="bankingPayBtn">PAY</button>
+                                        </div>
+                                    </div>
+                                    <div id="upiItemBox">
+                                        <div id="upiItemBoxFirstInnerDiv">
+                                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_309,h_84,e_trim/UPI-logo_fjr18d" alt="">
+                                            <p>Transfer money from your bank account using UPI with your registered VPA</p>
+                                            <span>HOW IT WORKS</span>
+                                        </div>
+                                        <div id="imagesLine">
+                                            <div id="weaccept">WE ACCEPT</div>
+                                            <div id="imagesLineImageDiv">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/GooglePay_lh8a267" alt="">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PhonePe_x1g54c7" alt="">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/BHIM_lkkvup7" alt="">
+                                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Pockets_vxwejm7" alt="">
+                                            </div>
+                                            <div>& more</div>
+                                        </div>
+                                        <hr id="imageLineBlowhr">
+                                        <h3 id="payLine">Pay via New VPA</h3>
+                                        <p id="payPara">You must have a Virtual Payment Address</p>
+                                        <form id="upiDetailsForm">
+                                            <div class="upiform">
+                                                <input type="text" required id="upiId" class="upiform__input" autocomplete="off" placeholder=" ">
+                                                <label for="upiId" class="upiform__label">Enter VPA</label>
+                                            </div>
+                                            <div>
+                                                <input class="upipaymentBtn" type="submit" value="VERIFY AND PAY">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="middlePartInnerRightPart">
+                    <div id="rightSideUpperBoxForCart">
+                        <div id="rightSideUpperBoxForCartDiv1">
+                            Cart Details
+                        </div>
+                        <div id="rightSideUpperBoxForCartDiv2">
+                            <div id="emptyCart">
+                                <img src="./cart_empty.png" alt="">
+                                <span>CART IS EMPTY</span>
+                                <br></br>
+                                <span>GRAB YOUR MEAL NOW</span>
+                            </div>
+                            <div id="divForCartDataUpperDiv">
+                               <div id="divForCartData"></div>
+                               <div id="couponDiv">
+                                <input id="promoCodeValue" type="text" placeholder="Enter promo code">
+                                <button id="applyPromoCode">Apply</button>
+                            </div>
+                            <hr style="border: .1px solid rgb(210, 208, 208);">
+                               <div style="padding: 5px;" id="totalBill">
+                                   <div id="totalBillDiv1">Bill Details</div>
+                                   <div id="totalBillDiv2">
+                                       <div>Item Total</div>
+                                       <div id="ItemTotal"></div>
+                                   </div>
+                                   <div id="totalBillDiv3">
+                                       <div>Delivery Fee</div>
+                                       <div id="deliveryFeeBox"><span id="feeSpan1">₹52</span><span id="feeSpan2">FREE</span></div>
+                                   </div>
+                                   <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+                                   <div id="offerDiv">
+                                    <div id="totalBillOffer">
+                                        <div>Item Discount</div>
+                                        <div id="offByPromo"></div>
+                                     </div>
+                                     <hr id="offerBlowLine">
+                                   </div>
+                                   <div id="totalBillDiv4">
+                                       <div>Taxes and Charges</div>
+                                       <div id="charges"></div>
+                                   </div>
+                                   <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+                               </div>
+                            </div>
+                        </div>
+                        <div id="rightSideUpperBoxForCartDiv3Up">
+                            <div id="rightSideUpperBoxForCartDiv3">
+                                <span>TO PAY</span>
+                                <span id="totalPayableAmount"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="saveMoneyBox">You have saved ₹<span id="savedMoney">52</span> on the bill</div>
+                    <div id="cancellitionPolicyBox">
+                        <div id="cancelInnerBox">
+                            <h3>Review your order and address details to avoid cancellations</h3>
+                            <p><span style="color: red;">Note:</span> If you cancel within 60 seconds of placing your order, a 100% refund will be issued. No refund for cancellations made after 60 seconds.
+                                <br>
+                                <br>
+                                <span style="color: grey;">Avoid cancellation as it leads to food wastage.</span>
+                            </p>
+                            <div>Read cancellation policy</div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="footerPart"></footer>
+        <div id="import1"></div>
+        <div id="import2"></div>
+        <div id="import3"></div>
+        <div id="import4">
+            <div id="addressDiv">
+                <div id="addressDivUpperLine">
+                    <span id="closeBtnForAddressDiv">X</span>
+                    <span id="closeBtnSideLine">Save Delivery Address</span>
+                </div>
+                <div id="mapDiv">
+                    <iframe src="https://maps.google.com/maps?q=Bengaluru,%Karnataka&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"></iframe>
+                </div>
+                <div class="addressform">
+                    <input type="text" disabled id="enteredLocation" value="Bengaluru, Karnataka" class="addressform__input" autocomplete="off" placeholder=" ">
+                    <label for="enteredLocation" class="addressform__label">Address</label>
+                </div>
+                <form id="userAddressForm">
+                    <div class="addressform">
+                        <input type="text" required id="enteredFlatNumber" class="addressform__input" autocomplete="off" placeholder=" ">
+                        <label for="enteredFlatNumber" class="addressform__label">Door / Flat No.</label>
+                      </div>
+                      <div class="addressform">
+                        <input type="text" required id="enteredLandmark" class="addressform__input" autocomplete="off" placeholder=" ">
+                        <label for="enteredLandmark" class="addressform__label">Landmark / Colony</label>
+                    </div>
+                    <div id="typeOfLocation">
+                        <div class="locationType" id="typeHome">HOME</div>
+                        <div class="locationType" id="typeWork">WORK</div>
+                        <div class="locationType" id="typeOthers">OTHERS</div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <input class="addAddressBtn" type="submit" value="SAVE ADDRESS & PROCEED">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="./Scripts/checkout.js" type="module"></script>
