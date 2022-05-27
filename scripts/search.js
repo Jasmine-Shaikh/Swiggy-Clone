@@ -77,7 +77,7 @@ document.getElementById("searchInput").addEventListener("input", () => {
     try {
       let search = document.getElementById("searchInput").value;
       let result = await fetch(
-        `http://localhost:3000/Restaurents/?q=${search}`
+        `http://localhost:3000/Restaurants/?q=${search}`
       );
       // console.log(result);
       let data = await result.json();
@@ -96,7 +96,7 @@ document.getElementById("searchInput").addEventListener("input", () => {
 async function dishesList() {
   let search = document.getElementById("searchInput").value;
   try {
-    let result = await fetch(`http://localhost:3000/Restaurents/?q=${search}`);
+    let result = await fetch(`http://localhost:3000/Restaurants/?q=${search}`);
     // console.log(result);
     let data = await result.json();
     // console.log(data);
@@ -123,30 +123,37 @@ async function dishesList() {
       },wait);
   }
 
+  document.getElementById("relevence").addEventListener("click",function(){
+    filtertypes.innerText = "Relevence";
+    filterlist.style.display = "none";
+    filtertypes.style.marginLeft = "7px"
+  })
 
 function allFilters(data){
   document.getElementById('lowToHigh').addEventListener('click', function() {
-
-    data.sort(function(a, b) { return a.approxPrice - b.approxPrice }
-
-    )
+    data.sort(function(a, b) { return a.approxPrice - b.approxPrice })
     displayData(data);
+    filtertypes.innerText = "ByPrice  ";
+    filterlist.style.display = "none";
+    filtertypes.style.marginLeft = "30px"
 })
 
 
 document.getElementById('ratingsSort').addEventListener('click', function() {
-
-    data.sort(function(a, b) { return b.ratings - a.ratings }
-    )
+    data.sort(function(a, b) { return b.ratings - a.ratings })
     displayData(data);
+    filtertypes.innerText = "Rating   ";
+    filterlist.style.display = "none";
+    filtertypes.style.marginLeft = "35px"
+
 })
 
 document.getElementById('deliveryTimeSort').addEventListener('click', function() {
-
-    data.sort(function(a, b) { return a.approxDeliveryTime - b.approxDeliveryTime }
-
-    )
+    data.sort(function(a, b) { return a.approxDeliveryTime - b.approxDeliveryTime })
     displayData(data);
+    filterlist.style.display = "none";
+    filtertypes.innerText = "Delivery ";
+    filtertypes.style.marginLeft = "31px"
 })
 }
 
@@ -171,10 +178,10 @@ function displayData(datas){
       ratingsElement.textContent = data.ratings;
 
       let approxDeliveryTime = document.createElement("p");
-      approxDeliveryTime.textContent = `${data.approxDeliveryTime}`;
+      approxDeliveryTime.textContent = `${data.approxDeliveryTime} MINS`;
 
       let approxPriceElement = document.createElement("p");
-      approxPriceElement.textContent = `₹${data.approxPrice}`;
+      approxPriceElement.textContent = `₹${data.approxPrice} FOR TWO`;
       
       let hrElement = document.createElement("hr");
 

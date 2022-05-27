@@ -5,7 +5,7 @@ import { navbarHTML } from '../componentsJs/navbar.js';
 document.getElementById("navbarContainer").innerHTML = navbarHTML();
 
 async function fetchAndDisplayData(){
-    let url = "http://localhost:3000/Restaurents";
+    let url = "http://localhost:3000/Restaurants";
     let res = await fetch(url);
     // console.log(res)
     let data = await res.json();
@@ -84,22 +84,20 @@ function displayData(datas,length){
       ratingsElement.textContent = data.ratings;
 
       let deliveryElement = document.createElement("p");
-      deliveryElement.textContent = `${data.approxDeliveryTime}`;
+      deliveryElement.textContent = `${data.approxDeliveryTime} MINS`;
 
       let approxPriceElement = document.createElement("p");
-      approxPriceElement.textContent = `₹${data.approxPrice}`;
+      approxPriceElement.textContent = `₹${data.approxPrice} FOR TWO`;
       
       let hrElement = document.createElement("hr");
 
-
-      // let offerElement = document.createElement("p");
-      // offerElement.setAttribute("class","offerContainer")
-      // offerElement.textContent = `${data.offer}% off | Use WELCOME50 `;
-      // offerElement.style.color = "#8A584B"
+      let offerElement = document.createElement("p");
+      offerElement.setAttribute("class","offerContainer")
+      offerElement.textContent = `40% off | Use WELCOME40 `;
+      offerElement.style.color = "#8A584B"
       ratingDeliveryApproxPrice.append(ratingsElement, deliveryElement, approxPriceElement,)
-      card.append(imageElement, restaurantNameElement, cuisineElement,ratingDeliveryApproxPrice,hrElement);
+      card.append(imageElement, restaurantNameElement, cuisineElement,ratingDeliveryApproxPrice,hrElement, offerElement);
       mainContainer.append(card);
-
   });
 
 

@@ -100,7 +100,7 @@
 }
 #dishesButton{
     /* padding: 10px 20px; */
-     padding-bottom: 10px;
+    padding-bottom: 10px;
     color: grey;
     background-color: white;
     border: none;
@@ -110,7 +110,7 @@
     display: flex;
     justify-content: space-between;
     /* position: fixed; */
-    margin-right: 500px;
+    margin-right: 600px;
     /* border: 2px solid red; */
 }
 /* #filterContainer{
@@ -142,8 +142,6 @@
     margin-inline-end: 0px;
     padding-inline-start: 20px;
 }
-
-
 #filterlist ul li{
     list-style: none;
     padding: 10px;
@@ -179,11 +177,14 @@
 #mainContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 58%;
-    gap: 40px;
+    width: 60%;
+    gap: 30px;
     margin: auto;
     margin-bottom: 100vh;
     margin-top: 3px;
+}
+#mainContainer>div{
+    padding: 15px;
 }
 
 #mainContainer>div:hover{
@@ -191,13 +192,13 @@
 }
 #mainContainer >div>img{
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 #mainContainer >div>h4{
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 #mainContainer >div>p{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 #mainContainer >div>div{
     display: flex;
@@ -216,7 +217,7 @@
     padding-bottom: 10px;
     padding-right: 20px;
     background-color: white;
-    margin-right: 5px;
+    margin-right: 7px;
     border: none;
     color: black;
     font-size: 20px;
