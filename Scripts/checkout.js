@@ -14,6 +14,7 @@
 //     showProfileSection();
 // });
 showProfileSection();
+let printedAddressCount = 0;
 
 document.querySelector('#loggedUpperDiv').addEventListener('mouseenter', () => {
     document.getElementById('logoutDropDown').style.display = 'block';
@@ -40,6 +41,9 @@ function showProfileSection(){
             document.querySelector('#navButtonUpperDiv').style.display = 'none';
             document.querySelector('#loggedUpperDiv').style.display = 'block';
             document.querySelector('#loggedUser>div>button').innerText = response.userName;
+            if(printedAddressCount<=1){
+                showGridDivs(response.userAddresses);
+            }
 
         }).catch((error) => {
             console.log(error);
@@ -63,7 +67,6 @@ import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initial
     document.querySelector('#overlay').addEventListener('click', initialPosition);
     document.querySelector('#closeBtnForSignup').addEventListener('click', initialPosition);
     document.querySelector('#closeBtnForLogin').addEventListener('click', initialPosition);
-    document.querySelector('#closeBtnForAddressDiv').addEventListener('click', initialPosition);
     document.querySelector('#loginBtn').addEventListener('click', showLoginBox);
     document.querySelector('#signupBtn').addEventListener('click', showSignupBox);
     
@@ -191,6 +194,7 @@ import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initial
                 // showProfileSection();
                 setTimeout(showProfileSection,1500)
                 initialPosition();
+                setTimeout(showCartItems,2000)
             }
             else{
                 // alert('Invalid Credentials');
@@ -202,11 +206,15 @@ import {overlayHTML, signUpHtml, loginHTML, showLoginBox, showSignupBox, initial
         
     });    
 
+    let addressedIsSelectedOrNot = false;
 
 document.getElementById('wallet').addEventListener('click',() => {
 var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
        if(!checkUserDataInLocalStorage[0]){
            showAlertPopupBody('Please Login')
+       }
+       else if(!addressedIsSelectedOrNot){
+           showAlertPopupBody('Select delivery address');
        }
        else{
         let element = document.getElementById('wallet');
@@ -246,6 +254,9 @@ document.getElementById('card').addEventListener('click',() => {
 var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
     if(!checkUserDataInLocalStorage[0]){
         showAlertPopupBody('Please Login')
+    }
+    else if(!addressedIsSelectedOrNot){
+        showAlertPopupBody('Select delivery address');
     }
     else{
         let element = document.getElementById('card');
@@ -287,6 +298,9 @@ var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile')
     if(!checkUserDataInLocalStorage[0]){
         showAlertPopupBody('Please Login')
     }
+    else if(!addressedIsSelectedOrNot){
+        showAlertPopupBody('Select delivery address');
+    }
     else{
         let element = document.getElementById('banking');
     element.style.backgroundColor = '#FFFFFF';
@@ -325,6 +339,9 @@ document.getElementById('upi').addEventListener('click',() => {
 var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
     if(!checkUserDataInLocalStorage[0]){
         showAlertPopupBody('Please Login')
+    }
+    else if(!addressedIsSelectedOrNot){
+        showAlertPopupBody('Select delivery address');
     }
     else{
         let element = document.getElementById('upi');
@@ -428,8 +445,252 @@ cardForm.addEventListener('submit',() => {
 
 document.getElementById('newAddress').addEventListener('click',()=>{
     // console.log('hello');
-    let overlay = document.querySelector('#overlay');
+    var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
+    if(!checkUserDataInLocalStorage[0]){
+      showAlertPopupBody('Please Login')
+    }
+    else{
+        let overlay = document.querySelector('#overlay');
     overlay.style.display = 'block';
     document.getElementById('addressDiv').style.display = 'block';
     document.querySelector('body').style.overflow = 'hidden';
+    }
+    
 })
+
+let selectedLocationType = undefined;
+
+document.getElementById('typeHome').addEventListener('click', () => {
+    document.getElementById('typeHome').style.backgroundColor = 'black';
+    document.getElementById('typeHome').style.color = 'white';
+    document.getElementById('typeWork').style.backgroundColor = 'white';
+    document.getElementById('typeOthers').style.backgroundColor = 'white';
+    document.getElementById('typeWork').style.color = 'black';
+    document.getElementById('typeOthers').style.color = 'black';
+    // console.log(event)
+    selectedLocationType = event.target.innerText;
+// console.log(selectedLocationType);
+
+})
+document.getElementById('typeWork').addEventListener('click', () => {
+    document.getElementById('typeWork').style.backgroundColor = 'black';
+    document.getElementById('typeWork').style.color = 'white';
+    document.getElementById('typeHome').style.backgroundColor = 'white';
+    document.getElementById('typeOthers').style.backgroundColor = 'white';
+    document.getElementById('typeHome').style.color = 'black';
+    document.getElementById('typeOthers').style.color = 'black';
+    // console.log(event)
+    selectedLocationType = event.target.innerText;
+// console.log(selectedLocationType);
+    
+})
+document.getElementById('typeOthers').addEventListener('click', () => {
+    document.getElementById('typeOthers').style.backgroundColor = 'black';
+    document.getElementById('typeOthers').style.color = 'white';
+    document.getElementById('typeWork').style.backgroundColor = 'white';
+    document.getElementById('typeHome').style.backgroundColor = 'white';
+    document.getElementById('typeWork').style.color = 'black';
+    document.getElementById('typeHome').style.color = 'black';
+    // console.log(event)
+    selectedLocationType = event.target.innerText;
+// console.log(selectedLocationType);
+    
+})
+
+document.querySelector('#closeBtnForAddressDiv').addEventListener('click', () =>{
+    initialPosition();
+    selectedLocationType = undefined;
+});
+
+document.querySelector('#userAddressForm').addEventListener('submit', ()=>{
+    event.preventDefault();
+    if(selectedLocationType == undefined){
+        showAlertPopupOverlay('Select Location Type');
+    }
+    else{
+        // console.log('hii');
+         let addressDetails = {
+            flatNumber : document.getElementById('enteredFlatNumber').value,
+            landmark : document.getElementById('enteredLandmark').value,
+            location : document.getElementById('enteredLocation').value,
+            locationType : selectedLocationType
+         }
+         var checkUserDataInLocalStorage = JSON.parse(localStorage.getItem('userProfile'));
+        // console.log(flatNumber,landmark,location,locationType);
+        // console.log(addressDetails)
+        getSingleDataFromDataBase(checkUserDataInLocalStorage[1]).then((result)  => {
+            // console.log(result);
+            let allAddresses = result.userAddresses;
+            allAddresses.push(addressDetails);
+            putAddressDataToDataBase(allAddresses,checkUserDataInLocalStorage[1]);
+            initialPosition();
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+})
+
+async function putAddressDataToDataBase(allAddresses,id){
+    try {
+        let result = await fetch(`http://localhost:3000/Users/${id}`,{
+            method : 'PATCH',
+            body : JSON.stringify({
+                userAddresses : allAddresses
+            }),
+            headers : {"Content-Type" : "application/json"}
+        })
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+if((JSON.parse(localStorage.getItem('userProfile')))[0]){
+    getSingleDataFromDataBase((JSON.parse(localStorage.getItem('userProfile')))[1]).then((result)=>{
+        showGridDivs(result.userAddresses);
+    })
+}
+
+
+function showGridDivs(data){
+    printedAddressCount++;
+    
+    if(printedAddressCount<=1){
+        var count = 1;
+        data.forEach(element => {
+            var div = document.createElement('div');
+            div.setAttribute('class','dynamicAddressDiv')
+            div.setAttribute('id',`dynamicDiv${count}`)
+            
+            var innerDiv = document.createElement('div');
+
+            var locationTypeHead = document.createElement('h3');
+            locationTypeHead.innerText = element.locationType;
+            
+            var fullAdd = document.createElement('p');
+            fullAdd.innerText = `${element.flatNumber},${element.landmark},${element.location}`;
+            
+            var btnDiv = document.createElement('button');
+            btnDiv.setAttribute('class','deliverHereBtn')
+            btnDiv.innerText = 'DELIVER HERE'
+            btnDiv.setAttribute('id',count)
+            
+            btnDiv.addEventListener('click',(event)=>{
+                // changeBorder(event.target.id);
+                const id = event.target.id;
+                const length = data.length;
+
+                addressedIsSelectedOrNot = true;
+                // console.log(id,data.length);
+                changeBorder(id,length)
+                // dynamicDivId = count;
+                // console.log(count);
+                // console.log(`dynamicDiv${count}`);
+                
+            })
+            count++;
+            
+            innerDiv.append(locationTypeHead,fullAdd,btnDiv);
+            div.append(innerDiv);
+            document.getElementById('addresses').append(div);
+            
+        })
+        // totalAddressesLength = count;
+    }
+}
+
+// console.log(totalAddressesLength)
+function changeBorder(id,length){
+    for(var i=1;i<=length;i++){
+        if(i==id){
+            document.querySelector(`#dynamicDiv${i}`).style.borderColor = '#60b246';
+        }
+        else{
+            document.querySelector(`#dynamicDiv${i}`).style.borderColor = '#e9e9eb';
+        }
+    }
+    // console.log(id,length)
+}
+if(JSON.parse(localStorage.getItem('userProfile'))[0]){
+    showCartItems();
+}
+
+function showCartItems(){
+    getSingleDataFromDataBase(JSON.parse(localStorage.getItem('userProfile'))[1]).then(result => {
+        // console.log(result.userCart);
+        if(result.userCart.length>0){
+            document.getElementById('emptyCart').style.display = 'none';
+            document.getElementById('divForCartDataUpperDiv').style.display = 'block';
+            document.getElementById('saveMoneyBox').style.display = 'block';
+            document.getElementById('rightSideUpperBoxForCartDiv3Up').style.display = 'block';
+            showCartDataInBox(result.userCart);
+        }
+    })
+}
+
+function showCartDataInBox(cartData){
+    document.getElementById('divForCartData').innerHTML = '';
+    let itemTotal = 0;
+    cartData.forEach(element => {
+        itemTotal+=(element.count*element.price);
+        var div = document.createElement('div');
+        div.setAttribute('class','singleCartItemBox');
+
+        var name = document.createElement('span')
+        name.innerText = element.name;
+        name.setAttribute('class','nameSpan');
+
+        var price = document.createElement('span');
+        price.innerText = `${element.count} * ${element.price} = ₹${element.count*element.price}`
+        price.setAttribute('class','priceSpan');
+
+        div.append(name,price);
+        document.getElementById('divForCartData').append(div)
+    })
+    document.getElementById('ItemTotal').innerText = '₹'+itemTotal;
+    document.getElementById('charges').innerText = '₹'+Math.round(((itemTotal/100)*5));
+    document.getElementById('totalPayableAmount').innerText = '₹'+(itemTotal+Math.round(((itemTotal/100)*5)));
+    // document.getElementById('savedMoney').innerText = 52;
+}
+
+
+// let offerArray = ['masai30','akash25','jasmine100']
+let promoApplyCount = 0;
+document.getElementById('applyPromoCode').addEventListener('click',()=>{
+    let promocode = document.getElementById('promoCodeValue').value;
+    let totalAmount = (document.getElementById('totalPayableAmount').innerText).substring(1);
+
+    if(promoApplyCount>=1){
+        showAlertPopupBody('Already Applied')
+        return;
+    }
+    if(promocode==''){
+        showAlertPopupBody('Invalid Credentials')
+        return;
+    }
+    // console.log(promocode,totalAmount.substring(1));
+    if(promocode == 'masai30'){
+        document.getElementById('promoCodeValue').value ='';
+        promoApplyCount++;
+        let discount = Math.round((totalAmount/100)*30)
+        document.getElementById('offByPromo').innerText = "- ₹"+discount;
+        document.getElementById('savedMoney').innerText = (52+discount);
+        document.getElementById('totalPayableAmount').innerText = '₹'+(totalAmount-discount);
+        document.getElementById('offerDiv').style.display='block';
+        return;
+    }
+    else if(promocode== 'welcome40'){
+        document.getElementById('promoCodeValue').value ='';
+        promoApplyCount++;
+        let discount = Math.round((totalAmount/100)*40);
+        document.getElementById('savedMoney').innerText = (52+discount);
+        document.getElementById('offByPromo').innerText = "- ₹"+discount;
+        document.getElementById('totalPayableAmount').innerText = '₹'+(totalAmount-discount);
+        document.getElementById('offerDiv').style.display='block';
+
+        return;
+    }
+    else{
+        showAlertPopupBody('Invalid Promo Code')
+    }
+})
+

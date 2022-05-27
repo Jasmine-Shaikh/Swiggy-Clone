@@ -88,6 +88,10 @@ function initialPosition(){
     document.querySelector('#userSignupForm').reset();
     document.querySelector('#userLoginForm').reset();
     document.querySelector('#userAddressForm').reset();
+    document.querySelectorAll('.locationType').forEach(element =>{
+        element.style.backgroundColor = 'white';
+        element.style.color = 'black';
+    })
 };
 
 

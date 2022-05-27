@@ -271,8 +271,58 @@
                     </div>
                 </div>
                 <div id="middlePartInnerRightPart">
-                    <div id="rightSideUpperBoxForCart"></div>
-                    <div id="saveMoneyBox">You have saved ₹<span id="savedMoney">50</span> on the bill</div>
+                    <div id="rightSideUpperBoxForCart">
+                        <div id="rightSideUpperBoxForCartDiv1">
+                            Cart Details
+                        </div>
+                        <div id="rightSideUpperBoxForCartDiv2">
+                            <div id="emptyCart">
+                                <img src="./cart_empty.png" alt="">
+                                <span>CART IS EMPTY</span>
+                                <br></br>
+                                <span>GRAB YOUR MEAL NOW</span>
+                            </div>
+                            <div id="divForCartDataUpperDiv">
+                               <div id="divForCartData"></div>
+                               <div id="couponDiv">
+                                <input id="promoCodeValue" type="text" placeholder="Enter promo code">
+                                <button id="applyPromoCode">Apply</button>
+                            </div>
+                            <hr style="border: .1px solid rgb(210, 208, 208);">
+                               <div style="padding: 5px;" id="totalBill">
+                                   <div id="totalBillDiv1">Bill Details</div>
+                                   <div id="totalBillDiv2">
+                                       <div>Item Total</div>
+                                       <div id="ItemTotal"></div>
+                                   </div>
+                                   <div id="totalBillDiv3">
+                                       <div>Delivery Fee</div>
+                                       <div id="deliveryFeeBox"><span id="feeSpan1">₹52</span><span id="feeSpan2">FREE</span></div>
+                                   </div>
+                                   <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+                                   <div id="offerDiv">
+                                    <div id="totalBillOffer">
+                                        <div>Item Discount</div>
+                                        <div id="offByPromo"></div>
+                                     </div>
+                                     <hr id="offerBlowLine">
+                                   </div>
+                                   <div id="totalBillDiv4">
+                                       <div>Taxes and Charges</div>
+                                       <div id="charges"></div>
+                                   </div>
+                                   <hr width="100%" style="border: .1px solid rgb(210, 208, 208);">
+                               </div>
+                            </div>
+                        </div>
+                        <div id="rightSideUpperBoxForCartDiv3Up">
+                            <div id="rightSideUpperBoxForCartDiv3">
+                                <span>TO PAY</span>
+                                <span id="totalPayableAmount"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="saveMoneyBox">You have saved ₹<span id="savedMoney">52</span> on the bill</div>
                     <div id="cancellitionPolicyBox">
                         <div id="cancelInnerBox">
                             <h3>Review your order and address details to avoid cancellations</h3>
@@ -312,8 +362,13 @@
                         <label for="enteredFlatNumber" class="addressform__label">Door / Flat No.</label>
                       </div>
                       <div class="addressform">
-                        <input type="password" required id="enteredLandmark" class="addressform__input" autocomplete="off" placeholder=" ">
-                        <label for="enteredLandmark" class="addressform__label">Landmark</label>
+                        <input type="text" required id="enteredLandmark" class="addressform__input" autocomplete="off" placeholder=" ">
+                        <label for="enteredLandmark" class="addressform__label">Landmark / Colony</label>
+                    </div>
+                    <div id="typeOfLocation">
+                        <div class="locationType" id="typeHome">HOME</div>
+                        <div class="locationType" id="typeWork">WORK</div>
+                        <div class="locationType" id="typeOthers">OTHERS</div>
                     </div>
                     <div style="margin-top: 20px;">
                         <input class="addAddressBtn" type="submit" value="SAVE ADDRESS & PROCEED">

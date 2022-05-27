@@ -389,7 +389,7 @@ body{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    row-gap: 20px;
+    gap: 25px;
 }
 
 
@@ -406,9 +406,161 @@ body{
     /* border: 1px solid blue; */
 }
 #rightSideUpperBoxForCart{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #FFFFFF;
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#rightSideUpperBoxForCartDiv1{
+    height: 40px;
+    /* border: 1px solid blue; */
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0;
+    /* align-items: center; */
+}
+#rightSideUpperBoxForCartDiv2{
+    /* border: 1px solid blue; */
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 300px;
+    overflow-y: scroll;
+}
+#rightSideUpperBoxForCartDiv3{
+    /* border: 1px solid blue; */
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    /* text-align: center; */
+    align-items: center;
+    /* display: none; */
+}
+#rightSideUpperBoxForCartDiv3Up{
+    display: none;
+}
+#totalBillOffer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #60b246;
+}
+#offerDiv{
+    display: none;
+}
+#offerBlowLine{
+    width: 100%;
+    /* height: 0px; */
+    /* background-color: white; */
+    border: .1px solid rgb(210, 208, 208);
+}
+#emptyCart{
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* display: none; */
+    margin: auto;
+    text-align: center;
+}
+#emptyCart>img{
+    /* margin-top: 0px; */
+    width: 100%;
+    /* height: 280px; */
+}
+#emptyCart>span{
+    font-weight: 600;
+    font-size: 15px;
+}
+  /* border: 1px solid red; */
+#totalBill{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#totalBillDiv1{
+    font-size: 15px;
+    font-weight: 500;
+}
+#totalBillDiv2,#totalBillDiv3,#totalBillDiv4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;
+}
+#ItemTotal{
+   color: #686b78;
+}
+#deliveryFeeBox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#feeSpan1{
+    font-size: 13px;
+   color: #7d7d7f8f;
+   text-decoration: line-through;
+}
+#feeSpan2{
+    color: #60b246;
+    font-size: 13px;
+}
+#divForCartDataUpperDiv{
+    display: none;
+}
+.singleCartItemBox{
+    border-bottom: .1px solid #d4d5d9a5;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nameSpan{
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto;
+    margin-left: 0;
+    
+}
+.priceSpan{
+    font-size: 13px;
+    font-weight: 500;
+    margin: auto;
+    margin-right: 0;
+    color: #686b78;
+}
+#couponDiv{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#couponDiv>input{
+    padding: 10px;
+    outline: none;
+    border: .1px solid #d4d5d9a5;
+    font-size: 16px;
+}
+#couponDiv>button{
+    width: 100%;
+    background-color: #FC8019;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
 }
 #saveMoneyBox{
     margin-top: 20px;
@@ -420,6 +572,7 @@ body{
     font-size: 13px;
     font-weight: 600;
     color: #60b246;
+    display: none;
 }
 
 #cancellitionPolicyBox{
@@ -482,6 +635,9 @@ body{
     /* border-style: dashed; */
     padding-left: 20px;
     padding-top: 10px;
+}
+#newAddress:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #locationIcon{
     width: 30px;
@@ -556,6 +712,7 @@ body{
     display: flex;
     height: 70px;
     text-align: left;
+    margin-bottom: 2px;
     font-size: 14px;
     cursor: pointer;
     padding-right: 5px;
@@ -1142,4 +1299,96 @@ z-index: 10001;
 }
 .addAddressBtn:hover{
     cursor: pointer;
+}
+#typeOfLocation{
+    margin-top: 0px;
+    /* height: 50px; */
+    display: grid;
+    width: 383.5px;
+    grid-template-columns: repeat(3,1fr);
+}
+#typeOfLocation>div{
+    font-weight: 300;
+    color: #282c3f;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* margin: auto; */
+    /* border: 1px solid red; */
+    border: 1px solid #d4d5d9;
+    outline: none;
+
+
+}
+#typeHome:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#typeWork:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#typeOthers:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.dynamicAddressDiv{
+    border: 1px solid #e9e9eb;
+    /* border: 1px solid red; */
+    width: 324px;
+    height: 218px;
+    padding-left: 20px;
+    padding-top: 10px;
+    position: relative;
+    /* cursor: pointer; */
+}
+.dynamicAddressDiv:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.deliverHereBtn{
+    text-align: center;
+    border: 1px solid #60b246;
+    background-color: #60b246;
+    color: #FFFFFF;
+    font-weight: 600;
+    width: 150px;
+    /* height: 25px; */
+    padding-top: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    position: absolute;
+    bottom: 30px;
+    /* margin-top: 65px; */
+}
+.deliverHereBtn:hover{
+    cursor: pointer;
+}
+.dynamicAddressDiv>div{
+    margin-left: 40px;
+    padding-right: 30px;
+    /* position: relative; */
+}
+.dynamicAddressDiv>div>h3{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.dynamicAddressDiv>div>p{
+    font-size: 13px;
+    color: #93959f;
+    margin-top: 8px;
+    font-weight: 300;
+}
+.paymentOptionsDivs:hover{
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(149, 157, 165, 0.122) 0px 8px 24px;
+    /* color: black; */
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
