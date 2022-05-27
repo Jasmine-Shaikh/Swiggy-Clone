@@ -37,7 +37,7 @@ restaurantButton.addEventListener("click",function(){
   restaurantButton.style.borderBottom = "3px solid #fc8019"
 
   dishesMainContainer.style.display = "none";
-  mainContainer.style.display = "block";
+  mainContainer.style.display = "grid";
 
 })
 
@@ -69,7 +69,7 @@ filterIcon1.addEventListener("click", function(){
 document.getElementById("searchInput").addEventListener("input", () => {
   //   console.log(inputText);
   debounce (getList(),1000);
-  debounce (dishesList(),1000);
+  debounce (dishesList,1000);
 
   });
 
@@ -79,10 +79,11 @@ document.getElementById("searchInput").addEventListener("input", () => {
       let result = await fetch(
         `http://localhost:3000/Restaurents/?q=${search}`
       );
-      console.log(result);
+      // console.log(result);
       let data = await result.json();
-      console.log(data);
+      // console.log(data);
       displayData(data);
+      allFilters(data);
     } catch (error) {
       console.log(error);
     }
@@ -96,12 +97,12 @@ async function dishesList() {
   let search = document.getElementById("searchInput").value;
   try {
     let result = await fetch(`http://localhost:3000/Restaurents/?q=${search}`);
-    console.log(result);
+    // console.log(result);
     let data = await result.json();
-    console.log(data);
+    // console.log(data);
     // console.log(data.categories);
     data.forEach(element => {
-      console.log(element)
+      // console.log(element)
       func(element , data);
     });
     // displayDishesData(data.categories)
@@ -113,15 +114,42 @@ async function dishesList() {
 
 
   let timerId;
-  function debounce (fn,wait){
+  function debounce (fun,wait){
       if(timerId){
           clearTimeout(timerId);
       }
       timerId = setTimeout(() => {
-          fn();
+          fun();
       },wait);
   }
-  
+
+
+function allFilters(data){
+  document.getElementById('lowToHigh').addEventListener('click', function() {
+
+    data.sort(function(a, b) { return a.approxPrice - b.approxPrice }
+
+    )
+    displayData(data);
+})
+
+
+document.getElementById('ratingsSort').addEventListener('click', function() {
+
+    data.sort(function(a, b) { return b.ratings - a.ratings }
+    )
+    displayData(data);
+})
+
+document.getElementById('deliveryTimeSort').addEventListener('click', function() {
+
+    data.sort(function(a, b) { return a.approxDeliveryTime - b.approxDeliveryTime }
+
+    )
+    displayData(data);
+})
+}
+
   
 function displayData(datas){
      mainContainer.innerHTML = "";
@@ -153,8 +181,8 @@ function displayData(datas){
 
       let offerElement = document.createElement("p");
       offerElement.setAttribute("class","offerContainer")
-      // offerElement.textContent = `${data.offer}% off | Use WELCOME50 `;
-      // offerElement.style.color = "#8A584B"
+      offerElement.textContent = `40% off | Use WELCOME40 `;
+      offerElement.style.color = "#8A584B"
       ratingDeliveryApproxPrice.append(ratingsElement, approxDeliveryTime, approxPriceElement,)
       card.append(imageElement, restaurantNameElement, cuisineElement,ratingDeliveryApproxPrice,hrElement, offerElement);
       mainContainer.append(card);
