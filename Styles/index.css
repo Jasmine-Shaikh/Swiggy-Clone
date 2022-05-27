@@ -276,7 +276,7 @@ sup {
     margin-bottom: 5px;
 }
 
-.restaurantCard>img {
+.restaurantCard>a>img {
     width: 100%;
     height: 160px;
 }

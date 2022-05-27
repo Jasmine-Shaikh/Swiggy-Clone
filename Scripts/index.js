@@ -6,7 +6,6 @@ async function displayRestuarantList() {
     let res = await fetch(`http://localhost:3000/Restaurants`);
     let restaurantList = await res.json();
     let data = JSON.parse(JSON.stringify(restaurantList));
-    console.log(data)
 
     document.getElementById('lowToHigh').addEventListener('click', function() {
 
@@ -40,6 +39,32 @@ async function displayRestuarantList() {
         displayAvailableRestaurants(data)
     })
 
+    let filterSubmit = document.getElementById("filterSubmit");
+
+    filterSubmit.addEventListener("click", (event) => {
+        event.preventDefault();
+        let filterDish = document.querySelectorAll('.filterDish');
+        console.log(filterDish)
+        let filter;
+        filterDish.forEach((e) => {
+            if (e.checked) {
+                filter = e.value;
+            }
+        });
+
+
+        let filteredList = data.filter(function(e) {
+
+
+            return e.cuisine.includes(filter)
+
+        })
+
+        filterModal.style.display = "none";
+        displayAvailableRestaurants(filteredList);
+
+    });
+
     function displayAvailableRestaurants(restaurantList) {
 
         document.querySelector('#restaurantListContainer').innerHTML = "";
@@ -48,8 +73,13 @@ async function displayRestuarantList() {
             let restaurantCard = document.createElement("div");
             restaurantCard.setAttribute('class', 'restaurantCard');
 
+            let restaurantImgAnchor = document.createElement("a");
+            restaurantImgAnchor.href = "#";
+
             let restaurantImg = document.createElement("img");
             restaurantImg.src = restaurant.image;
+
+            restaurantImgAnchor.append(restaurantImg)
 
             let restaurantName = document.createElement('p');
             restaurantName.innerText = restaurant.name;
@@ -86,7 +116,7 @@ async function displayRestuarantList() {
             offerIcon.src = 'https://cdn-icons-png.flaticon.com/512/272/272535.png';
 
             let offerDetails = document.createElement('p');
-            offerDetails.innerText = "40% off  | Use TRYNEW";
+            offerDetails.innerText = "40% off  | Use WELCOME40";
             offerDetails.setAttribute('class', 'offerDetails')
 
             let quickViewDiv = document.createElement('div');
@@ -132,7 +162,6 @@ async function displayRestuarantList() {
                 }
 
                 clickCount++;
-                console.log(clickCount)
             })
 
 
@@ -145,7 +174,7 @@ async function displayRestuarantList() {
 
             ratingDeliveryPriceBox.append(ratingsBox, approxDeliveryTime, approxPrice);
 
-            restaurantCard.append(restaurantImg, restaurantName, cuisine, ratingDeliveryPriceBox, offerBox, quickViewDiv);
+            restaurantCard.append(restaurantImgAnchor, restaurantName, cuisine, ratingDeliveryPriceBox, offerBox, quickViewDiv);
 
             document.getElementById('restaurantListContainer').append(restaurantCard);
 
@@ -182,32 +211,3 @@ window.onclick = function(event) {
         filterModal.style.display = "none";
     }
 }
-
-// ----------------Filter----------------------
-
-// let filterDishes = document.getElementById("filterSubmitBox");
-
-// filterDishes.addEventListener("click", (event) => {
-
-//     let filter = event.target.checked;
-//     if (filter) {
-//         let filterCriteria = event.target.value;
-
-//         let updatedProductList = productList.filter((prod) => {
-//             if (filterCriteria === "Roadster") {
-//                 return prod.brand == "Roadster";
-//             } else if (filterCriteria === "WROGN") {
-//                 return prod.brand == "WROGN";
-//             } else if (filterCriteria === "HRX by Hrithik Roshan") {
-//                 return prod.brand == "HRX by Hrithik Roshan";
-//             } else if (filterCriteria === "Louis Philippe Sport") {
-//                 return prod.brand == "Louis Philippe Sport";
-//             } else if (filterCriteria === "Puma") {
-//                 return prod.brand == "Puma";
-//             } else {
-//                 return true;
-//             }
-//         });
-//         displayProducts(updatedProductList);
-//     }
-// });
