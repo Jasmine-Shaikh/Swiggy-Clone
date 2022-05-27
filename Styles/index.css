@@ -17,7 +17,7 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    min-width: 1240px;
+    min-width: 100%;
 }
 
 header {
@@ -304,13 +304,14 @@ sup {
 }
 
 .ratings {
-    background-color: #48c479;
     color: white;
 }
 
 .ratings>p {
+    background-color: #48c479;
     font-size: 12px;
     margin-top: 0%;
+    padding: 0px 3px;
 }
 
 .offerBox {
@@ -371,7 +372,7 @@ sup {
     box-shadow: 0 0 40px 0 rgb(40 44 63 / 20%);
     border: 1px solid #e9e9eb;
     transform: translateZ(0);
-    animation: _1Lzu2 .3s ease;
+    animation: .3s ease;
     cursor: pointer;
     align-items: center;
     position: absolute;
@@ -425,7 +426,9 @@ sup {
 }
 
 #filterModalHead>h2 {
-    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10%;
 }
 
 #filterModalContent {
@@ -448,7 +451,8 @@ sup {
 }
 
 #filterOption>input {
-    margin: 8px;
+    margin: 10px 5px 8px 25px;
+    ;
 }
 
 .close {

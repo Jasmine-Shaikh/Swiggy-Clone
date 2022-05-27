@@ -260,223 +260,34 @@
         },
         {
             "id": 2,
-            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ers3firlqevnvpnponuj",
-            "name": "Subway",
-            "address": "Subway, Ubcity 2nd level Vital mallya Road Bangalore",
-            "ratings": 3.9,
-            "approxDeliveryTime": 47,
-            "approxPrice": 350,
-            "cuisine": ["Fast Food", "Salad", "Snacks", "Desserts", "Beverages"],
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lpikismf7ulkpknsbw2h",
+            "name": "Bhartiya Jalpan",
+            "address": "Commercial Street, Shivaji Nagar | Change Outlet ",
+            "ratings": "4.2",
+            "approxDeliveryTime": 40,
+            "approxPrice": 270,
+            "cuisine": [
+                "North Indian",
+                "Sweets"
+
+
+            ],
             "categories": [{
-                    "categoryName": "Recommended",
-                    "categoryItems": [{
-                            "name": "Non Veg Footlong Sub Combo",
-                            "price": "490",
-                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
-                        },
-                        {
-                            "name": "Veg Salad Combo",
-                            "price": "323.81",
-                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
-                        },
-                        {
-                            "name": "Non Veg Salad Combo",
-                            "price": "361.91",
-                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
-                        },
-                        {
-                            "name": "Veg Signature Wrap Combo",
-                            "price": "323.81",
-                            "details": "(Save Rs 30) Any one veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
-                        },
-                        {
-                            "name": "Non Veg Signature Wrap Combo",
-                            "price": "352.38",
-                            "details": "(Save Rs 30) Any one non veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
-                        },
-                        {
-                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
-                            "price": "319.05",
-                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
-                        }
-
-                    ]
-                },
-                {
-                    "categoryName": "Sub N Sip Combo",
-                    "categoryItems": [{
-                            "name": "Non Veg Footlong Sub Combo",
-                            "price": "490.48",
-                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
-                        },
-                        {
-                            "name": "Veg Salad Combo",
-                            "price": "Veg Salad Combo",
-                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
-                        },
-                        {
-                            "name": "Non Veg Salad Combo",
-                            "price": "361.91",
-                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
-                        }
-                    ]
-                },
-                {
-                    "categoryName": "Snack Wrap Combos",
-                    "categoryItems": [{
-                            "name": "Snack Wrap With Veg Subs Combos (15 cm, 6 Inch)",
-                            "price": "261.90",
-                            "details": "Veg Combos includes one 6 inches sub along with 1 veg snack wrap"
-                        },
-                        {
-                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
-                            "price": "319.05",
-                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
-                        }
-                    ]
-                },
-                {
-                    "categoryName": "Cookie Combos",
-                    "categoryItems": [{
-                            "name": "Cookie With Veg Signature Wrap Combos",
-                            "price": "309.52",
-                            "details": "Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
-                        },
-                        {
-                            "name": "Cookie With Non Veg Signature Wrap Combos",
-                            "price": "338.10",
-                            "details": "Non Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
-                        },
-                        {
-                            "name": "Cookie With Veg Sub Combos (15 cm, 6 Inch)",
-                            "price": "233.33",
-                            "details": "Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
-                        },
-                        {
-                            "name": "Cookie With Non Veg Sub Combos (15 cm, 6 Inch)",
-                            "price": "290.48",
-                            "details": "Non Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
-                        }
-                    ]
-                },
-                {
-                    "categoryName": "Non Veg Signature Wraps",
-                    "categoryItems": [{
-                            "name": "Turkey Signature Wraps",
-                            "price": "285.71",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-                        },
-                        {
-                            "name": "Tuna Signature Wraps",
-                            "price": "285.71",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-                        },
-                        {
-                            "name": "Roasted chicken Strips Signature Wraps",
-                            "price": "285.71",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-
-                        },
-                        {
-                            "name": "Subway Club Signature Wraps",
-                            "price": "285.71",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-
-                        },
-                        {
-                            "name": "Turkey Breast & Chicken Slice Signature Wraps",
-                            "price": "285.71",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-
-                        }
-
-                    ]
-                },
-                {
-                    "categoryName": "Veg Signature Wraps",
-                    "categoryItems": [{
-                            "name": "Veggie Delite Signature Wraps",
-                            "price": "257.14",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-                        },
-                        {
-                            "name": "Veg Seekh Signature Wraps",
-                            "price": "257.14",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-                        },
-                        {
-                            "name": "Hara Bhara Kebab Signature Wraps",
-                            "price": "257.14",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-
-                        },
-                        {
-                            "name": "Veg Shammi Kebab Signature Wraps",
-                            "price": "257.14",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-
-                        },
-                        {
-                            "name": "Mexican Patty Signature Wraps",
-                            "price": "257.14",
-                            "details": "Signature wraps packed with double protein and loaded flavours"
-
-                        }
-
-                    ]
-                },
-                {
-                    "categoryName": "BFF Combos",
-                    "categoryItems": [{
-                            "name": "BFF Veg Sub Combo (15 cm, 6 Inch)",
-                            "price": "400",
-                            "details": "Buy any two 6 inches veg sub & get 2 cookie free"
-                        },
-                        {
-                            "name": "BFF Veggie Delite Combo (15 cm, 6 Inch)",
-                            "price": "361.90",
-                            "details": "Buy two Veggie Delite (15, cm, 6inch) subs and get two cookies free"
-                        },
-                        {
-                            "name": "BFF Non-Veg Sub Combo (15 cm, 6 Inch)",
-                            "price": "476.19",
-                            "details": "Buy any two 6 inches non-veg sub & get 2 cookie free"
-                        },
-                        {
-                            "name": "BFF Veg Signature Wrap Combo",
-                            "price": "514.29",
-                            "details": "Buy any two signature wrap & get 2 cookie free"
-                        },
-                        {
-                            "name": "BFF Non-Veg Signature Wrap Combo",
-                            "price": "571.43",
-                            "details": "Buy any two signature wrap & get 2 cookie free"
-                        }
-                    ]
-                },
-                {
-                    "categoryName": "Classic Combo",
-                    "categoryItems": [{
-                            "name": "Turkey Sub (15 cm, 6 Inch) + Subway club Sub (15 cm, 6 Inch)",
-                            "price": "495.24",
-                            "details": "Price shown is after 10% discount."
-                        },
-                        {
-                            "name": "BMT Sub (15 cm, 6 Inch) + Turkey & Chicken Slice Sub (15 cm, 6 Inch)",
-                            "price": "495.24",
-                            "details": "Price shown is after 10 % discount"
-                        }
-                    ]
-                },
-                {
-                    "categoryName": "Fusion Combo",
-                    "categoryItems": [{
-                        "name": "Smokey Chicken Club Sub (15 cm, 6 Inch) + Smoked Chicken Club Sub (15 cm, 6 Inch)",
-                        "price": "619.05",
-                        "details": ""
-                    }]
-                }
-            ]
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/u0himdvdy2kkq99wtlez",
+                        "name": "Aloo Sandwich",
+                        "price": "120",
+                        "details": "Our spicy chatpata aloo masala sandwich make with pure butter intawa."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pvqdlcbktjqrgtnjctyv",
+                        "name": "Chole Bhature",
+                        "price": "189",
+                        "details": "Spicy chole gravy cooked in a delectable veriety of masalas, served with a fluffy fried leavened bread."
+                    }
+                ]
+            }]
         },
         {
             "id": 3,
@@ -733,11 +544,11 @@
             "id": 4,
             "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gmmenahhys58q9jvtsu9",
             "name": "Third Wave Coffee",
-            "address": "Subway, Ubcity 2nd level Vital mallya Road Bangalore",
+            "address": "Vital mallya Road Bangalore",
             "ratings": 2.1,
             "approxDeliveryTime": 50,
             "approxPrice": 250,
-            "cuisine": ["Fast Food", "Salad", "Snacks", "Desserts", "Beverages"],
+            "cuisine": ["Salad", "Snacks", "Desserts", "Beverages"],
             "categories": [{
                     "categoryName": "Recommended",
                     "categoryItems": [{
@@ -1320,34 +1131,223 @@
         },
         {
             "id": 17,
-            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lpikismf7ulkpknsbw2h",
-            "name": "Bhartiya Jalpan",
-            "address": "Commercial Street, Shivaji Nagar | Change Outlet ",
-            "ratings": "4.2",
-            "approxDeliveryTime": 40,
-            "approxPrice": 270,
-            "cuisine": [
-                "North Indian",
-                "Sweets"
-
-
-            ],
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ers3firlqevnvpnponuj",
+            "name": "Subway",
+            "address": "Subway, Ubcity 2nd level Vital mallya Road Bangalore",
+            "ratings": 3.9,
+            "approxDeliveryTime": 47,
+            "approxPrice": 350,
+            "cuisine": ["Fast Food", "Salad", "Snacks", "Desserts", "Beverages"],
             "categories": [{
-                "categoryName": "Recommended",
-                "categoryItems": [{
-                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/u0himdvdy2kkq99wtlez",
-                        "name": "Aloo Sandwich",
-                        "price": "120",
-                        "details": "Our spicy chatpata aloo masala sandwich make with pure butter intawa."
-                    },
-                    {
-                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pvqdlcbktjqrgtnjctyv",
-                        "name": "Chole Bhature",
-                        "price": "189",
-                        "details": "Spicy chole gravy cooked in a delectable veriety of masalas, served with a fluffy fried leavened bread."
-                    }
-                ]
-            }]
+                    "categoryName": "Recommended",
+                    "categoryItems": [{
+                            "name": "Non Veg Footlong Sub Combo",
+                            "price": "490",
+                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Salad Combo",
+                            "price": "323.81",
+                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Salad Combo",
+                            "price": "361.91",
+                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Signature Wrap Combo",
+                            "price": "323.81",
+                            "details": "(Save Rs 30) Any one veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Signature Wrap Combo",
+                            "price": "352.38",
+                            "details": "(Save Rs 30) Any one non veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "319.05",
+                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Sub N Sip Combo",
+                    "categoryItems": [{
+                            "name": "Non Veg Footlong Sub Combo",
+                            "price": "490.48",
+                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Salad Combo",
+                            "price": "Veg Salad Combo",
+                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Salad Combo",
+                            "price": "361.91",
+                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Snack Wrap Combos",
+                    "categoryItems": [{
+                            "name": "Snack Wrap With Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "261.90",
+                            "details": "Veg Combos includes one 6 inches sub along with 1 veg snack wrap"
+                        },
+                        {
+                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "319.05",
+                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Cookie Combos",
+                    "categoryItems": [{
+                            "name": "Cookie With Veg Signature Wrap Combos",
+                            "price": "309.52",
+                            "details": "Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Non Veg Signature Wrap Combos",
+                            "price": "338.10",
+                            "details": "Non Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Veg Sub Combos (15 cm, 6 Inch)",
+                            "price": "233.33",
+                            "details": "Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Non Veg Sub Combos (15 cm, 6 Inch)",
+                            "price": "290.48",
+                            "details": "Non Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Non Veg Signature Wraps",
+                    "categoryItems": [{
+                            "name": "Turkey Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Tuna Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Roasted chicken Strips Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Subway Club Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Turkey Breast & Chicken Slice Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Veg Signature Wraps",
+                    "categoryItems": [{
+                            "name": "Veggie Delite Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Veg Seekh Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Hara Bhara Kebab Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Veg Shammi Kebab Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Mexican Patty Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "BFF Combos",
+                    "categoryItems": [{
+                            "name": "BFF Veg Sub Combo (15 cm, 6 Inch)",
+                            "price": "400",
+                            "details": "Buy any two 6 inches veg sub & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Veggie Delite Combo (15 cm, 6 Inch)",
+                            "price": "361.90",
+                            "details": "Buy two Veggie Delite (15, cm, 6inch) subs and get two cookies free"
+                        },
+                        {
+                            "name": "BFF Non-Veg Sub Combo (15 cm, 6 Inch)",
+                            "price": "476.19",
+                            "details": "Buy any two 6 inches non-veg sub & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Veg Signature Wrap Combo",
+                            "price": "514.29",
+                            "details": "Buy any two signature wrap & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Non-Veg Signature Wrap Combo",
+                            "price": "571.43",
+                            "details": "Buy any two signature wrap & get 2 cookie free"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Classic Combo",
+                    "categoryItems": [{
+                            "name": "Turkey Sub (15 cm, 6 Inch) + Subway club Sub (15 cm, 6 Inch)",
+                            "price": "495.24",
+                            "details": "Price shown is after 10% discount."
+                        },
+                        {
+                            "name": "BMT Sub (15 cm, 6 Inch) + Turkey & Chicken Slice Sub (15 cm, 6 Inch)",
+                            "price": "495.24",
+                            "details": "Price shown is after 10 % discount"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Fusion Combo",
+                    "categoryItems": [{
+                        "name": "Smokey Chicken Club Sub (15 cm, 6 Inch) + Smoked Chicken Club Sub (15 cm, 6 Inch)",
+                        "price": "619.05",
+                        "details": ""
+                    }]
+                }
+            ]
         },
         {
             "id": 18,
