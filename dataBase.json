@@ -57,6 +57,15 @@
       "userAddresses": [],
       "userCart": [],
       "id": 3
+    },
+    {
+      "userName": "Testing",
+      "userEmail": "demo@gmail.com",
+      "userPhoneNumber": "123456789",
+      "userPassword": "12345",
+      "userCart": [],
+      "userAddresses": [],
+      "id": 4
     }
   ],
   "Restaurants": [
