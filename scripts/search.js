@@ -14,9 +14,88 @@ document.getElementById("navbarContainer").innerHTML = navbarHTML();
 //     displayData(data);
    
 // }
+
+
+
+
+
+let mainContainer = document.getElementById("mainContainer");
+let dishesMainContainer = document.getElementById("dishesMainContainer");
+
+
+let crossButtonInSearchPage = document.getElementById("crossButtonInSearchPage");
+crossButtonInSearchPage.addEventListener("click", function(){
+  window.location.href = "./offers.html";
+})
+
+let restaurantButton = document.getElementById("restaurantButton");
+restaurantButton.addEventListener("click",function(){
+  dishesButton.style.borderBottom = "1px solid white"
+  restaurantButton.style.color = "grey"
+  restaurantButton.style.color = "black"
+  restaurantButton.style = "black"
+  restaurantButton.style.borderBottom = "3px solid #fc8019"
+
+  dishesMainContainer.style.display = "none";
+  mainContainer.style.display = "block";
+
+})
+
+let dishesButton = document.getElementById("dishesButton");
+dishesButton.addEventListener("click", function(){
+  dishesButton.style.color = "black"
+  dishesButton.style.borderBottom = "3px solid #fc8019"
+  restaurantButton.style.color = "grey"
+  restaurantButton.style.borderBottom = "1px solid white"
+
+  mainContainer.style.display = "none";
+  dishesMainContainer.style.display = "block";
+})
+
+let filterlist = document.getElementById("ulList");
+console.log(filterlist)
+let filtertypes = document.getElementById("filtertypes");
+filtertypes.addEventListener("click", function(){
+     filterlist.style.display = "block";
+})
+let filterIcon1 = document.getElementById("filterIcon1");
+filterIcon1.addEventListener("click", function(){
+     filterlist.style.display = "block";
+})
+
+
+
+
+document.getElementById("searchInput").addEventListener("input", () => {
+  //   console.log(inputText);
+  debounce (getList(),1000);
+  debounce (dishesList(),1000);
+
+  });
+
+  async function getList () {
+    try {
+      let search = document.getElementById("searchInput").value;
+      let result = await fetch(
+        `http://localhost:3000/Restaurents/?q=${search}`
+      );
+      console.log(result);
+      let data = await result.json();
+      console.log(data);
+      displayData(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+
+
+  
+
 async function dishesList() {
+  let search = document.getElementById("searchInput").value;
   try {
-    let result = await fetch(`http://localhost:3000/Restaurents`);
+    let result = await fetch(`http://localhost:3000/Restaurents/?q=${search}`);
     console.log(result);
     let data = await result.json();
     console.log(data);
@@ -30,6 +109,62 @@ async function dishesList() {
     console.log(error);
   }
 }
+
+
+
+  let timerId;
+  function debounce (fn,wait){
+      if(timerId){
+          clearTimeout(timerId);
+      }
+      timerId = setTimeout(() => {
+          fn();
+      },wait);
+  }
+  
+  
+function displayData(datas){
+     mainContainer.innerHTML = "";
+  datas.forEach(data => {
+      let card = document.createElement("div");
+
+      let imageElement = document.createElement("img");
+      imageElement.src = data.image;
+
+      let restaurantNameElement = document.createElement("h4");
+      restaurantNameElement.textContent = data.name;
+      
+      let cuisineElement = document.createElement("p");
+      cuisineElement.textContent = data.cuisine;
+       
+      let ratingDeliveryApproxPrice = document.createElement("div")
+      ratingDeliveryApproxPrice.setAttribute("class","ratingDeliveryApproxPrice")
+      let ratingsElement = document.createElement("p");
+      ratingsElement.textContent = data.ratings;
+
+      let approxDeliveryTime = document.createElement("p");
+      approxDeliveryTime.textContent = `${data.approxDeliveryTime}`;
+
+      let approxPriceElement = document.createElement("p");
+      approxPriceElement.textContent = `₹${data.approxPrice}`;
+      
+      let hrElement = document.createElement("hr");
+
+
+      let offerElement = document.createElement("p");
+      offerElement.setAttribute("class","offerContainer")
+      // offerElement.textContent = `${data.offer}% off | Use WELCOME50 `;
+      // offerElement.style.color = "#8A584B"
+      ratingDeliveryApproxPrice.append(ratingsElement, approxDeliveryTime, approxPriceElement,)
+      card.append(imageElement, restaurantNameElement, cuisineElement,ratingDeliveryApproxPrice,hrElement, offerElement);
+      mainContainer.append(card);
+
+  });
+
+
+}
+
+
 function func(data , rdata){
   console.log(data.ratings)
   data.categories.forEach(element => {
@@ -40,6 +175,7 @@ function func(data , rdata){
 }
 let retaurentDishesContainer = document.getElementById("retaurentDishesContainer");
 function displayDishesData(data, rdata){
+  dishesMainContainer.innerHTML = "";
 //  let cards = document.createElement("div");
 
 //  let rnameElement = document.createElement("h3");
@@ -95,130 +231,6 @@ function displayDishesData(data, rdata){
   });
 
 }
-
-
-
-
-let mainContainer = document.getElementById("mainContainer");
-let dishesMainContainer = document.getElementById("dishesMainContainer");
-
-
-let crossButtonInSearchPage = document.getElementById("crossButtonInSearchPage");
-crossButtonInSearchPage.addEventListener("click", function(){
-  window.location.href = "./help.html";
-})
-
-let restaurantButton = document.getElementById("restaurantButton");
-restaurantButton.addEventListener("click",function(){
-  dishesButton.style.borderBottom = "1px solid white"
-  restaurantButton.style.color = "grey"
-  restaurantButton.style.color = "black"
-  restaurantButton.style = "black"
-  restaurantButton.style.borderBottom = "3px solid #fc8019"
-
-  dishesMainContainer.style.display = "none";
-  mainContainer.style.display = "block";
-
-})
-
-let dishesButton = document.getElementById("dishesButton");
-dishesButton.addEventListener("click", function(){
-  dishesButton.style.color = "black"
-  dishesButton.style.borderBottom = "3px solid #fc8019"
-  restaurantButton.style.color = "grey"
-  restaurantButton.style.borderBottom = "1px solid white"
-
-  mainContainer.style.display = "none";
-  dishesMainContainer.style.display = "block";
-})
-
-
-
-
-document.getElementById("searchInput").addEventListener("input", () => {
-  //   console.log(inputText);
-  debounce (getList,1000);
-  });
-
-  async function getList (search) {
-    try {
-      let search = document.getElementById("searchInput").value;
-      let result = await fetch(
-        `http://localhost:3000/Restaurents`
-      );
-      console.log(result);
-      let data = await result.json();
-      console.log(data);
-      displayData(data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-
-  let timerId;
-  function debounce (fn,wait){
-      if(timerId){
-          clearTimeout(timerId);
-      }
-      timerId = setTimeout(() => {
-          fn();
-      },wait);
-  }
-
-
-
-
-function displayData(datas){
-
-  datas.forEach(data => {
-      let card = document.createElement("div");
-
-      let imageElement = document.createElement("img");
-      imageElement.src = data.image;
-
-      let restaurantNameElement = document.createElement("h4");
-      restaurantNameElement.textContent = data.name;
-      
-      let cuisineElement = document.createElement("p");
-      cuisineElement.textContent = data.cuisine;
-       
-      let ratingDeliveryApproxPrice = document.createElement("div")
-      ratingDeliveryApproxPrice.setAttribute("class","ratingDeliveryApproxPrice")
-      let ratingsElement = document.createElement("p");
-      ratingsElement.textContent = data.ratings;
-
-      let approxDeliveryTime = document.createElement("p");
-      approxDeliveryTime.textContent = `${data.approxDeliveryTime}`;
-
-      let approxPriceElement = document.createElement("p");
-      approxPriceElement.textContent = `₹${data.approxPrice}`;
-      
-      let hrElement = document.createElement("hr");
-
-
-      let offerElement = document.createElement("p");
-      offerElement.setAttribute("class","offerContainer")
-      // offerElement.textContent = `${data.offer}% off | Use WELCOME50 `;
-      // offerElement.style.color = "#8A584B"
-      ratingDeliveryApproxPrice.append(ratingsElement, approxDeliveryTime, approxPriceElement,)
-      card.append(imageElement, restaurantNameElement, cuisineElement,ratingDeliveryApproxPrice,hrElement, offerElement);
-      mainContainer.append(card);
-
-  });
-
-
-}
-// let  input = document.getElementById("searchInput");
-// input.addEventListener("keyup", fetchAndDisplayData)
-// displayData(restaurantsAvailable);
-
-// let dishesMainContainer = document.getElementById("dishesMainContainer");
-
-
-
-dishesList();
-
 
 
 
