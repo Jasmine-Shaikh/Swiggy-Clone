@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./ComponentsStyles/footer.css">
+    <link rel="stylesheet" href="./componentsStyles/navbar.css">
+    <link rel="icon" type="image/x-icon" href="./fav icon/favicon.ico">
+    
+    
+
 </head>
 
 <body>
+    <div id="navbarContainer"></div>
     <div id="restaurant-header">
 
         <div class="box">
@@ -66,14 +73,23 @@
     <div id="container">
         <div>
             <ul id="leftContainer" class="leftContainer">
-              <li onclick="print('Recommended')">Recommended</li>
-              <li onclick="print('Brunch Combos')">Brunch Combos</li>
-              <li onclick="print('Pasta La Vista')">Pasta La Vista</li>
-              <li onclick="print('Snacks & Quick Bites')">Snacks & Quick Bites</li>
-              <li onclick="print('Indian Meals & Rice Bowls')">Indian Meals & Rice Bowls</li>
-              <li onclick="print('Beverages')">Beverages</li>
-              <li onclick="print('The 997 AD pizzas')">The 997 AD pizzas</li>
-              <li onclick="print('Desserts')">Desserts</li>
+              <!-- <li onclick="prints('Recommended')">Recommended</li>
+              <li onclick="prints('Brunch Combos')">Brunch Combos</li>
+              <li onclick="prints('Pasta La Vista')">Pasta La Vista</li>
+              <li onclick="prints('Snacks & Quick Bites')">Snacks & Quick Bites</li>
+              <li onclick="prints('Indian Meals & Rice Bowls')">Indian Meals & Rice Bowls</li>
+              <li onclick="prints('Beverages')">Beverages</li>
+              <li onclick="prints('The 997 AD pizzas')">The 997 AD pizzas</li>
+              <li onclick="prints('Desserts')">Desserts</li> -->
+
+              <li class="allListOfFilters">Recommended</li>
+              <li class="allListOfFilters">Brunch Combos</li>
+              <li class="allListOfFilters">Pasta La Vista</li>
+              <li class="allListOfFilters">Snacks & Quick Bites</li>
+              <li class="allListOfFilters">Indian Meals & Rice Bowls</li>
+              <li class="allListOfFilters">Beverages</li>
+              <li class="allListOfFilters">The 997 AD pizzas</li>
+              <li class="allListOfFilters">Desserts</li>
             </ul>
           </div>
         <div id="show" class="leftContainer">
@@ -87,8 +103,8 @@
     </div>
 
 
-
+    <footer id="footerPart"></footer>
 </body>
-<script src="./script/index.js"></script>
+<script src="./script/index.js" type="module"></script>
 
 </html>

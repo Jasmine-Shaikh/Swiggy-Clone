@@ -46,6 +46,46 @@
     width: 43%;
     margin: auto;
 }
+.imgCant{
+  position: absolute;
+  /* border: 2px solid red; */
+}
+.addItems{
+    border:  1px solid #cecece;
+    position: relative;
+    top: -20px;
+    left: 24px;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 90px;
+    background-color: white;
+    color: #60b246;
+    /* display: none; */
+}
+#itemAdditionAndSubtraction{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    border:  1px solid #cecece;
+    position: relative;
+    display: none;
+    top: -20px;
+    left: 24px;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 90px;
+    background-color: white;
+    color: #60b246;
+}
+#itemAdditionAndSubtraction > button{
+    background-color: white;
+    border: none;
+}
+#itemAdditionAndSubtraction > p{
+    padding-top: 7px;
+}
 #ratingLogoContainer>img{
  width: 14px;
  height: 14px;
@@ -98,7 +138,9 @@ form{
 #container{
     display: flex;
     width: 80%;
+    min-height: 500px;
     margin: auto;
+    margin-bottom: 100px;
     /* border: 2px solid red;   */
 }
 #leftContainer{
@@ -106,6 +148,7 @@ form{
     margin-top: 50px;
     width: 95%;
     list-style: none;
+    /* border: 2px solid green; */
     /* border: 2px solid red; */
 }
 #leftContainer>li{
@@ -118,48 +161,93 @@ form{
     color:#fc8019;
 }
 #show{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-left: 1px solid #cecece;
     width: 60%;
+    /* border: 2px solid green; */
 
 }
-#rightContainer{
-    width: 20%;
 
+#rightContainer{
+    width: 30%;
     margin-top: 50px;
+    margin-left: 50px;
     color:grey;
+    border:1px solid red;
   
    
 }
 #show>div{
+    /* border: 2px solid green; */
     display: flex;
+    justify-content: space-between;
     width: 90%;
     height: 150px;
-    margin: auto;
+    /* margin: auto; */
     padding-top: 50px;
     padding-bottom: 0%;
     border-bottom:2px solid #cecece;
-    justify-content: space-between;
+   
 
 }
 
+.paraCant{
+    /* border: 2px solid blue; */
+    width: 80%;
+}
+.imageCant{
+    width: 13%;
+}
 .paraCant > p{
     width: 100%;
     padding-top: 15px;
+    /* border: 2px solid green; */
 }
 
 
 #show >div>div>img{
-
     height: 90%;
-    
-
+    /* border: 2px solid green; */
 }
-#show >div>div{
+/* #show >div>div{
     height: 15vh;
-}
+
+} */
 #rightContainer > img{
     width: 100%;
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+#product-container{
+    display: flex;
+    gap: 20px;
+    color: rgb(47, 46, 46);
+}
+#inc-dec-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#inc-btn,#dec-btn{
+    background-color: transparent;
+    border: 0px;
+    padding: 20px;
+    font-size: 25px;
+}
