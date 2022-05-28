@@ -9,6 +9,7 @@ document.getElementById("navbarContainer").innerHTML = navbarHTML();
 
 
 
+
 let category = document.querySelectorAll(".allListOfFilters");
 
 // console.log(category);
@@ -53,7 +54,10 @@ function printData(allCategories,category){
 }
 
 //  async function fetchAndDisplayData(data1){
-//    let url = `http://localhost:3000/Restaurants/2/?q=${data1}`;
+//    let url = `http://localhost:3000/Restaurants/2/?q=${data1}`
+//  async function fetchAndDisplayData(){
+//    let url = `http://localhost:3000/Restaurants/${2}`;
+
 //    let res = await fetch(url);
 //    console.log(res);
 //    let data = await res.json();
@@ -67,6 +71,41 @@ function printData(allCategories,category){
   //  console.log(data.categories.categoryName)
 //  }
 
+//    console.log(data.categories)
+//    data.categories.forEach(element => {
+//      console.log(element);
+//      displayData(element);
+//    });
+  //  console.log(data.categories.categoryName
+
+//  }
+
+
+document.querySelector("li").innerText.addEventListener("click",
+function(category){
+  console.log(category)
+   getData(2,category);
+})
+
+
+
+
+async function getData(id,category){
+  let result = await fetch(`http://localhost:3000/Restaurants/${id}`);
+  let ans = await result.json();
+  console.log(ans.categories);
+  printData(ans.categories,category);
+}
+
+function printData(allCategories,category){
+  console.log(allCategories,category)
+  allCategories.forEach(element => {
+      console.log(element);
+      if(element.categoryName == category){
+          displayData(element);
+      }
+  });
+}
 // function displayData(data){
 //   document.getElementById('main').innerHTML='';
 //   data.forEach(element => {
