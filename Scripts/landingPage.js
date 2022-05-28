@@ -194,6 +194,9 @@ document.querySelector('#logoutBtn').addEventListener('click', () => {
     showProfileSection();
 })
 
+document.getElementById('searchBtn').addEventListener('click', () => {
+    window.location.href = './index.html';
+})
 
 
 //////////////////////////////////
