@@ -1,3 +1,11 @@
+
+import {footerHTML} from '../componentsJs/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
+
+import { navbarHTML } from '../componentsJs/navbar.js';
+document.getElementById("navbarContainer").innerHTML = navbarHTML();
+
+
 //  async function fetchAndDisplayData(){
 //    let url = `http://localhost:3000/Restaurants/${2}`;
 //    let res = await fetch(url);
@@ -10,29 +18,31 @@
 //      console.log(element);
 //      displayData(element);
 //    });
-  //  console.log(data.categories.categoryName)
-
- 
+  //  console.log(data.categories.categoryName
 
 //  }
 
 
- function print(category){
-  // console.log(category)
+document.querySelector("li").innerText.addEventListener("click",
+function(category){
+  console.log(category)
    getData(2,category);
-}
+})
+
+
+
 
 async function getData(id,category){
   let result = await fetch(`http://localhost:3000/Restaurants/${id}`);
   let ans = await result.json();
-  // console.log(ans.categories);
+  console.log(ans.categories);
   printData(ans.categories,category);
 }
 
 function printData(allCategories,category){
-  // console.log(allCategories,category)
+  console.log(allCategories,category)
   allCategories.forEach(element => {
-      // console.log(element);
+      console.log(element);
       if(element.categoryName == category){
           displayData(element);
       }
