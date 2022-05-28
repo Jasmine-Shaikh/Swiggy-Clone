@@ -1,0 +1,262 @@
+*{
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* search part start */
+#searchPageContainer{
+    margin-top: 130px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+#searchContainer{
+    /* border: 2px solid red; */
+    margin-left: 320px;
+    display: flex;
+    flex-direction: row;
+}
+#searchContainer input{
+    padding: 15px;
+    padding: 22px 0px;
+    padding-right: 640px;
+    font-size: 17px;
+    border: 1px solid grey;
+    
+    float: left;
+    width: 95%;
+    background: white;
+    outline: none;
+    border-left: none;
+    box-sizing: border-box;
+}
+#searchIcon{
+    float: left;
+    width: 5%;
+    padding: 15px;
+    padding: 22px 0px;
+    background: white;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-right: none; 
+    cursor: pointer;
+  
+}
+#crossIcon{
+    margin-left: 40px;
+    background-color: white;
+    border: none;
+}
+#crossIcon > img{
+
+    display: block;
+    /* filter: invert(10%); */
+    font-size: 50px;
+    color: black;
+    width: 80%;
+    height: 45px;
+    margin: auto;
+}
+#crossIcon >span{
+    color: grey;
+    margin-bottom: 0%;
+    font-size: 16px;
+    padding-top: 0%;
+}
+/* search part end */
+
+
+#RestaurantsContainer{
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    width: 57%;
+    margin: 50px;
+    margin-left: 320px;
+    /* border: 2px solid red; */
+    border-bottom: 1px solid #cecece;
+}
+#filterRestaurant{
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+}
+
+#restaurantButton{
+    /* padding: 15px 25px; */
+    padding-bottom: 10px;
+    /* padding-right: 20px; */
+    background-color: white;
+    /* border-radius: 9999px; */
+    margin-right: 5px;
+
+    border: none;
+    /* outline: none; */
+    color: black;
+    /* border-bottom: 3px solid #fc8019; */
+    font-size: 20px;
+    
+}
+#dishesButton{
+    /* padding: 10px 20px; */
+    padding-bottom: 10px;
+    color: grey;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+}
+#filtertypeselector{
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    margin-right: 600px;
+    /* border: 2px solid red; */
+}
+/* #filterContainer{
+    display: flex;
+    flex-direction: column;
+} */
+#filterContainer{
+    width: 14%;
+    position: relative;
+}
+#filterContainer >div{
+    display: flex;
+}
+#filterContainer >div > button{
+    padding-right: 0%;
+}
+#filterContainer >div > i{
+    color: #fc8019;
+    padding-left: 0%;
+}
+#filterlist{
+    position: absolute;
+    top: 0px;
+    left: -85px;
+    right: 0px;
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+#filterlist ul li{
+    list-style: none;
+    padding: 10px;
+}
+#ulList{
+    /* position: absolute; */
+    position: relative;
+    top: -10px;
+    right: 0;
+    padding: 9px 10px 10px 15px;
+    background: #fff;
+    box-shadow: 0 2px 20px 0 rgb(40 44 63 / 50%);
+    min-width: 170px;
+    display: none;
+    z-index: 1;
+    margin: 0;
+    margin-right: 35px;
+    /* padding: 0; */
+    list-style-type: none;
+}
+
+#ulList>li{
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+
+
+ /* Restaurant part Start */
+#mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    gap: 30px;
+    margin: auto;
+    margin-bottom: 100vh;
+    margin-top: 3px;
+}
+#mainContainer>div{
+    padding: 15px;
+}
+
+#mainContainer>div:hover{
+    border: 1px solid #cecece;
+}
+#mainContainer >div>img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+#mainContainer >div>h4{
+    padding-bottom: 10px;
+}
+#mainContainer >div>p{
+    padding-bottom: 15px;
+}
+#mainContainer >div>div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.ratingDeliveryApproxPrice{
+    margin-bottom: 10px;
+}
+.offerContainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* restaurant part end */
+#filtertypes{
+    padding-bottom: 10px;
+    padding-right: 20px;
+    background-color: white;
+    margin-right: 7px;
+    border: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* deshes css part */
+
+#dishesMainContainer{
+    display: none;
+    
+    width: 58%;
+    gap: 40px;
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 3px;
+    border: 1px solid #cecece;
+}
+#cardcontainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* border: 2px solid red; */
+    width: 92%;
+    margin: auto;
+    border-bottom: 1px solid #cecece;
+}
+#imgBoxContainer > img{
+    display: block;
+    width: 120px;
+    /* margin: auto; */
+    padding: 20px 0px;
+    height: 120px;
+}
+#paraBoxContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* width: 80%; */
+}
+.lastPara{
+    color: gray;
+}

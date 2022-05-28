@@ -1,0 +1,172 @@
+*{
+    font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+}
+#helpMainContainer{
+    height: auto;
+    width: 100%;
+    background-color: #005062;
+    margin-bottom: 50px;
+}
+#helpbackground{  
+    margin-top: 80px;
+    width: 100%;
+    height: 200px;
+    background-color: #005062;
+    color: white;
+    display: flex;  
+}
+#helpbackground div{
+  width: 49%; 
+  margin: auto;
+  margin-left: 150px;
+  /* border: 2px solid red; */ 
+}
+#helpContainer{
+    height: auto;
+    width: 85%;
+    background-color: white;
+    margin: auto;
+}
+#helpContentMainDiv{
+    display: flex;
+    gap: 60px;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 80px;
+}
+.leftHelp{
+    /* border: 2px solid black; */
+    width: 22%;
+    height: auto;
+    color: black;
+    background-color: #edf1f7;
+    border-left: 2px solid #cecece;
+}
+.leftHelp>h2:hover{
+    color: #282c3f;
+}
+.leftHelpHead{
+    display: flex;
+    justify-content: end;
+    width: 20%;
+}
+#rightHelp > details > summary:hover{
+    color: #fc8019;
+}
+#legalHelppage > details > summary:hover{
+    color: #fc8019;
+}
+#faqsHelpPage> details > summary:hover{
+    color: #fc8019;
+}
+.leftHelp > div>div{
+    height: 70px;
+    width: 93%;
+    /* direction: rtl; */
+    /* background-color: white; */
+    margin-left: 20px;
+    font-size: 16px;
+}
+#partnerOnboardingHelp {
+    padding-bottom: 25px;
+    color: black;
+    background-color: white;
+    padding: 30px 0px;
+    padding-left: 50px;
+    /* border: 2px solid red; */
+}
+#legalHelp{
+    padding: 30px 0px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    /* border: 2px solid red; */
+}
+#faqshelp{
+    padding: 30px 0px;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    /* border: 2px solid red; */
+}
+
+#rightHelp{
+    /* border-right: 2px solid #cecece; */
+    width: 77%;
+    /* min-height: 100vh; */
+}
+#rightHelp > details{
+    padding-top: 35px;
+    font-size: 13px;
+}
+#rightHelp > details > summary{
+    padding-bottom: 35px;
+    /* border-bottom: 2px solid #cecece; */
+    font-size: 17px;
+}
+#legalHelppage{
+    /* border-right: 2px solid #cecece; */
+    width: 77%;
+    height: auto;
+    display: none;
+}
+#legalHelppage > details{
+    padding-top: 35px;
+    font-size: 13px;
+}
+#legalHelppage > details > summary{
+    padding-bottom: 35px;
+    /* border-bottom: 2px solid #cecece; */
+    font-size: 17px;
+}
+#faqsHelpPage{
+    /* border-right: 2px solid #cecece; */
+    width: 75%;
+    /* min-height: 100vh; */
+    display: none;
+}
+#faqsHelpPage > details{
+    padding-top: 35px;
+    font-size: 13px;
+}
+#faqsHelpPage > details > summary{
+    padding-bottom: 35px;
+    /* border-bottom: 2px solid #cecece; */
+    font-size: 17px;
+}
+/* details > summary {
+    list-style-type: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::after {
+    content: '❮';
+}
+
+details[open] > summary::after {
+    padding: 100px;
+    content: '❯';
+}
+
+details {
+    border: 1px solid gray;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+} */
+/* @media all and (min-height: 5vh) and (max-height: 50vhpx){
+    body{
+            background: white;  
+    }} */
+    /* @media all and (min-width: 50px) and (max-width: 450px){
+        #container{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(10, auto);  
+    }
+   } */

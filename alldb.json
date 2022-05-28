@@ -1,0 +1,1636 @@
+{
+    "Users": [{
+        "userName": "Akash Kumawat",
+        "userEmail": "akashkmt963@gmail.com",
+        "userPhoneNumber": "9079938742",
+        "userPassword": "AAaa@123",
+        "userCart": [],
+        "id": 1
+    }],
+    "Restaurants": [{
+            "id": 1,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/amwnaysbgyubk9rpzzuf",
+            "name": "Nandhini Deluxe",
+            "address": "St. Marks Road, Ashok Nagar",
+            "ratings": 4.2,
+            "approxDeliveryTime": 31,
+            "approxPrice": 500,
+            "cuisine": ["Andhra", "Biryani", "Chinese", "North Indian"],
+            "categories": [{
+                    "categoryName": "Recommended",
+                    "categoryItems": [{
+                            "name": "Baby Corn Pepper Dry",
+                            "price": "239",
+                            "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala."
+                        },
+                        {
+                            "name": "Chicken Sholay kebab",
+                            "price": "289",
+                            "details": "Battered Fried Tender Chicken Sauteed with Fresh Curd with special Spices"
+                        },
+                        {
+                            "name": "Mutton Roast",
+                            "price": "349",
+                            "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+                        },
+                        {
+                            "name": "Chicken French",
+                            "price": "279",
+                            "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating, tossed in tangy sauces."
+                        },
+                        {
+                            "name": "Chicken Masala",
+                            "price": "279",
+                            "details": "Chicken cooked with authentic spices from Rayalaseema region"
+                        },
+                        {
+                            "name": "Paneer Butter Masala",
+                            "price": "269",
+                            "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Andhra Soups",
+                    "categoryItems": [{
+                        "name": "Chicken Pepper Soup",
+                        "price": "109",
+                        "details": "Chicken pepper soup is basically chicken broth with herbs and spices like peppercorn, ginger, cayenne pepper, fennel seeds, and cumin. allspice has a woody flavor that resembles a combination of cloves, cinnamon, must try soup"
+                    }]
+                },
+                {
+                    "categoryName": "Super Hit Veg Starters",
+                    "categoryItems": [{
+                            "name": "Gobi Sholay Kebab",
+                            "price": "229",
+                            "details": "A signature preparation of the house"
+                        },
+                        {
+                            "name": "Gobi Pudina Dry",
+                            "price": "229",
+                            "details": "A signature preparation of the house"
+                        },
+                        {
+                            "name": "Baby Corn Pudina Dry",
+                            "price": "229",
+                            "details": "A signature preparation of the house"
+                        },
+                        {
+                            "name": "Mushroom Pepper Dry",
+                            "price": "259",
+                            "details": "A signature preparation of the house"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Super Hit Non Veg Starters",
+                    "categoryItems": [{
+                            "name": "Andhra Chicken Fry",
+                            "price": "289",
+                            "details": "Chicken chunks cooked in real spices of telangana region"
+                        },
+                        {
+                            "name": "Andhra Chicken Kebab",
+                            "price": "289",
+                            "details": "Marinated chicken chunks and fried chicken pieces"
+                        },
+                        {
+                            "name": "Mutton Roast",
+                            "price": "349",
+                            "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+                        },
+                        {
+                            "name": "Fish Chilly",
+                            "price": "349",
+                            "details": "Stir-fried fish fillets coated in a spicy marinade and topped with a special Andhra chilli masala."
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Andhra Style Non Vegetarian",
+                    "categoryItems": [{
+                            "name": "Chicken French",
+                            "price": "279",
+                            "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating tossed in tangy sauces."
+                        },
+                        {
+                            "name": "Prawns Pepper Fry",
+                            "price": "349",
+                            "details": "Fresh prawns shallow fried, and finished with chef's special spices"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "North Indian Main Course",
+                    "categoryItems": [{
+                            "name": "Butter Chicken Boneless",
+                            "price": "299",
+                            "details": "A decadently creamy dish prepared with boneless chicken chunks dunked in a hearty gravy of tomatoes, onions and mild Indian spices."
+                        },
+                        {
+                            "name": "Kadai Chicken Curry",
+                            "price": "299",
+                            "details": "Must try dish the bitter taste of fenugreek greens complements the chicken exceptionally well. the addition of cream further mellows down the bitterness thereby adding to the rich quotient of this dish."
+                        },
+                        {
+                            "name": "Paneer Butter Masala",
+                            "price": "269",
+                            "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+                        },
+                        {
+                            "name": "Dal Fry",
+                            "price": "229",
+                            "details": "Spicy, yet simple, a comforting yellow lentil preparation spiced with Indian masala."
+                        },
+                        {
+                            "name": "Kadai Paneer",
+                            "price": "269",
+                            "details": "Cubes of Paneer,Diced Tomato & Capicum Cooked with Aromatic Gravy Kadai Gravy"
+                        },
+                        {
+                            "name": "Mushroom Masala",
+                            "price": "259",
+                            "details": "Is a Delicious Indian Curry Made with Fresh Button Mushrooms cooked with Onions , Tomato , Spices and Herbs"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Breads",
+                    "categoryItems": [{
+                            "name": "Butter Naan",
+                            "price": "50",
+                            "details": "A super-soft bread with a generous serving of butter that tastes brilliant when paired with a gravy."
+                        },
+                        {
+                            "name": "Kulcha",
+                            "price": "50",
+                            "details": "Clay oven baked Thick flat bread made from refined flour"
+                        },
+                        {
+                            "name": "Butter Paratha",
+                            "price": "60",
+                            "details": "All Time Favorite Multi Layered Bread Loaded with Butter"
+                        },
+                        {
+                            "name": "Roti",
+                            "price": "45",
+                            "details": "Leavened, clay oven-baked flat bread"
+                        },
+                        {
+                            "name": "Butter Roti",
+                            "price": "50",
+                            "details": "Clay oven baked flat bread made from refined flour"
+                        },
+                        {
+                            "name": "Garlic Naan",
+                            "price": "60",
+                            "details": "Clay oven baked flat bread made from refined flour Sprinkled With Roast Garlic"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Tandoori Delights",
+                    "categoryItems": [{
+                            "name": "Kalmi Kabab",
+                            "price": "289",
+                            "details": "Tandoor-cooked succulent chicken drumsticks marinated in a blend of yogurt and roasted Indian spices."
+                        },
+                        {
+                            "name": "Tandoori Chicken",
+                            "price": "310",
+                            "details": "Evergreen Tender chicken Chicken cooked with yogurt Base masala Finished with Clay"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Chinese Starters",
+                    "categoryItems": [{
+                            "name": "Mushroom Manchurian",
+                            "price": "259",
+                            "details": "Deep-fried Battered Button Mushroom that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+                        },
+                        {
+                            "name": "Paneer Manchurian",
+                            "price": "269",
+                            "details": "Deep-fried paneer cubes that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+                        },
+                        {
+                            "name": "Chilly Chicken Boneless",
+                            "price": "279",
+                            "details": "Deep-fried, boneless chicken pieces coated in seasoned batter and tossed in a slightly spicy chilli sauce."
+                        },
+                        {
+                            "name": "Chicken Manchurian",
+                            "price": "279",
+                            "details": "Manchurian is a class of Chinese dish made by roughly chopping and deep-fried Battered Chicken Piece , and sautéeing it in a sauce flavored with soy sauce"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Rice and Noodles",
+                    "categoryItems": [{
+                            "name": "Veg pulao",
+                            "price": "229",
+                            "details": "Long Grain Basmati Rice Cooked With Fresh Vegetable & Green Peas"
+                        },
+                        {
+                            "name": "Jeera Rice",
+                            "price": "229",
+                            "details": "flavored Indian Rice Dish Made By Cooking with Cumin Seeds & other Fragrant Spices"
+                        },
+                        {
+                            "name": "Veg Noodles",
+                            "price": "239",
+                            "details": "Tender noodles tossed in a ginger-garlic base along with grated vegetable mix."
+                        },
+                        {
+                            "name": "Chicken Fried Rice",
+                            "price": "279",
+                            "details": "Wholesome stir-fried rice tossed with juicy chicken chunks and grated vegetables."
+                        },
+                        {
+                            "name": "Egg Fried Rice",
+                            "price": "249",
+                            "details": "Long grain basmati cooked with beaten eggs and flavored full masala finished with spicy schezwan sauce"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lpikismf7ulkpknsbw2h",
+            "name": "Bhartiya Jalpan",
+            "address": "Commercial Street, Shivaji Nagar | Change Outlet ",
+            "ratings": "4.2",
+            "approxDeliveryTime": 40,
+            "approxPrice": 270,
+            "cuisine": [
+                "North Indian",
+                "Sweets"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/u0himdvdy2kkq99wtlez",
+                        "name": "Aloo Sandwich",
+                        "price": "120",
+                        "details": "Our spicy chatpata aloo masala sandwich make with pure butter intawa."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pvqdlcbktjqrgtnjctyv",
+                        "name": "Chole Bhature",
+                        "price": "189",
+                        "details": "Spicy chole gravy cooked in a delectable veriety of masalas, served with a fluffy fried leavened bread."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 3,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bdspckdbrtrkcq6gjjvj",
+            "name": "Cafe By Nature's Basket",
+            "address": "St. Marks Road, Ashok Nagar",
+            "ratings": 2.1,
+            "approxDeliveryTime": 28,
+            "approxPrice": 700,
+            "cuisine": ["Andhra", "Biryani", "Chinese", "North"],
+            "categories": [{
+                    "categoryName": "Recommended",
+                    "categoryItems": [{
+                            "name": "Baby Corn Pepper Dry",
+                            "price": "239",
+                            "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala."
+                        },
+                        {
+                            "name": "Chicken Sholay kebab",
+                            "price": "289",
+                            "details": "Battered Fried Tender Chicken Sauteed with Fresh Curd with special Spices"
+                        },
+                        {
+                            "name": "Mutton Roast",
+                            "price": "349",
+                            "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+                        },
+                        {
+                            "name": "Chicken French",
+                            "price": "279",
+                            "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating, tossed in tangy sauces."
+                        },
+                        {
+                            "name": "Chicken Masala",
+                            "price": "279",
+                            "details": "Chicken cooked with authentic spices from Rayalaseema region"
+                        },
+                        {
+                            "name": "Paneer Butter Masala",
+                            "price": "269",
+                            "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Andhra Soups",
+                    "categoryItems": [{
+                        "name": "Chicken Pepper Soup",
+                        "price": "109",
+                        "details": "Chicken pepper soup is basically chicken broth with herbs and spices like peppercorn, ginger, cayenne pepper, fennel seeds, and cumin. allspice has a woody flavor that resembles a combination of cloves, cinnamon, must try soup"
+                    }]
+                },
+                {
+                    "categoryName": "Super Hit Veg Starters",
+                    "categoryItems": [{
+                            "name": "Gobi Sholay Kebab",
+                            "price": "229",
+                            "details": "A signature preparation of the house"
+                        },
+                        {
+                            "name": "Gobi Pudina Dry",
+                            "price": "229",
+                            "details": "A signature preparation of the house"
+                        },
+                        {
+                            "name": "Baby Corn Pudina Dry",
+                            "price": "229",
+                            "details": "A signature preparation of the house"
+                        },
+                        {
+                            "name": "Mushroom Pepper Dry",
+                            "price": "259",
+                            "details": "A signature preparation of the house"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Super Hit Non Veg Starters",
+                    "categoryItems": [{
+                            "name": "Andhra Chicken Fry",
+                            "price": "289",
+                            "details": "Chicken chunks cooked in real spices of telangana region"
+                        },
+                        {
+                            "name": "Andhra Chicken Kebab",
+                            "price": "289",
+                            "details": "Marinated chicken chunks and fried chicken pieces"
+                        },
+                        {
+                            "name": "Mutton Roast",
+                            "price": "349",
+                            "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala."
+                        },
+                        {
+                            "name": "Fish Chilly",
+                            "price": "349",
+                            "details": "Stir-fried fish fillets coated in a spicy marinade and topped with a special Andhra chilli masala."
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Andhra Style Non Vegetarian",
+                    "categoryItems": [{
+                            "name": "Chicken French",
+                            "price": "279",
+                            "details": "Shallow-fried chicken chunks covered in a crispy corn flour coating tossed in tangy sauces."
+                        },
+                        {
+                            "name": "Prawns Pepper Fry",
+                            "price": "349",
+                            "details": "Fresh prawns shallow fried, and finished with chef's special spices"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "North Indian Main Course",
+                    "categoryItems": [{
+                            "name": "Butter Chicken Boneless",
+                            "price": "299",
+                            "details": "A decadently creamy dish prepared with boneless chicken chunks dunked in a hearty gravy of tomatoes, onions and mild Indian spices."
+                        },
+                        {
+                            "name": "Kadai Chicken Curry",
+                            "price": "299",
+                            "details": "Must try dish the bitter taste of fenugreek greens complements the chicken exceptionally well. the addition of cream further mellows down the bitterness thereby adding to the rich quotient of this dish."
+                        },
+                        {
+                            "name": "Paneer Butter Masala",
+                            "price": "269",
+                            "details": "A creamy indulgence of soft paneer cubes cooked in tomato and onion based gravy with undertones of whole spices."
+                        },
+                        {
+                            "name": "Dal Fry",
+                            "price": "229",
+                            "details": "Spicy, yet simple, a comforting yellow lentil preparation spiced with Indian masala."
+                        },
+                        {
+                            "name": "Kadai Paneer",
+                            "price": "269",
+                            "details": "Cubes of Paneer,Diced Tomato & Capicum Cooked with Aromatic Gravy Kadai Gravy"
+                        },
+                        {
+                            "name": "Mushroom Masala",
+                            "price": "259",
+                            "details": "Is a Delicious Indian Curry Made with Fresh Button Mushrooms cooked with Onions , Tomato , Spices and Herbs"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Breads",
+                    "categoryItems": [{
+                            "name": "Butter Naan",
+                            "price": "50",
+                            "details": "A super-soft bread with a generous serving of butter that tastes brilliant when paired with a gravy."
+                        },
+                        {
+                            "name": "Kulcha",
+                            "price": "50",
+                            "details": "Clay oven baked Thick flat bread made from refined flour"
+                        },
+                        {
+                            "name": "Butter Paratha",
+                            "price": "60",
+                            "details": "All Time Favorite Multi Layered Bread Loaded with Butter"
+                        },
+                        {
+                            "name": "Roti",
+                            "price": "45",
+                            "details": "Leavened, clay oven-baked flat bread"
+                        },
+                        {
+                            "name": "Butter Roti",
+                            "price": "50",
+                            "details": "Clay oven baked flat bread made from refined flour"
+                        },
+                        {
+                            "name": "Garlic Naan",
+                            "price": "60",
+                            "details": "Clay oven baked flat bread made from refined flour Sprinkled With Roast Garlic"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Tandoori Delights",
+                    "categoryItems": [{
+                            "name": "Kalmi Kabab",
+                            "price": "289",
+                            "details": "Tandoor-cooked succulent chicken drumsticks marinated in a blend of yogurt and roasted Indian spices."
+                        },
+                        {
+                            "name": "Tandoori Chicken",
+                            "price": "310",
+                            "details": "Evergreen Tender chicken Chicken cooked with yogurt Base masala Finished with Clay"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Chinese Starters",
+                    "categoryItems": [{
+                            "name": "Mushroom Manchurian",
+                            "price": "259",
+                            "details": "Deep-fried Battered Button Mushroom that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+                        },
+                        {
+                            "name": "Paneer Manchurian",
+                            "price": "269",
+                            "details": "Deep-fried paneer cubes that are coated with seasoned batter and tossed in a thick and spicy Manchurian sauce."
+                        },
+                        {
+                            "name": "Chilly Chicken Boneless",
+                            "price": "279",
+                            "details": "Deep-fried, boneless chicken pieces coated in seasoned batter and tossed in a slightly spicy chilli sauce."
+                        },
+                        {
+                            "name": "Chicken Manchurian",
+                            "price": "279",
+                            "details": "Manchurian is a class of Chinese dish made by roughly chopping and deep-fried Battered Chicken Piece , and sautéeing it in a sauce flavored with soy sauce"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Rice and Noodles",
+                    "categoryItems": [{
+                            "name": "Veg pulao",
+                            "price": "229",
+                            "details": "Long Grain Basmati Rice Cooked With Fresh Vegetable & Green Peas"
+                        },
+                        {
+                            "name": "Jeera Rice",
+                            "price": "229",
+                            "details": "flavored Indian Rice Dish Made By Cooking with Cumin Seeds & other Fragrant Spices"
+                        },
+                        {
+                            "name": "Veg Noodles",
+                            "price": "239",
+                            "details": "Tender noodles tossed in a ginger-garlic base along with grated vegetable mix."
+                        },
+                        {
+                            "name": "Chicken Fried Rice",
+                            "price": "279",
+                            "details": "Wholesome stir-fried rice tossed with juicy chicken chunks and grated vegetables."
+                        },
+                        {
+                            "name": "Egg Fried Rice",
+                            "price": "249",
+                            "details": "Long grain basmati cooked with beaten eggs and flavored full masala finished with spicy schezwan sauce"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/gmmenahhys58q9jvtsu9",
+            "name": "Third Wave Coffee",
+            "address": "Vital mallya Road Bangalore",
+            "ratings": 2.1,
+            "approxDeliveryTime": 50,
+            "approxPrice": 250,
+            "cuisine": ["Salad", "Snacks", "Desserts", "Beverages"],
+            "categories": [{
+                    "categoryName": "Recommended",
+                    "categoryItems": [{
+                            "name": "Non Veg Footlong Sub Combo",
+                            "price": "490",
+                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Salad Combo",
+                            "price": "323.81",
+                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Salad Combo",
+                            "price": "361.91",
+                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Signature Wrap Combo",
+                            "price": "323.81",
+                            "details": "(Save Rs 30) Any one veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Signature Wrap Combo",
+                            "price": "352.38",
+                            "details": "(Save Rs 30) Any one non veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "319.05",
+                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Sub N Sip Combo",
+                    "categoryItems": [{
+                            "name": "Non Veg Footlong Sub Combo",
+                            "price": "490.48",
+                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Salad Combo",
+                            "price": "Veg Salad Combo",
+                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Salad Combo",
+                            "price": "361.91",
+                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Snack Wrap Combos",
+                    "categoryItems": [{
+                            "name": "Snack Wrap With Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "261.90",
+                            "details": "Veg Combos includes one 6 inches sub along with 1 veg snack wrap"
+                        },
+                        {
+                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "319.05",
+                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Cookie Combos",
+                    "categoryItems": [{
+                            "name": "Cookie With Veg Signature Wrap Combos",
+                            "price": "309.52",
+                            "details": "Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Non Veg Signature Wrap Combos",
+                            "price": "338.10",
+                            "details": "Non Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Veg Sub Combos (15 cm, 6 Inch)",
+                            "price": "233.33",
+                            "details": "Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Non Veg Sub Combos (15 cm, 6 Inch)",
+                            "price": "290.48",
+                            "details": "Non Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Non Veg Signature Wraps",
+                    "categoryItems": [{
+                            "name": "Turkey Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Tuna Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Roasted chicken Strips Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Subway Club Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Turkey Breast & Chicken Slice Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Veg Signature Wraps",
+                    "categoryItems": [{
+                            "name": "Veggie Delite Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Veg Seekh Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Hara Bhara Kebab Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Veg Shammi Kebab Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Mexican Patty Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "BFF Combos",
+                    "categoryItems": [{
+                            "name": "BFF Veg Sub Combo (15 cm, 6 Inch)",
+                            "price": "400",
+                            "details": "Buy any two 6 inches veg sub & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Veggie Delite Combo (15 cm, 6 Inch)",
+                            "price": "361.90",
+                            "details": "Buy two Veggie Delite (15, cm, 6inch) subs and get two cookies free"
+                        },
+                        {
+                            "name": "BFF Non-Veg Sub Combo (15 cm, 6 Inch)",
+                            "price": "476.19",
+                            "details": "Buy any two 6 inches non-veg sub & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Veg Signature Wrap Combo",
+                            "price": "514.29",
+                            "details": "Buy any two signature wrap & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Non-Veg Signature Wrap Combo",
+                            "price": "571.43",
+                            "details": "Buy any two signature wrap & get 2 cookie free"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Classic Combo",
+                    "categoryItems": [{
+                            "name": "Turkey Sub (15 cm, 6 Inch) + Subway club Sub (15 cm, 6 Inch)",
+                            "price": "495.24",
+                            "details": "Price shown is after 10% discount."
+                        },
+                        {
+                            "name": "BMT Sub (15 cm, 6 Inch) + Turkey & Chicken Slice Sub (15 cm, 6 Inch)",
+                            "price": "495.24",
+                            "details": "Price shown is after 10 % discount"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Fusion Combo",
+                    "categoryItems": [{
+                        "name": "Smokey Chicken Club Sub (15 cm, 6 Inch) + Smoked Chicken Club Sub (15 cm, 6 Inch)",
+                        "price": "619.05",
+                        "details": ""
+                    }]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/w1rrow27w3vb3ur5xbi9",
+            "name": "McDonald's",
+            "address": "Kasturba Road, Ashok Nagar | Change Outlet ",
+            "ratings": 4.3,
+            "approxDeliveryTime": 34,
+            "approxPrice": 400,
+            "cuisine": [
+                "Burgers",
+                "Beverages"
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/gscpaluydqlvrgxxmjef",
+                        "name": "McAloo Tikki + Veg Pizza McPuff + Coke",
+                        "price": "139",
+                        "details": "Enjoy a combo of McAloo Tikki Burger, Veg Pizza McPuff and Coke, now in a delivery friendly reusable bottle."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uckbx3rr87jhakb81mbs",
+                        "name": "McAloo Tikki Burger",
+                        "price": "55",
+                        "details": "The World's favourite Indian burger! Crunchy potato and peas patty with delicious Tom Mayo & crunchy onions; now with Whole Wheat Bun."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 6,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ukkzkm7sh8ii9zilqpkr",
+            "name": "Samosa Party",
+            "address": "Central Bangalore, Ashok Nagar ",
+            "ratings": 4.4,
+            "approxDeliveryTime": 40,
+            "approxPrice": 150,
+            "cuisine": [
+                "Chaat",
+                "North Indian"
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/k7p5l3hkverro19upeng",
+                        "name": "Veg Samosa Platter",
+                        "price": "179",
+                        "details": "Punjabi Aloo, Pickley Paneer, Noodle, Corn and Cheese."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rpvmuk6spo39et2qfi7g",
+                        "name": "Samosa and Chole Meal",
+                        "price": "139",
+                        "details": "Mumbaiya breakfast of Chole and 2 pcs of Punjabi Aloo Samosa served with mint chutney and onion salad."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 7,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/myqjdznwukizjyij8yyi",
+            "name": "Biryani Blues",
+            "address": "Central Bangalore, Church Street ",
+            "ratings": 4.3,
+            "approxDeliveryTime": 35,
+            "approxPrice": 400,
+            "cuisine": [
+                "Biryani",
+                " Kebabs",
+                "Gulab Jamun"
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ffvhmvzqjnplvlvmtggo",
+                        "name": "Paneer 65 Biryani",
+                        "price": "309",
+                        "details": "Spicy Paneer 65 pieces layered with Biryani Rice and served with Raita."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dbxnoju4lqiz3cxlqla1",
+                        "name": "Gulab Jamun",
+                        "price": "49",
+                        "details": "Soft, melt in your mouth, fried dumplings, traditionally made of thickened milk and soaked in rose-flavored sugar syrup."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 8,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ap8fnfunttp5a0afyjfl",
+            "name": "SRI UDUPI VAIBHAV",
+            "address": "Indiranagar, Indiranagar",
+            "ratings": 4.3,
+            "approxDeliveryTime": 40,
+            "approxPrice": 199,
+            "cuisine": [
+                "South Indian",
+                "North Indian"
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rp7lbmw3kmn0u4ixuggi",
+                        "name": "Idli (2)",
+                        "price": "43.81",
+                        "details": "Spicy and Testy."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/wzmmlzejtfjvqhbx9u2n",
+                        "name": "Plain Dosa",
+                        "price": "66.67",
+                        "details": "Spicy and Testy."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 9,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bavd0e8lwhnzn02gvfsc",
+            "name": "Noto Healthy Ice Cream",
+            "address": "Indiranagar, Indiranagar | Change Outlet ",
+            "ratings": 4.5,
+            "approxDeliveryTime": 45,
+            "approxPrice": 250,
+            "cuisine": [
+                "Desserts",
+                "Ice Cream"
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jxopfnjzihmimm6mfppr",
+                        "name": "Chocolate Peanut Butter 125 ml",
+                        "price": "80.51",
+                        "details": "Our take on the classic combination of dark chocolate and peanut butter, this one is spoon-lickingly good. We're obsessed and we promise so will you. No Artificial sweeteners or preservatives,100% Vegetarian. (Per serving: 95 Cal, 2.1gms sugar, 5.6gms protein compared to traditional ice creams.)."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/r1hkrmzopddjjamiywwf",
+                        "name": "Mangoes and Cream Ice Cream (125ml)",
+                        "price": "80.50",
+                        "details": "Move over the king is here! Made using 25% real Alphonso pulp you can enjoy this flavour all year round. No Artificial sweeteners or preservatives. 100% Vegetarian (Per serving: 75 cal, 3gms sugar, 5gms protein compared to traditional ice cream)."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 10,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddlewhiegjaigcxnp5tr",
+            "name": "Shanti Sagar",
+            "address": "Ulsoor, Frazer Town",
+            "ratings": 4.3,
+            "approxDeliveryTime": 37,
+            "approxPrice": 600,
+            "cuisine": [
+                "Chinese"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ougimdtukafslyszovou",
+                        "name": "Single Idli Vada (1 Pc Each)",
+                        "price": "50",
+                        "details": "Spicy and Testy."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hwqefvgot83pt25mqzpj",
+                        "name": "Rava Masala Dosa",
+                        "price": "75",
+                        "details": "Spicy and Testy."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 11,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ddodxcajls66p0f7kypg",
+            "name": "Cake Town",
+            "address": "BTM, BTM",
+            "ratings": "4.8",
+            "approxDeliveryTime": 62,
+            "approxPrice": 250,
+            "cuisine": [
+                "Desserts"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sohpazwzra8njkslhqq6",
+                        "name": "Ferrero Rocher Cake 1kg",
+                        "price": "749",
+                        "details": "Soft and Testy."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/yxr6extf5r7varygtdtb",
+                        "name": "Mix Fruit Cake 1kg",
+                        "price": "749",
+                        "details": "Soft and Testy."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 12,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/bti5cqzjlftzrw0uml1k",
+            "name": "Sangam Sweets",
+            "address": "Central Bangalore, Gandhi Nagar | Change Outlet ",
+            "ratings": 4.5,
+            "approxDeliveryTime": 48,
+            "approxPrice": 100,
+            "cuisine": [
+                "North Indian",
+                "Desserts"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/caoragyuxyneszngkwa2",
+                        "name": "MALAI SANDWICH",
+                        "price": "175",
+                        "details": "Soft and Testy."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/g9dl0en0ncq2yq2qnfoj",
+                        "name": "BADAM KATHLI",
+                        "price": "392.86",
+                        "details": "Soft and Testy."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 13,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/is2nsfowmvlbl4atsrrn",
+            "name": "No Sugar Please, Sweets & Juices",
+            "address": "Koramangala, S.G. Palya",
+            "ratings": 4.3,
+            "approxDeliveryTime": 50,
+            "approxPrice": 200,
+            "cuisine": [
+                "Beverages",
+                "Keto"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ahtefo4u8xfp0qh6hooo",
+                        "name": "Tropical Hydrating Fruit Bowl",
+                        "price": "129",
+                        "details": "Washed in warm ro water. Cucumber & watermelon.[kcal 63gm | carbs 16gm | fats 0.4gm | protein 1.8gm]."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/f5fr2wvtwgpimf6uvzjt",
+                        "name": "Doctor Immunity Hydrator Bowl",
+                        "price": "189",
+                        "details": "[washed in warm ro water]orange+apple+watermelon[kcal 121gm | carbs 31gm | fats 0.4gm | protein 1.1gm]."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 14,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rebvqejt2trciuqucqum",
+            "name": "Hatti Kaapi - Coffee and more",
+            "address": "Central Bangalore, Sivanchetti Gardens | Change Outlet ",
+            "ratings": 4.2,
+            "approxDeliveryTime": 38,
+            "approxPrice": 120,
+            "cuisine": [
+                "Beverages",
+                "South Indian"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nzhxamcgbpinoz6ewhz8",
+                        "name": "Black Currant Milkshake",
+                        "price": "120",
+                        "details": "Testy."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ed3yjaqi05uu2yvybhhk",
+                        "name": "Upma N Coffee Serves 2",
+                        "price": "170",
+                        "details": "Testy."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 15,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vojof3tfxr0i3kwpsp3e",
+            "name": "Karnataka Bhel House",
+            "address": "Chamrajpet, Chamrajpet",
+            "ratings": 4.4,
+            "approxDeliveryTime": 30,
+            "approxPrice": 100,
+            "cuisine": [
+                "Chaat"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nyxgxr8miybp6lxd4fyv",
+                        "name": "Pani Puri",
+                        "price": "45",
+                        "details": "A byte sized chaat consisting of a hollow crispy fried puffed-ball filled with green peas and onions and flavoured water . (Serves 1)."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/slkyuj1zal9gupncbymt",
+                        "name": "Aloo Dahi Puri",
+                        "price": "68",
+                        "details": "Hollow fried puffed ball filled with mashed potatoes served with a mixture of sweet chutney and curd on top, topped with rice flakes and sev.(Serves 1)."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 16,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/mksb1fkm6edljogjd8n6",
+            "name": "The Himalayan Momo Company",
+            "address": "Indiranagar, Domlur",
+            "ratings": "4.3",
+            "approxDeliveryTime": 51,
+            "approxPrice": 200,
+            "cuisine": [
+                "Snacks",
+                " Beverages"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sgkiw0bj22fhhspzochp",
+                        "name": "Himalyan Kurkure Veg Momos",
+                        "price": "159",
+                        "details": "Seasoned and crumb-fried (in cold pressed groundnut oil) vegetable (cabbage, onion, carrots, herbs) dumplings served with spicy chilli garlic 'chutney'. Our momos are hand made everyday by expert chefs."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rn1nnobhuslfvhuezyzr",
+                        "price": "190",
+                        "details": "Grilled cottage cheese and garden vegetables with tandoori spices; served with crisps."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 17,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ers3firlqevnvpnponuj",
+            "name": "Subway",
+            "address": "Subway, Ubcity 2nd level Vital mallya Road Bangalore",
+            "ratings": 3.9,
+            "approxDeliveryTime": 47,
+            "approxPrice": 350,
+            "cuisine": ["Fast Food", "Salad", "Snacks", "Desserts", "Beverages"],
+            "categories": [{
+                    "categoryName": "Recommended",
+                    "categoryItems": [{
+                            "name": "Non Veg Footlong Sub Combo",
+                            "price": "490",
+                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Salad Combo",
+                            "price": "323.81",
+                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Salad Combo",
+                            "price": "361.91",
+                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Signature Wrap Combo",
+                            "price": "323.81",
+                            "details": "(Save Rs 30) Any one veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Signature Wrap Combo",
+                            "price": "352.38",
+                            "details": "(Save Rs 30) Any one non veg signature wrap + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "319.05",
+                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Sub N Sip Combo",
+                    "categoryItems": [{
+                            "name": "Non Veg Footlong Sub Combo",
+                            "price": "490.48",
+                            "details": "(Save Rs 30) Any one non veg footlong sub + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Veg Salad Combo",
+                            "price": "Veg Salad Combo",
+                            "details": "(Save Rs 30) Any one veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        },
+                        {
+                            "name": "Non Veg Salad Combo",
+                            "price": "361.91",
+                            "details": "(Save Rs 30) Any one non veg salad + any one raw pressery juice pet bottle @Rs 70"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Snack Wrap Combos",
+                    "categoryItems": [{
+                            "name": "Snack Wrap With Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "261.90",
+                            "details": "Veg Combos includes one 6 inches sub along with 1 veg snack wrap"
+                        },
+                        {
+                            "name": "Snack Wrap With Non Veg Subs Combos (15 cm, 6 Inch)",
+                            "price": "319.05",
+                            "details": "Non Veg Combos includes one 6 inches sub price along with 1 non veg snack wrap"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Cookie Combos",
+                    "categoryItems": [{
+                            "name": "Cookie With Veg Signature Wrap Combos",
+                            "price": "309.52",
+                            "details": "Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Non Veg Signature Wrap Combos",
+                            "price": "338.10",
+                            "details": "Non Veg Combos includes one signature wrap along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Veg Sub Combos (15 cm, 6 Inch)",
+                            "price": "233.33",
+                            "details": "Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
+                        },
+                        {
+                            "name": "Cookie With Non Veg Sub Combos (15 cm, 6 Inch)",
+                            "price": "290.48",
+                            "details": "Non Veg Combos includes one 6 inches sub along with Choice of Cookie (1 Piece)"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Non Veg Signature Wraps",
+                    "categoryItems": [{
+                            "name": "Turkey Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Tuna Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Roasted chicken Strips Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Subway Club Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Turkey Breast & Chicken Slice Signature Wraps",
+                            "price": "285.71",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "Veg Signature Wraps",
+                    "categoryItems": [{
+                            "name": "Veggie Delite Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Veg Seekh Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+                        },
+                        {
+                            "name": "Hara Bhara Kebab Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Veg Shammi Kebab Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        },
+                        {
+                            "name": "Mexican Patty Signature Wraps",
+                            "price": "257.14",
+                            "details": "Signature wraps packed with double protein and loaded flavours"
+
+                        }
+
+                    ]
+                },
+                {
+                    "categoryName": "BFF Combos",
+                    "categoryItems": [{
+                            "name": "BFF Veg Sub Combo (15 cm, 6 Inch)",
+                            "price": "400",
+                            "details": "Buy any two 6 inches veg sub & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Veggie Delite Combo (15 cm, 6 Inch)",
+                            "price": "361.90",
+                            "details": "Buy two Veggie Delite (15, cm, 6inch) subs and get two cookies free"
+                        },
+                        {
+                            "name": "BFF Non-Veg Sub Combo (15 cm, 6 Inch)",
+                            "price": "476.19",
+                            "details": "Buy any two 6 inches non-veg sub & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Veg Signature Wrap Combo",
+                            "price": "514.29",
+                            "details": "Buy any two signature wrap & get 2 cookie free"
+                        },
+                        {
+                            "name": "BFF Non-Veg Signature Wrap Combo",
+                            "price": "571.43",
+                            "details": "Buy any two signature wrap & get 2 cookie free"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Classic Combo",
+                    "categoryItems": [{
+                            "name": "Turkey Sub (15 cm, 6 Inch) + Subway club Sub (15 cm, 6 Inch)",
+                            "price": "495.24",
+                            "details": "Price shown is after 10% discount."
+                        },
+                        {
+                            "name": "BMT Sub (15 cm, 6 Inch) + Turkey & Chicken Slice Sub (15 cm, 6 Inch)",
+                            "price": "495.24",
+                            "details": "Price shown is after 10 % discount"
+                        }
+                    ]
+                },
+                {
+                    "categoryName": "Fusion Combo",
+                    "categoryItems": [{
+                        "name": "Smokey Chicken Club Sub (15 cm, 6 Inch) + Smoked Chicken Club Sub (15 cm, 6 Inch)",
+                        "price": "619.05",
+                        "details": ""
+                    }]
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/me4mzdjxosmk0lg4ndog",
+            "name": "Anand Sweets and Savouries",
+            "address": "Commercial Street, Shivaji Nagar | Change Outlet ",
+            "ratings": "4.6",
+            "approxDeliveryTime": 33,
+            "approxPrice": 200,
+            "cuisine": [
+                "Sweets",
+                "Chaat"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ow9mvmxclhv8tju2miva",
+                        "name": "Kaju Katli",
+                        "price": "247.62",
+                        "details": "The cashew fudge adds all the dhamaka to every occassin. This lip-smacking sweet is ripe with the goodness of premium cashews in plenty, a decadent ode to everyone's favourite made with plenty in our kitchens."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/o5p0ccqyp8yuajqwcxub",
+                        "name": "Soan Halwa",
+                        "price": "200",
+                        "details": "A caramelized delicacy that plays milk, sugar, cornflour and ghee in rich harmony to reveal the forgotten childhood favorites of the streets of Multan."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 19,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tu6nushcuxar8c03ezaa",
+            "name": "Say Cheese Cake",
+            "address": "Koramangala, Koramangala",
+            "ratings": "4.3",
+            "approxDeliveryTime": 53,
+            "approxPrice": 175,
+            "cuisine": [
+                "Desserts",
+                " Beverages"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/qruw4tjrswottvxxiyzc",
+                        "name": "Blueberry Cheesecake - Slice",
+                        "price": "139",
+                        "details": "Dish originally from greece, this cheesecake has a perfect buttery graham cracker crust. Swirled with a sweet blueberry sauce. The velvety richness for a simply sophisticated experience."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/nzr2siox3naabnkpffiv",
+                        "name": "White Truffle Cake",
+                        "price": "479",
+                        "details": "Layers of moist white chocolate sponge indulging with milk chocolate ganache, every bite that will melt in your mouth. (Serves 1)."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 20,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/dxnxm50rkswvsiwtqero",
+            "name": "Joys Kuttanadu Restaurant",
+            "address": "Mathikere,Yeshwanthpur, Yeswanthpur",
+            "ratings": "4.0",
+            "approxDeliveryTime": 50,
+            "approxPrice": 300,
+            "cuisine": [
+                "Kerala",
+                "South Indian"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/r3uihuizxmyzcdnegj1n",
+                        "name": "Chicken Biryani",
+                        "price": "175",
+                        "details": "Richly flavored aromatic rice layered with marinated chicken pieces in a delicate blend of whole spices."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dyzqlyijv1ppvlenwmah",
+                        "name": "Chicken Curry",
+                        "price": "155",
+                        "details": " Tender chicken cooked in a masala gravy with onions, tomatoes and special spices."
+                    }
+                ]
+            }]
+        },
+        {
+            "id": 21,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/qoxluuv2ocvc3ffgdzug",
+            "name": "Green Pepper",
+            "address": "Hal 3Rd Stage, New Tippasandra",
+            "ratings": "4.2",
+            "approxDeliveryTime": 43,
+            "approxPrice": 200,
+            "cuisine": [
+                "Kerala",
+                "Seafood"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/k60n1tsykjclhlenobxy",
+                        "name": "Chicken 65",
+                        "price": "189",
+                        "details": "Chicken 65 is spicy coated with spices which is deep fried in oil and garnished with onion and lemon."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ornc9q1i0msyx3e5hggg",
+                        "name": "Pepper Chicken ( Dry )",
+                        "price": "189",
+                        "details": "| Serves 1,4-5pcs , 500grms |Chicken is cooked untill tender and shallow fried with pepper,onions,curry leaves which gives intensifying spicy flavour.| Bone |."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 22,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/zowvf44mmrwshigprrvn",
+            "name": "Thalassery Restaurant",
+            "address": "Nehru Road, Near Syndicate Bank, Kacharakanahalli",
+            "ratings": "4.2",
+            "approxDeliveryTime": 46,
+            "approxPrice": 300,
+            "cuisine": [
+                "South Indian",
+                "Arabian"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ojbgvuufcipxlwni2acx",
+                        "name": "Chilli Paneer",
+                        "price": "130",
+                        "details": "Cubes of moist paneer tossed in a melange of onion, bell peppers, soy sauce and chilli sauce."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/mipsm2vf83ilvrgt0pl5",
+                        "name": "Chicken Curry(kerala Style)",
+                        "price": "170",
+                        "details": "A spicy flavourful blend of toasted ground spices and grated coconut in a thick gravy with soft and tender chicken pieces (serves 1)."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 23,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vofvjtbfnonk6xespq03",
+            "name": "Bangarpet chats",
+            "address": "Central Bangalore, Central Bangalore | Change Outlet",
+            "ratings": "4.1",
+            "approxDeliveryTime": 35,
+            "approxPrice": 110,
+            "cuisine": [
+                "Chaat"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ebbcxtpmccnttdbwrebj",
+                        "name": "Sev Puri",
+                        "price": "55",
+                        "details": "Bangarpet special sev puri."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/xsuowbjzdsxuqkjjnxjd",
+                        "name": "Masala Puri",
+                        "price": "75",
+                        "details": "Contains 7 puri, delicious taste with extra special white pani."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 24,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jxp8y1chnqljwqylpkov",
+            "name": "Sri Udupi Park (100ft Road)",
+            "address": "100 Feet Road, Indiranagar",
+            "ratings": "4.3",
+            "approxDeliveryTime": 46,
+            "approxPrice": 100,
+            "cuisine": [
+                "South Indian",
+                "North Indian"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/lleihif6wfk5rjmbt9pq",
+                        "name": "Vada",
+                        "price": "35",
+                        "details": "This classic Vada is a perfect choice when you don't want to go wrong. Served with sambhar and chutney."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/sjg84ifbojyb9glrtc2l",
+                        "name": "Masala Dosa",
+                        "price": "65",
+                        "details": "Filled with nutrients and taste, this Masala Dosa will make your mornings better. Served with sambhar and chutney."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 25,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/n15vckntsiboiod3gpco",
+            "name": "Asha tiffins",
+            "address": "HSR, Hsr Layout",
+            "ratings": "4.4",
+            "approxDeliveryTime": 50,
+            "approxPrice": 200,
+            "cuisine": [
+                "Indian",
+                "South Indian"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/cepid7iiux5mmvqa5lgm",
+                        "name": "Gobi Manchurian (dry)",
+                        "price": "79",
+                        "details": "Served with tomato sauce(no artificial colours/ajinomoto/msg and its chemical free)."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dfzkaxlydbd2zx3zwxa5",
+                        "name": "Mushroom Manchurian (dry)",
+                        "price": "99",
+                        "details": "Spicy and Testy."
+                    }
+                ]
+            }]
+        },
+
+        {
+            "id": 26,
+            "image": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/tn7yk3nwzsa5qkdj7yv4",
+            "name": "Aubree",
+            "address": "Central Bangalore - Bangalore, Shivaji Nagar | Change Outlet ",
+            "ratings": "4.6",
+            "approxDeliveryTime": 35,
+            "approxPrice": 700,
+            "cuisine": [
+                "Desserts",
+                "Bakery"
+
+
+            ],
+            "categories": [{
+                "categoryName": "Recommended",
+                "categoryItems": [{
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/w59yb8myjxcg29ajz06v",
+                        "name": "Kit Kat Cupcake",
+                        "price": "161.90",
+                        "details": "The Crunchy Kitkat Cupcake with Delicious chocolate Butter Cream Frosting."
+                    },
+                    {
+                        "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/dkq7exmt8lng8vyfxboz",
+                        "name": "Black Forest Cake",
+                        "price": "566.67",
+                        "details": "Chocolate sponge base filled with American sour cherries and topped with white chocolate shavings and edible chocolate mushrooms."
+                    }
+                ]
+            }]
+        }
+    ]
+}

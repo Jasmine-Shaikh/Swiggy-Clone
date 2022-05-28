@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./allStyle/search.css">
+    <link rel="stylesheet" href="./ComponentStyles/footer.css">
+    <link rel="stylesheet" href="./componentStyles/navbar.css">
+    <link href='https://css.gg/chevron-down.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="navbarContainer"></div>
+    
+    <div id="searchPageContainer">
+        <div id="searchContainer">
+           <div>
+            <button id="searchIcon"><i class="fa fa-search"></i></button>
+            <input type="text" id="searchInput" placeholder="Search For Restaurants"/> 
+           </div>
+            <div>
+                <button id="crossIcon">
+                    <!-- <i  class="fa fa-window-close" aria-hidden="true"></i> -->
+                    <img id="crossButtonInSearchPage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQ4mCgEvwFuckExTSxUrrYOzGt_Jz1_9htlPBsw73l0ONIgxJKrNlxHtBKIXHEjU1kjo&usqp=CAU" alt="">
+                    <span>ESC</span>
+                </button>
+            </div>
+        </div>
+        <div id="RestaurantsContainer">
+            <div id="filterRestaurant">
+                <button id="restaurantButton">Restaurants</button>
+                <button id="dishesButton">Dishes</button>
+            </div>
+            <div id="filterContainer">
+                <div id="filtertypeselector">
+                    <button id="filtertypes">Relevance</button>
+                    <i id="filterIcon1" class="gg-chevron-down"></i>
+                </div>
+                <div id="filterlist">
+                    <ul id="ulList">
+                        <li id="relevence">Relevence</li>
+                        <li id="deliveryTimeSort">Delivery</li>
+                        <li id="ratingsSort">Rating</li>
+                        <li id="lowToHigh">ByPrice</li>
+                    </ul>
+                 </div>
+               
+               
+                <!-- <button>Relevance</button> -->
+            </div>
+        </div>
+    </div>
+   
+ 
+    <div id="mainContainer">
+
+    </div>
+    <div id="dishesMainContainer"></div>
+   
+    <footer id="footerPart"></footer>
+    
+    <script src="./allScript/search.js" type="module"></script>
+</body>
+</html>
