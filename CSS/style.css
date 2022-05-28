@@ -175,7 +175,7 @@ form{
     margin-top: 50px;
     margin-left: 50px;
     color:grey;
-    border:1px solid red;
+    /* border:1px solid red; */
   
    
 }
@@ -250,4 +250,95 @@ form{
     border: 0px;
     padding: 20px;
     font-size: 25px;
+}
+
+
+
+/* card css */
+
+#product-container {
+    display: flex;
+    gap: 20px;
+    color: rgb(47, 46, 46);
+}
+
+#product-container>div>img {
+    height: 100px;
+    width: 100px;
+}
+
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#inc-btn,
+#dec-btn {
+    background-color: transparent;
+    border: 0px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+
+
+#cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    width: 300px;
+    display: none;
+    /* border: 1px solid #cecece; */
+    
+
+}
+
+#inc-dec-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#priceContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    height: 250px;
+}
+#cardItemContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid #cecece; */
+    /* height: 200px;
+    width: 250px; */
+}
+#cardMainContainer{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    border: 2px solid #cecece;
+
+    /* justify-content: space-between; */
+
+}
+/* #welcomecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+} */
+/* #checkout{
+  border: 2px solid red;
+} */
+#continue-button{
+    padding: 15px 90px;
+    background-color: #60b246;
+    color: white;
+    border: none;
 }

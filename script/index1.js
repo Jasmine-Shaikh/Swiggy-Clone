@@ -7,9 +7,14 @@ document.getElementById("navbarContainer").innerHTML = navbarHTML();
 
 
 
+// window.onload = function() {
+
+// }
 
 
-
+document.addEventListener("DOMContentLoaded", function(event) { 
+  // your code here
+  
 let category = document.querySelectorAll(".allListOfFilters");
 
 // console.log(category);
@@ -81,31 +86,31 @@ function printData(allCategories,category){
 //  }
 
 
-document.querySelector("li").innerText.addEventListener("click",
-function(category){
-  console.log(category)
-   getData(2,category);
-})
+// document.querySelector("li").innerText.addEventListener("click",
+// function(category){
+//   console.log(category)
+//    getData(2,category);
+// })
 
 
 
 
-async function getData(id,category){
-  let result = await fetch(`http://localhost:3000/Restaurants/${id}`);
-  let ans = await result.json();
-  console.log(ans.categories);
-  printData(ans.categories,category);
-}
+// async function getData(id,category){
+//   let result = await fetch(`http://localhost:3000/Restaurants/${id}`);
+//   let ans = await result.json();
+//   console.log(ans.categories);
+//   printData(ans.categories,category);
+// }
 
-function printData(allCategories,category){
-  console.log(allCategories,category)
-  allCategories.forEach(element => {
-      console.log(element);
-      if(element.categoryName == category){
-          displayData(element);
-      }
-  });
-}
+// function printData(allCategories,category){
+//   console.log(allCategories,category)
+//   allCategories.forEach(element => {
+//       console.log(element);
+//       if(element.categoryName == category){
+//           displayData(element);
+//       }
+//   });
+// }
 // function displayData(data){
 //   document.getElementById('main').innerHTML='';
 //   data.forEach(element => {
@@ -131,9 +136,20 @@ function printData(allCategories,category){
 
   let show = document.getElementById("show");
 
+  let imgreplace = document.getElementById("imgreplace");
+  let h1replace = document.getElementById("h1replace");
+  h1replace.style.display = "none";
+  let parareplace = document.getElementById("parareplace");
+  let cardContainer = document.getElementById("cardContainer");
+console.log(show)
+show.addEventListener("click",function(){
+   cardContainer.style.display = "block"
+   imgreplace.style.display = "none";
+   parareplace.style.display = "none"
+})
   function displayData(data){
     show.innerHTML = "";
-    document.getElementById('show').innerHTML='';
+    // document.getElementById('show').innerHTML='';
     data.categoryItems.forEach(user => {
       
       let box = document.createElement('div');
@@ -147,7 +163,6 @@ function printData(allCategories,category){
       
       let addItems = document.createElement("button");
       addItems.textContent = "ADD";
-      // addItems.setAttribute("id","addItems");
       addItems.classList.add('addItems');
 
       let itemAdditionAndSubtraction = document.createElement("div");
@@ -191,3 +206,9 @@ function printData(allCategories,category){
   // console.log(additionBtn)
   // let text = document.createElement("text");
   // console.log(text)
+});
+
+
+let cardContainer = document.getElementById("cardContainer");
+console.log(cardContainer);
+

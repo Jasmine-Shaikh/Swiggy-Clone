@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,44 +9,103 @@
     <link rel="icon" type="image/x-icon" href="./fav icon/favicon.ico">
 
     <style>
-
- /* // css for show cart product  */
-        #product-container{
+        /* // css for show cart product  */
+        #product-container {
             display: flex;
             gap: 20px;
             color: rgb(47, 46, 46);
         }
-        #inc-dec-btn{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+
+        #product-container>div>img {
+            height: 100px;
+            width: 100px;
         }
-        #right-side{
+
+
+        #right-side {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-        #inc-btn,#dec-btn{
+
+        #inc-btn,
+        #dec-btn {
             background-color: transparent;
             border: 0px;
             padding: 20px;
             font-size: 25px;
         }
 
+
+
+
+        #cardContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid #cecece; */
+            
+
+        }
+        
+        #inc-dec-btn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #priceContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 200px;
+            height: 250px;
+        }
+        #cardItemContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* border: 2px solid #cecece; */
+            /* height: 200px;
+            width: 250px; */
+        }
+        #cardMainContainer{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 250px;
+            border: 2px solid #cecece;
+
+            /* justify-content: space-between; */
+
+        }
+        /* #welcomecontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            
+        } */
+        /* #checkout{
+          border: 2px solid red;
+        } */
+        #continue-button{
+            padding: 15px 90px;
+            background-color: #60b246;
+            color: white;
+            border: none;
+        }
     </style>
 </head>
+
 <body>
     <!-- add heading part inside  -->
 
-    <div id="product-container">
-        <div>
+
+    <!-- <div>
             <img src="https://static.zara.net/photos///2022/V/0/1/p/7521/031/940/2/w/353/7521031940_1_1_1.jpg?ts=1647433483020" alt="">
         </div>
         <div  id="right-side">
-            <div>
-                <p>REF. | 7521/031</p>
-            <P>DARK FUCHSIA</P>
-            <P>S</P>
             <div id="inc-dec-btn">
                 <button id="dec-btn">-</button>
                 <p id="count">1</p>
@@ -59,74 +119,55 @@
                 <p>DELETE</p>
                 <P>SAVE FOR LATER</P>
             </div>
-        </div>
-    </div>
-
-
-        </div>
-
-   
-
-         <!-- design fix continue button  -->
-         <div id="continue">
-            <div id="total-pirce-div">
-                <p class="total-price1">Total Price : Rs. 500/-</p>
-                
-
-            </div>
-            
-            <a href="./choose-payment.html">
-                <button id="continue-button">
-                    CONTINUE
-                </button>
-            </a>
-        </div>
+        </div> -->
 
 
 
-        <!-- container stop  -->
-    </div>
+
+    <!-- design fix continue button  -->
     
+    <!-- container stop  -->
+    </div>
+
 </body>
 
 <script>
-    var iprice=5000;
-    var count=1;
-    localStorage.setItem('totalPrice',iprice);
-    localStorage.setItem('count',count);
-   
-    document.querySelector('.total-price1').innerText=`Total Price : Rs. ${iprice}/- `;
-    document.querySelector('.total-price').innerText=`Rs. ${iprice}/- `;
-    document.querySelector('#count').innerText=`${count} `;
+    var iprice = 5000;
+    var count = 1;
+    localStorage.setItem('totalPrice', iprice);
+    localStorage.setItem('count', count);
+
+    document.querySelector('.total-price1').innerText = `Total Price : Rs. ${iprice}/- `;
+    document.querySelector('.total-price').innerText = `Rs. ${iprice}/- `;
+    document.querySelector('#count').innerText = `${count} `;
 
 
-    document.querySelector('#inc-btn').addEventListener('click',function(){
+    document.querySelector('#inc-btn').addEventListener('click', function () {
         count++;
-        localStorage.setItem('count',count);
-        document.querySelector('#count').innerText=`${count} `
-        var finalPrice=iprice*count;
-        localStorage.setItem('totalPrice',finalPrice);
-        document.querySelector('.total-price1').innerText=`Total Price : Rs. ${finalPrice}/- `;        
-        document.querySelector('.total-price').innerText=`Rs. ${finalPrice}/- `;       
+        localStorage.setItem('count', count);
+        document.querySelector('#count').innerText = `${count} `
+        var finalPrice = iprice * count;
+        localStorage.setItem('totalPrice', finalPrice);
+        document.querySelector('.total-price1').innerText = `Total Price : Rs. ${finalPrice}/- `;
+        document.querySelector('.total-price').innerText = `Rs. ${finalPrice}/- `;
 
 
     });
 
-    document.querySelector('#dec-btn').addEventListener('click',function(){
-        if(count>1){
-            count--;  
-            localStorage.setItem('count',count);
-        }        
-        document.querySelector('#count').innerText=`${count} `
-        var finalPrice=iprice*count;
-        localStorage.setItem('totalPrice',finalPrice);
-        document.querySelector('.total-price1').innerText=`Total Price : Rs. ${finalPrice}/- `;
-        document.querySelector('.total-price').innerText=`Rs. ${finalPrice}/- `;       
-
-
+    document.querySelector('#dec-btn').addEventListener('click', function () {
+        if (count > 1) {
+            count--;
+            localStorage.setItem('count', count);
+        }
+        document.querySelector('#count').innerText = `${count} `
+        var finalPrice = iprice * count;
+        localStorage.setItem('totalPrice', finalPrice);
+        document.querySelector('.total-price1').innerText = `Total Price : Rs. ${finalPrice}/- `;
+        document.querySelector('.total-price').innerText = `Rs. ${finalPrice}/-`;
     });
 
-    
-    
+
+
 </script>
+
 </html>
