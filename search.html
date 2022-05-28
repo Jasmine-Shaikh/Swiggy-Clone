@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search | Swiggy</title>
     <link rel="stylesheet" href="./allStyle/search.css">
     <link rel="stylesheet" href="./ComponentStyles/footer.css">
     <link rel="stylesheet" href="./componentStyles/navbar.css">
     <link href='https://css.gg/chevron-down.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 </head>
+
 <body>
     <div id="navbarContainer"></div>
-    
+
     <div id="searchPageContainer">
         <div id="searchContainer">
-           <div>
-            <button id="searchIcon"><i class="fa fa-search"></i></button>
-            <input type="text" id="searchInput" placeholder="Search For Restaurants"/> 
-           </div>
+            <div>
+                <button id="searchIcon"><i class="fa fa-search"></i></button>
+                <input type="text" id="searchInput" placeholder="Search For Restaurants" />
+            </div>
             <div>
                 <button id="crossIcon">
                     <!-- <i  class="fa fa-window-close" aria-hidden="true"></i> -->
@@ -45,22 +48,23 @@
                         <li id="ratingsSort">Rating</li>
                         <li id="lowToHigh">ByPrice</li>
                     </ul>
-                 </div>
-               
-               
+                </div>
+
+
                 <!-- <button>Relevance</button> -->
             </div>
         </div>
     </div>
-   
- 
+
+
     <div id="mainContainer">
 
     </div>
     <div id="dishesMainContainer"></div>
-   
+
     <footer id="footerPart"></footer>
-    
+
     <script src="./allScript/search.js" type="module"></script>
 </body>
+
 </html>

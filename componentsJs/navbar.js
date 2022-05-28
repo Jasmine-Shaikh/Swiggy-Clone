@@ -1,8 +1,8 @@
-function navbarHTML(){
+function navbarHTML() {
     return ` <header>
     <div id="headerContainer">
         <div id="headerContentContainer">
-            <a href="./homepage.html" id="logo"><img src="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg"
+            <a href="index.html" id="logo"><img src="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg"
                     alt="swiggylogo"></a>
 
             <div id="currentLocation">Bangalore, Karnataka, India</div>
@@ -21,15 +21,14 @@ function navbarHTML(){
                             alt=""> Help</a>
                 </li>
                 <li id="signIn">
-                    <a href=""><img
-                            src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png"
-                            alt=""> Sign In</a>
-                </li>
+
+                <a href="" id="signInA"><img src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png" alt="">Guest</a>
+            </li>
                 <li id="cart"><a href=""><span id="noOfCartItems"></span> Cart</a></li>
             </ul>
         </div>
     </div>
 </header>`
 }
- 
-export {navbarHTML};
+
+export { navbarHTML };
