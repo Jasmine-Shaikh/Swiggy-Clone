@@ -713,3 +713,7 @@ document.getElementById('goToLoginBox').addEventListener('click', () => {
     // initialPosition();
     showLoginBox();
 })
+
+document.querySelector('.navBox').addEventListener('click',()=>{
+    window.location.href = './help.html';
+})

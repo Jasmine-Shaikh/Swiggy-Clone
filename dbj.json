@@ -4,7 +4,38 @@
         "userEmail": "akashkmt963@gmail.com",
         "userPhoneNumber": "9079938742",
         "userPassword": "AAaa@123",
-        "userCart": [],
+        "userCart": [{
+            "name": "Baby Corn Pepper Dry",
+            "price": "239",
+            "details": "Shallow-fried baby corns that are covered in a crispy batter spiced with red pepper and garam masala.",
+            "count" : 4
+          },
+          {
+            "name": "Mutton Roast",
+            "price": "349",
+            "details": "Medium-sized, juicy mutton pieces dry-roasted in a spicy and tangy Indian masala.",
+            "count" : 5
+          }],
+          "userAddresses": [
+            {
+              "flatNumber": "38",
+              "landmark": "Star",
+              "location": "Bengaluru, Karnataka",
+              "locationType": "HOME"
+            },
+            {
+              "flatNumber": "1245",
+              "landmark": "Ashok Nagar",
+              "location": "Bengaluru, Karnataka",
+              "locationType": "WORK"
+            },
+            {
+              "flatNumber": "578, ashok nagar",
+              "landmark": "abcd",
+              "location": "Bengaluru, Karnataka",
+              "locationType": "HOME"
+            }
+          ],
         "id": 1
     }],
     "Restaurants": [{
