@@ -98,6 +98,37 @@
       ],
       "userAddresses": [],
       "id": 2
+    },
+    {
+      "userName": "Meenu",
+      "userEmail": "meenukatariya2330@gmail.com",
+      "userPhoneNumber": "9518058531",
+      "userPassword": "MMmm@123",
+      "userCart": [
+        {
+          "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rpvmuk6spo39et2qfi7g",
+          "name": "Samosa and Chole Meal",
+          "price": "139",
+          "details": "Mumbaiya breakfast of Chole and 2 pcs of Punjabi Aloo Samosa served with mint chutney and onion salad.",
+          "count": 1
+        },
+        {
+          "subimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/k7p5l3hkverro19upeng",
+          "name": "Veg Samosa Platter",
+          "price": "179",
+          "details": "Punjabi Aloo, Pickley Paneer, Noodle, Corn and Cheese.",
+          "count": 1
+        }
+      ],
+      "userAddresses": [
+        {
+          "flatNumber": "1234",
+          "landmark": "sdhg",
+          "location": "Bengaluru, Karnataka",
+          "locationType": "HOME"
+        }
+      ],
+      "id": 3
     }
   ],
   "Restaurants": [

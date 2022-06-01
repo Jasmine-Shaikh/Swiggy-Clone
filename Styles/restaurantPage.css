@@ -1,5 +1,6 @@
 body{
     font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+    position: relative;
 }
 #upperDivForDetails{
     height: 280px;
@@ -147,8 +148,8 @@ body{
 }
 .addToCartBtn{
     position: absolute;
-    right: 20px;
-    top: 30px;
+    right: -70px;
+    top: 35px;
     border: none;
     background-color: #60b246;
     cursor: pointer;
@@ -216,7 +217,9 @@ body{
     /* align-items: center; */
     width: 341px;
     position: absolute;
-    top: 83px;
+    /* top: 0px; */
+    bottom: 0;
+    /* top: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
     /* display: none; */

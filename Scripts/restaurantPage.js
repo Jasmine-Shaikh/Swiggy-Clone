@@ -142,7 +142,7 @@ async function addToCart(item){
     }
     else{
         // alert('login to add to cart');
-        showAlertPopupBody('login to add to cart');
+        showAlertPopupBody('Please Login');
     }
 
     // console.log(cartObject);  
