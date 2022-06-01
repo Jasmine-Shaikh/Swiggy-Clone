@@ -2,6 +2,8 @@ import { popupHTML, closeAlertPopup2, showAlertPopupBody } from '../Components/p
 document.getElementById('alertBoxUpperDiv2').innerHTML = popupHTML();
 document.querySelector('#alertBoxUpperDiv2>.alertBox>.closePopup').addEventListener('click', closeAlertPopup2);
 
+import { footerHTML } from '../Components/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
 
 var restaurantId = localStorage.getItem('restaurantId');
 
