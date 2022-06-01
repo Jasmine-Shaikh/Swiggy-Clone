@@ -73,8 +73,14 @@ async function displayRestuarantList() {
             let restaurantCard = document.createElement("div");
             restaurantCard.setAttribute('class', 'restaurantCard');
 
+
             let restaurantImgAnchor = document.createElement("a");
-            restaurantImgAnchor.href = "#";
+            restaurantImgAnchor.href = "../restaurantPage.html";
+
+            restaurantImgAnchor.addEventListener('click', function() {
+                    
+                    localStorage.setItem('restaurantId', restaurant.id);
+            });
 
             let restaurantImg = document.createElement("img");
             restaurantImg.src = restaurant.image;
@@ -411,3 +417,26 @@ async function getSingleDataFromDataBase(id) {
 //     //     console.log('hii');
 //     //     showSignupBox();
 //     // })
+
+async function getSingleUserDataFromDataBase(id) {
+    try {
+        let result = await fetch(`http://localhost:3000/Users/${id}`);
+        let response = await result.json();
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function showCartAtNavBar(){
+    let loggedUserData = JSON.parse(localStorage.getItem('userProfile'));
+    if(loggedUserData[0]){
+        getSingleUserDataFromDataBase(loggedUserData[1]).then((response) => {
+            document.querySelector('#noOfCartItems').style.display = 'block';
+            document.querySelector('#noOfCartItems').innerText = response.userCart.length;
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+}
+showCartAtNavBar();

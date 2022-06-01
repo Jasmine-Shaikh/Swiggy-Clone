@@ -24,7 +24,7 @@ let dishesMainContainer = document.getElementById("dishesMainContainer");
 
 let crossButtonInSearchPage = document.getElementById("crossButtonInSearchPage");
 crossButtonInSearchPage.addEventListener("click", function() {
-    window.location.href = "./offers.html";
+    window.location.href = "./index.html";
 })
 
 let restaurantButton = document.getElementById("restaurantButton");
@@ -52,7 +52,7 @@ dishesButton.addEventListener("click", function() {
 })
 
 let filterlist = document.getElementById("ulList");
-console.log(filterlist)
+// console.log(filterlist)
 let filtertypes = document.getElementById("filtertypes");
 filtertypes.addEventListener("click", function() {
     filterlist.style.display = "block";
@@ -201,9 +201,9 @@ function displayData(datas) {
 
 
 function func(data, rdata) {
-    console.log(data.ratings)
+    // console.log(data.ratings)
     data.categories.forEach(element => {
-        console.log(element)
+        // console.log(element)
         displayDishesData(element, rdata)
 
     });
@@ -296,3 +296,26 @@ async function getSingleDataFromDataBase(id) {
         console.log(error);
     }
 }
+
+async function getSingleUserDataFromDataBase(id) {
+    try {
+        let result = await fetch(`http://localhost:3000/Users/${id}`);
+        let response = await result.json();
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function showCartAtNavBar(){
+    let loggedUserData = JSON.parse(localStorage.getItem('userProfile'));
+    if(loggedUserData[0]){
+        getSingleUserDataFromDataBase(loggedUserData[1]).then((response) => {
+            document.querySelector('#noOfCartItems').style.display = 'block';
+            document.querySelector('#noOfCartItems').innerText = response.userCart.length;
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+}
+showCartAtNavBar();

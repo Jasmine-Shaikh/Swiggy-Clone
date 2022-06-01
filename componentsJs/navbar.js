@@ -24,7 +24,7 @@ function navbarHTML() {
 
                 <a href="./landingPage.html" id="signInA"><img src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png" alt="">Guest</a>
             </li>
-                <li id="cart"><a href="./checkout.html"><span id="noOfCartItems"></span> Cart</a></li>
+                <li id="cart"><a href="./checkout.html"> Cart<span id="noOfCartItems"></span></a></li>
             </ul>
         </div>
     </div>

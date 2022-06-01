@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/restaurantPage.css">
+</head>
+<body>
+    <header>
+        <div id="headerContainer">
+            <div id="headerContentContainer">
+                <a href="./index.html" id="logo"><img src="https://cdn.worldvectorlogo.com/logos/swiggy-1.svg" alt="swiggylogo"></a>
+
+                <div id="currentLocation">Bangalore, Karnataka, India</div>
+
+                <ul id="headerContainerRight">
+                    <li id="search">
+                        <a href="./search.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/2048px-Search_Icon.svg.png">Search</a>
+                    </li>
+                    <li id="offer">
+                        <a href="./offers.html"><img src="https://static.thenounproject.com/png/971055-200.png" alt=""> Offers<pre><sup>New</sup></pre></a>
+                    </li>
+                    <li id="help">
+                        <a href="./help.html"><img src="https://cdn.pixabay.com/photo/2016/07/23/13/18/pokemon-1536847_960_720.png" alt=""> Help</a>
+                    </li>
+                    <li id="signIn">
+
+                        <a href="./landingPage.html" id="signInA"><img src="https://www.transparentpng.com/thumb/user/single-user-icon-png-free--rLHSHx.png" alt="">Guest</a>
+                    </li>
+                    <li id="cart"><a href="./checkout.html">Cart <span id="noOfCartItems"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="upperDivForDetails">
+        <div id="restaurantImageDiv">
+            <img src="" alt="">
+        </div>
+        <div id="restaurantDetailsDiv">
+            <h2 id="restaurantDetailsDivName"></h2>
+            <p class="restaurantDetailsDivChangeCSS" id="restaurantDetailsDivCuisine"></p>
+            <p class="restaurantDetailsDivChangeCSS" id="restaurantDetailsDivAddress"></p>
+            <div id="extraDetailsForRestaurant">
+                <div id="restaurantRating">
+                    <h4></h4>
+                    <p class="extraDetailsChangeCSS">500+ Ratings</p>
+                </div>
+                <div id="restaurantDeliveryTime">
+                    <h4></h4>
+                    <p class="extraDetailsChangeCSS">Delivery Time</p>
+                </div>
+                <div id="restaurantCost">
+                    <h4></h4>
+                    <p class="extraDetailsChangeCSS">Cost for Two</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foodItemsBox">
+        <div id="categoryBox">
+            <ul id="categoryList">
+               
+            </ul>
+        </div>
+        <div id="categoryItemBox">
+            <div>
+                <h3 id="categoryHeading"></h3>
+                <p id="totalItemsCountInCategory"></p>
+            </div>
+            <div id="totalItemsInCategory"></div>
+        </div>
+    </div>
+    <div id="alertBoxUpperDiv2" class="alertBoxUpperDiv"></div>
+    
+</body>
+</html>
+<script src="./Scripts/restaurantPage.js" type="module"></script>
+

@@ -36,8 +36,8 @@ dishesButton.addEventListener("click", function() {
     alltpyesOfRestaurentOffers.style.display = "none";
     couponsContainer.style.display = "block"
 })
-console.log(alltpyesOfRestaurentOffers);
-console.log(couponsContainer)
+// console.log(alltpyesOfRestaurentOffers);
+// console.log(couponsContainer)
 
 // let couponCode = document.getElementById("couponCode").innerText;
 // console.log(couponCode);
@@ -133,3 +133,26 @@ async function getSingleDataFromDataBase(id) {
         console.log(error);
     }
 }
+
+async function getSingleUserDataFromDataBase(id) {
+    try {
+        let result = await fetch(`http://localhost:3000/Users/${id}`);
+        let response = await result.json();
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function showCartAtNavBar(){
+    let loggedUserData = JSON.parse(localStorage.getItem('userProfile'));
+    if(loggedUserData[0]){
+        getSingleUserDataFromDataBase(loggedUserData[1]).then((response) => {
+            document.querySelector('#noOfCartItems').style.display = 'block';
+            document.querySelector('#noOfCartItems').innerText = response.userCart.length;
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
+}
+showCartAtNavBar();

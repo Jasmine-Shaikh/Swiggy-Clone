@@ -856,3 +856,15 @@ sup {
     border-radius: 10px;
     /* border: 1px solid red;  */
 }
+#noOfCartItems{
+    /* border: 1px solid red; */
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 100%;
+    background-color: #60b246;
+    color: white;
+    font-weight: 600;
+    margin-left: 5px;
+    display: none;
+}
