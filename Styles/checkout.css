@@ -1,7 +1,8 @@
 body{
     margin: 0;
     font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
-    width: 1445px;
+    /* width: 1445px; */
+    min-width: 1400px;
     /* overflow: scroll; */
     font-weight: 300;
     color: #282c3f;

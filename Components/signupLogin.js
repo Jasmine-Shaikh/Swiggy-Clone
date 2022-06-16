@@ -83,7 +83,6 @@ function initialPosition(){
     document.querySelector('#overlay').style.display = 'none';
     document.querySelector('#loginDiv').style.display = 'none';
     document.querySelector('#signupDiv').style.display = 'none';
-    document.querySelector('#addressDiv').style.display = 'none';
     document.querySelector('body').style.overflow = 'scroll';
     document.querySelector('#userSignupForm').reset();
     document.querySelector('#userLoginForm').reset();
@@ -92,6 +91,7 @@ function initialPosition(){
         element.style.backgroundColor = 'white';
         element.style.color = 'black';
     })
+    document.querySelector('#addressDiv').style.display = 'none';
 };
 
 
