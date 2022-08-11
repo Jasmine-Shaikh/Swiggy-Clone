@@ -2,7 +2,7 @@
 
 Clone of <a href="https://www.swiggy.com/">ww.swiggy.com</a>www.swiggy.com that is an Indian online food ordering and delivery platform
 
-<img src="https://github.com/Jasmine-Shaikh/Banggood-Clone/blob/main/banggood-clone/src/Images/portfolio-1.PNG"/>
+<img src="https://github.com/Jasmine-Shaikh/Swiggy-Clone/blob/main/portfolio-2.PNG"/>
 
 ## Installation
 
