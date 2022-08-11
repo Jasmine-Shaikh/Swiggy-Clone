@@ -25,7 +25,7 @@ npm start
 
 ## Contributors
 - [Jasmine Shaikh](https://github.com/Jasmine-Shaikh)
-- [Akash Kumawat](https://github.com/Jasmine-Shaikh)
+- [Akash Kumawat](https://github.com/akashkmt)
 - [Sanoj Kumar](https://github.com/Sanojkumaryadav)
 - [Pawan Kumar](https://github.com/Pawangithub752000)
 
